@@ -1,4 +1,4 @@
-#Sunnies
+# 😎 Sunnies 😎
 
 This is a component library to be consumed in React and React Native. Why React Native as well? I just want to build universal compatibility from the get-go.
 
