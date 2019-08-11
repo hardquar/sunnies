@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "sunnies-docs",
+  "name": "@hardquar/sunnies-docs",
   "description": "Docs page for Sunnies",
 	"version": "0.0.1",
 	"keywords": [
@@ -15,14 +15,14 @@
     "styled-components"
   ],
   "license": "MIT",
-  "author": "Jack Toumey <jack@toumey.io>",
-  "homepage": "https://github.com/miloofcroton/sunnies#readme",
+  "author": "Hardquar",
+  "homepage": "https://github.com/hardquar/sunnies#readme",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/miloofcroton/sunnies.git"
+    "url": "git+ssh://git@github.com/hardquar/sunnies.git"
   },
   "bugs": {
-    "url": "https://github.com/miloofcroton/sunnies/issues"
+    "url": "https://github.com/hardquar/sunnies/issues"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",

@@ -2,7 +2,7 @@
 	"name": "sunnies",
 	"repository": {
 		"type": "git",
-		"url": "git+ssh://git@github.com/miloofcroton/sunnies.git"
+		"url": "git+ssh://git@github.com/hardquar/sunnies.git"
 	},
   "private": true,
 	"devDependencies": {
