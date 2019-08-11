@@ -1,0 +1,126 @@
+{
+  "private": true,
+  "name": "sunnies-docs",
+  "description": "Docs page for Sunnies",
+	"version": "0.0.1",
+	"keywords": [
+		"Typescript",
+		"React",
+    "Redux",
+    "RxJS",
+    "component",
+		"library",
+		"design system",
+    "styled-system",
+    "styled-components"
+  ],
+  "license": "MIT",
+  "author": "Jack Toumey <jack@toumey.io>",
+  "homepage": "https://github.com/miloofcroton/sunnies#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/miloofcroton/sunnies.git"
+  },
+  "bugs": {
+    "url": "https://github.com/miloofcroton/sunnies/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+	},
+  "devDependencies": {
+    "@types/lodash": "4.14.123",
+    "@types/react": "16.8.7",
+    "@types/styled-components": "4.0.2",
+    "gatsby-plugin-typescript": "2.0.13",
+    "husky": "2.1.0",
+    "lint-staged": "8.1.5",
+    "netlify-cms-backend-fs": "0.4.4",
+    "nodemon": "1.18.11",
+    "prettier": "1.17.0",
+    "tslint": "5.16.0",
+    "tslint-config-prettier": "1.18.0",
+    "tslint-react": "3.6.0",
+    "typescript": "3.3.3333",
+    "typescript-styled-plugin": "0.13.0",
+    "webpack-notifier": "1.7.0",
+    "webpack-shell-plugin": "0.5.0"
+  },
+  "dependencies": {
+    "sunnies": "^0.0.1",
+    "@babel/core": "^7.2.2",
+    "@mdx-js/mdx": "^0.20.0",
+    "@mdx-js/tag": "^0.20.0",
+    "@reach/router": "^1.2.1",
+    "babel-plugin-styled-components": "^1.10.0",
+    "d3-ease": "^1.0.5",
+    "docz-utils": "^0.13.6",
+    "gatsby": "2.3.34",
+    "gatsby-image": "^2.0.20",
+    "gatsby-mdx": "^0.3.4",
+    "gatsby-plugin-catch-links": "^2.0.10",
+    "gatsby-plugin-force-trailing-slashes": "^1.0.4",
+    "gatsby-plugin-manifest": "^2.0.9",
+    "gatsby-plugin-netlify-cms": "^3.0.10",
+    "gatsby-plugin-offline": "^2.0.16",
+    "gatsby-plugin-react-helmet": "^3.0.5",
+    "gatsby-plugin-sharp": "^2.0.14",
+    "gatsby-plugin-styled-components": "^3.0.4",
+    "gatsby-remark-prismjs": "^3.2.4",
+    "gatsby-source-filesystem": "^2.0.16",
+    "gatsby-transformer-remark": "^2.2.3",
+    "gatsby-transformer-sharp": "^2.1.8",
+    "hast-util-to-string": "^1.0.1",
+    "lodash": "^4.17.11",
+    "marked": "^0.6.0",
+    "netlify-cms": "^2.3.3",
+    "netlify-cms-widget-mdx": "^0.3.1",
+    "prismjs": "^1.15.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-helmet": "^5.2.0",
+    "react-powerplug": "^1.0.0",
+    "styled-components": "^4.3.2",
+    "unstated": "^2.1.1"
+	},
+	"scripts": {
+    "build": "gatsby build",
+    "clean": "rm -rf .cache && yarn start",
+    "develop": "nodemon --exec \"gatsby develop\"",
+    "debug": "nodemon --exec \"node --inspect-brk --no-lazy node_modules/.bin/gatsby develop\" ",
+    "lint": "tslint -c tslint.json --project tsconfig.json --fix",
+    "prettier-write": "prettier --write \"src/**/*.js\"",
+    "start": "yarn develop",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "type-check": "tsc --pretty --noEmit"
+  },
+  "workspaces": {
+    "nohoist": [
+      "gatsby",
+      "gatsby-*"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn run type-check"
+    }
+  },
+  "lint-staged": {
+    "*.@(ts|tsx)": [
+      "yarn lint",
+      "yarn prettier-write",
+      "git add"
+    ]
+  },
+  "nodemonConfig": {
+    "ignore": [
+      ".cache/*",
+      "public/*",
+      "src/*",
+      "static/*"
+    ],
+    "delay": "1500"
+  }
+}

@@ -100,7 +100,7 @@ const ReadMoreLinkContainer = styled.span`
 	white-space: nowrap;
 `;
 
-// NOTE: Couldn't use @artsy/palette / Sans due to root element being a `div`;
+// NOTE: Couldn't use sunnies / Sans due to root element being a `div`;
 // as html content from CMS comes through as a p tag, markup is rendered invalid.
 const ReadMoreLinkText = styled.span`
 	display: inline;
