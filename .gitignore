@@ -4,6 +4,7 @@ dist
 .vscode
 .cache
 storybook-static
+coverage
 
 .DS_Store
 .awcache
