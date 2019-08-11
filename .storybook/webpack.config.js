@@ -83,7 +83,7 @@ module.exports = async ({ config, mode }) => {
     {
       test: /\.tsx?$/,
       include: [/src/],
-      exclude: [/node_modules/, new RegExp(package.devDependencies.jest.testRegex)],
+      exclude: [/node_modules/],
       use: [
         {
           loader: "cache-loader",
