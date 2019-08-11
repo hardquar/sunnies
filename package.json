@@ -141,7 +141,7 @@
     "visual-test": "chromatic test --exit-zero-on-changes --app-code n02zjqmdqq"
 	},
 	"lint-staged": {
-    "*.@(ts|tsx)": [
+    ".(tsx?)$": [
       "yarn lint",
       "git add"
     ]

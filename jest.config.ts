@@ -28,12 +28,7 @@ module.exports = {
     }
   },
   moduleNameMapper: {
-    '@config': '<rootDir>/src/util/config',
-    '@database/(.*)': '<rootDir>/src/util/database/$1',
-    // '@app': '<rootDir>/src/app.ts',
-    // '@resources/(.*)': '<rootDir>/src/resources/$1',
-    // '@seed': '<rootDir>/src/scripts/seed',
-    // '@util/(.*)': '<rootDir>/src/util/$1',
+    '@elements': '<rootDir>/src/elements',
   },
 
 	modulePathIgnorePatterns: [
