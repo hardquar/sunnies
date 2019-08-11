@@ -1,6 +1,6 @@
 // @ts-ignore
-import React from 'react'
-import { styled as primitives } from '../../platform/primitives'
+import React from 'react';
+import { styled as primitives } from '../../platform/primitives';
 
 import {
 	background,
@@ -33,7 +33,7 @@ import {
 	WidthProps,
 	zIndex,
 	ZIndexProps
-} from 'styled-system'
+} from 'styled-system';
 
 export interface BoxProps
 	extends BackgroundProps,
@@ -72,6 +72,6 @@ export const Box = primitives.View<BoxProps>`
   ${top};
   ${width};
   ${zIndex};
-`
+`;
 
-Box.displayName = 'Box'
+Box.displayName = 'Box';

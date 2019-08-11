@@ -1,9 +1,9 @@
-import React, { ImgHTMLAttributes } from 'react'
-import { color } from '../../helpers/color'
-import { styledWrapper } from '../../platform/primitives'
-import { SerifSize } from '../../Theme'
-import { Flex } from '../Flex'
-import { Serif } from '../Typography'
+import React, { ImgHTMLAttributes } from 'react';
+import { color } from '../../helpers/color';
+import { styledWrapper } from '../../platform/primitives';
+import { SerifSize } from '../../Theme';
+import { Flex } from '../Flex';
+import { Serif } from '../Typography';
 
 export interface SizeProps {
 	[key: string]: {
@@ -26,22 +26,22 @@ export const Size: SizeProps = {
 		diameter: '100px',
 		typeSize: '8'
 	}
-}
+};
 
-type SizeKey = 'xs' | 'sm' | 'md'
+type SizeKey = 'xs' | 'sm' | 'md';
 
 /** sizeValue */
 export const sizeValue = (size) => {
 	switch (size) {
 		case 'xs':
-			return Size.xs
+			return Size.xs;
 		case 'sm':
-			return Size.sm
+			return Size.sm;
 		case 'md':
 		default:
-			return Size.md
+			return Size.md;
 	}
-}
+};
 
 export interface AvatarProps extends ImgHTMLAttributes<any> {
 	/** If an image is missing, show initials instead */
@@ -61,13 +61,13 @@ export const BaseAvatar = ({
 	size = 'md',
 	renderAvatar
 }: BaseAvatarProps): JSX.Element => {
-	const { diameter, typeSize } = sizeValue(size)
+	const { diameter, typeSize } = sizeValue(size);
 
 	if (src) {
-		return renderAvatar()
+		return renderAvatar();
 	} else if (initials) {
 		// Left align for overflow
-		const justifyContent = initials.length > 4 ? 'left' : 'center'
+		const justifyContent = initials.length > 4 ? 'left' : 'center';
 
 		return (
 			<InitialsHolder
@@ -86,11 +86,11 @@ export const BaseAvatar = ({
 					{initials}
 				</Serif>
 			</InitialsHolder>
-		)
+		);
 	} else {
-		return null
+		return null;
 	}
-}
+};
 
 /** InitialsHolder */
 export const InitialsHolder = styledWrapper(Flex)<{ size: SizeKey, }>`
@@ -98,6 +98,6 @@ export const InitialsHolder = styledWrapper(Flex)<{ size: SizeKey, }>`
   border-radius: ${(props) => sizeValue(props.size).diameter};
   text-align: center;
   overflow: hidden;
-`
+`;
 
-InitialsHolder.displayName = 'InitialsHolder'
+InitialsHolder.displayName = 'InitialsHolder';

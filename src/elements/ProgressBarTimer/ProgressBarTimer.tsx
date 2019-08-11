@@ -1,7 +1,7 @@
-import { DateTime } from 'luxon'
-import React from 'react'
-import { ProgressBar } from '..'
-import { color } from '../../helpers'
+import { DateTime } from 'luxon';
+import React from 'react';
+import { ProgressBar } from '..';
+import { color } from '../../helpers';
 
 /** ProgressBarTimer */
 export const ProgressBarTimer: React.SFC<{
@@ -18,12 +18,14 @@ export const ProgressBarTimer: React.SFC<{
 	const secondsRemaining = DateTime.fromISO(countdownEnd).diff(
 		DateTime.fromISO(currentTime),
 		'seconds'
-	).seconds
+	).seconds;
 	const totalSeconds = DateTime.fromISO(countdownEnd).diff(
 		DateTime.fromISO(countdownStart),
 		'seconds'
-	).seconds
-	const progress = Math.max(0, (secondsRemaining * 100) / totalSeconds)
+	).seconds;
+	const progress = Math.max(0, (secondsRemaining * 100) / totalSeconds);
 
-	return <ProgressBar percentComplete={progress} highlight={highlight as any} />
-}
+	return (
+		<ProgressBar percentComplete={progress} highlight={highlight as any} />
+	);
+};

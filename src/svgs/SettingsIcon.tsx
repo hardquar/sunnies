@@ -1,6 +1,6 @@
-import React from 'react'
-import { color } from '../helpers'
-import { Icon, IconProps } from './Icon'
+import React from 'react';
+import { color } from '../helpers';
+import { Icon, IconProps } from './Icon';
 
 /** SettingsIcon */
 export const SettingsIcon: React.SFC<IconProps> = (props) => {
@@ -13,5 +13,5 @@ export const SettingsIcon: React.SFC<IconProps> = (props) => {
 				fillRule='evenodd'
 			/>
 		</Icon>
-	)
-}
+	);
+};

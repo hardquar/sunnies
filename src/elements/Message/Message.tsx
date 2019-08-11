@@ -1,9 +1,9 @@
-import React, { SFC } from 'react'
-import { color } from '../../helpers'
-import { styledWrapper } from '../../platform/primitives'
-import { SansSize } from '../../Theme'
-import { Flex, FlexProps } from '../Flex'
-import { Sans } from '../Typography'
+import React, { SFC } from 'react';
+import { color } from '../../helpers';
+import { styledWrapper } from '../../platform/primitives';
+import { SansSize } from '../../Theme';
+import { Flex, FlexProps } from '../Flex';
+import { Sans } from '../Typography';
 
 /**
  * Spec: zpl.io/2Zg4Rdq
@@ -20,7 +20,7 @@ interface MessageProps extends FlexProps {
 const StyledFlex = styledWrapper(Flex)`
   background-color: ${color('black5')};
   border-radius: 2px;
-`
+`;
 
 /**
  * A generic message window for displaying ZerStates, notices, errors, etc.
@@ -38,5 +38,5 @@ export const Message: SFC<MessageProps> = ({
 				{children}
 			</Sans>
 		</StyledFlex>
-	)
-}
+	);
+};

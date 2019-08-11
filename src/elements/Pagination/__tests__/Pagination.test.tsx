@@ -1,8 +1,8 @@
-import { mount } from 'enzyme'
-import { set } from 'lodash/fp'
-import React from 'react'
-import { Theme } from '../../../Theme'
-import { LargePagination, SmallPagination } from '../Pagination'
+import { mount } from 'enzyme';
+import { set } from 'lodash/fp';
+import React from 'react';
+import { Theme } from '../../../Theme';
+import { LargePagination, SmallPagination } from '../Pagination';
 
 describe('Pagination', () => {
 	const paginationProps = {
@@ -26,19 +26,19 @@ describe('Pagination', () => {
 				/* */
 			}
 		}
-	}
+	};
 
-	const { cursor, callbacks } = paginationProps
-	let matchMedia
+	const { cursor, callbacks } = paginationProps;
+	let matchMedia;
 
 	beforeAll(() => {
-		matchMedia = window.matchMedia
-		window.matchMedia = undefined // Immediately set matching media query inMockBoot
-	})
+		matchMedia = window.matchMedia;
+		window.matchMedia = undefined; // Immediately set matching media query inMockBoot
+	});
 
 	afterAll(() => {
-		window.matchMedia = matchMedia
-	})
+		window.matchMedia = matchMedia;
+	});
 
 	describe('LargePagination', () => {
 		it('disables next button if hasNextPage=false', () => {
@@ -50,16 +50,16 @@ describe('Pagination', () => {
 						{...callbacks}
 					/>
 				</Theme>
-			)
-			expect(wrapper.find('NextButton').html()).toContain('class="disabled')
-		})
+			);
+			expect(wrapper.find('NextButton').html()).toContain('class="disabled');
+		});
 
 		it('disables previous button if pageCursors.previous is falsy', () => {
 			const updatedProps = set(
 				'cursor.previous',
 				undefined,
 				paginationProps
-			) as any
+			) as any;
 
 			const wrapper = mount(
 				<Theme>
@@ -69,13 +69,13 @@ describe('Pagination', () => {
 						{...callbacks}
 					/>
 				</Theme>
-			)
+			);
 
-			expect(wrapper.find('PrevButton').html()).toContain('class="disabled')
-		})
+			expect(wrapper.find('PrevButton').html()).toContain('class="disabled');
+		});
 
 		it('triggers next callback on next button click', () => {
-			const spy = jest.fn()
+			const spy = jest.fn();
 			const wrapper = mount(
 				<Theme>
 					<LargePagination
@@ -85,13 +85,13 @@ describe('Pagination', () => {
 						onNext={spy}
 					/>
 				</Theme>
-			)
-			wrapper.find('NextButton a').simulate('click')
-			expect(spy).toHaveBeenCalled()
-		})
+			);
+			wrapper.find('NextButton a').simulate('click');
+			expect(spy).toHaveBeenCalled();
+		});
 
 		it('triggers onClick callback on previous button click', () => {
-			const spy = jest.fn()
+			const spy = jest.fn();
 			const wrapper = mount(
 				<Theme>
 					<LargePagination
@@ -101,13 +101,13 @@ describe('Pagination', () => {
 						onClick={spy}
 					/>
 				</Theme>
-			)
-			wrapper.find('PrevButton a').simulate('click')
-			expect(spy).toHaveBeenCalled()
-		})
+			);
+			wrapper.find('PrevButton a').simulate('click');
+			expect(spy).toHaveBeenCalled();
+		});
 
 		it('triggers on click on number click', () => {
-			const spy = jest.fn()
+			const spy = jest.fn();
 			const wrapper = mount(
 				<Theme>
 					<LargePagination
@@ -117,28 +117,28 @@ describe('Pagination', () => {
 						onClick={spy}
 					/>
 				</Theme>
-			)
+			);
 			wrapper
 				.find('Page')
 				.first()
-				.simulate('click')
+				.simulate('click');
 
-			expect(spy).toHaveBeenCalled()
-		})
+			expect(spy).toHaveBeenCalled();
+		});
 
 		it('renders first, last and page range', () => {
 			const wrapper = mount(
 				<Theme>
 					<LargePagination hasNextPage pageCursors={cursor} {...callbacks} />
 				</Theme>
-			)
-			const html = wrapper.html()
-			const pages = ['1', '...', '6', '7', '8', '9', '...', '20']
+			);
+			const html = wrapper.html();
+			const pages = ['1', '...', '6', '7', '8', '9', '...', '20'];
 			pages.forEach((page) => {
-				expect(html).toContain(`>${page}<`)
-			})
-		})
-	})
+				expect(html).toContain(`>${page}<`);
+			});
+		});
+	});
 
 	describe('SmallPagination', () => {
 		it('does not render pages', () => {
@@ -146,13 +146,13 @@ describe('Pagination', () => {
 				<Theme>
 					<SmallPagination hasNextPage pageCursors={cursor} {...callbacks} />
 				</Theme>
-			)
-			expect(wrapper.find('Page').length).toEqual(0)
-			expect(wrapper.find('PageSpan').length).toEqual(0)
-		})
+			);
+			expect(wrapper.find('Page').length).toEqual(0);
+			expect(wrapper.find('PageSpan').length).toEqual(0);
+		});
 
 		it('triggers next callback on previous button click', () => {
-			const spy = jest.fn()
+			const spy = jest.fn();
 			const wrapper = mount(
 				<Theme>
 					<SmallPagination
@@ -162,18 +162,18 @@ describe('Pagination', () => {
 						onClick={spy}
 					/>
 				</Theme>
-			)
+			);
 
 			wrapper
 				.find('ButtonWithBorder')
 				.first()
-				.simulate('click')
+				.simulate('click');
 
-			expect(spy).toHaveBeenCalled()
-		})
+			expect(spy).toHaveBeenCalled();
+		});
 
 		it('triggers onClick callback on next button click', () => {
-			const spy = jest.fn()
+			const spy = jest.fn();
 			const wrapper = mount(
 				<Theme>
 					<SmallPagination
@@ -183,13 +183,13 @@ describe('Pagination', () => {
 						onNext={spy}
 					/>
 				</Theme>
-			)
+			);
 			wrapper
 				.find('ButtonWithBorder')
 				.last()
-				.simulate('click')
+				.simulate('click');
 
-			expect(spy).toHaveBeenCalled()
-		})
-	})
-})
+			expect(spy).toHaveBeenCalled();
+		});
+	});
+});

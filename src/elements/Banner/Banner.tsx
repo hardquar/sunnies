@@ -1,9 +1,9 @@
-import React from 'react'
-import styled from 'styled-components'
-import { CloseIcon } from '../../svgs'
-import { Box } from '../Box'
-import { Flex } from '../Flex'
-import { Sans } from '../Typography'
+import React from 'react';
+import styled from 'styled-components';
+import { CloseIcon } from '../../svgs';
+import { Box } from '../Box';
+import { Flex } from '../Flex';
+import { Sans } from '../Typography';
 
 const Target = styled.div`
 	padding-left: 10px;
@@ -12,27 +12,27 @@ const Target = styled.div`
 	svg {
 		display: block;
 	}
-`
+`;
 
 const Wrapper = styled(Box)`
 	transition: background-color 250ms linear;
 	display: flex;
-`
+`;
 
 const TextWrapper = styled(Flex)`
 	width: 100%;
 	text-align: center;
 	align-items: center;
 	justify-content: center;
-`
+`;
 
 const CloseButton = ({ onClick }) => {
 	return (
 		<Target onClick={onClick}>
 			<CloseIcon fill='white100' />
 		</Target>
-	)
-}
+	);
+};
 
 export interface BannerProps {
 	dismissable: boolean,
@@ -49,19 +49,19 @@ export class Banner extends React.Component<BannerProps> {
 		dismissable: false,
 		backgroundColor: 'red100',
 		textColor: 'white100'
-	}
+	};
 
 	state = {
 		dismissed: false
-	}
+	};
 
 	handleCloseClick = () => {
-		this.setState({ dismissed: true })
-	}
+		this.setState({ dismissed: true });
+	};
 
 	render() {
-		if (this.state.dismissed) return null
-		const showCloseButton = this.props.dismissable
+		if (this.state.dismissed) return null;
+		const showCloseButton = this.props.dismissable;
 
 		return (
 			<Wrapper
@@ -74,6 +74,6 @@ export class Banner extends React.Component<BannerProps> {
 				</TextWrapper>
 				{showCloseButton && <CloseButton onClick={this.handleCloseClick} />}
 			</Wrapper>
-		)
+		);
 	}
 }

@@ -1,9 +1,9 @@
-import React from 'react'
-import styled, { css } from 'styled-components'
+import React from 'react';
+import styled, { css } from 'styled-components';
 
-import { Box, Flex, Sans } from '../'
-import { color, space } from '../../helpers'
-import { ChevronIcon } from '../../svgs'
+import { Box, Flex, Sans } from '../';
+import { color, space } from '../../helpers';
+import { ChevronIcon } from '../../svgs';
 
 interface Props {
 	onClick?: (cursor: string, page: number) => void,
@@ -20,7 +20,7 @@ export const LargePagination = (props: Props) => {
 		onClick,
 		onNext,
 		hasNextPage
-	} = props
+	} = props;
 
 	return (
 		<Flex
@@ -50,15 +50,15 @@ export const LargePagination = (props: Props) => {
 					disabled={!previous}
 					onClick={() => {
 						if (previous) {
-							props.onClick(previous.cursor, previous.page)
+							props.onClick(previous.cursor, previous.page);
 						}
 					}}
 				/>
 				<NextButton disabled={!hasNextPage} onClick={() => onNext()} />
 			</Box>
 		</Flex>
-	)
-}
+	);
+};
 
 /** SmallPagination */
 export const SmallPagination = (props: Props) => {
@@ -67,7 +67,7 @@ export const SmallPagination = (props: Props) => {
 		onClick,
 		onNext,
 		hasNextPage
-	} = props
+	} = props;
 
 	return (
 		<Flex flexDirection='row' width='100%'>
@@ -82,7 +82,7 @@ export const SmallPagination = (props: Props) => {
 					pl={1}
 					onClick={() => {
 						if (previous) {
-							onClick(previous.cursor, previous.page)
+							onClick(previous.cursor, previous.page);
 						}
 					}}
 				>
@@ -104,8 +104,8 @@ export const SmallPagination = (props: Props) => {
 				</ButtonWithBorder>
 			</PrevNextFlex>
 		</Flex>
-	)
-}
+	);
+};
 
 const ButtonWithBorder = styled(Flex)`
 	border: ${(props) => props.theme.borders[1]};
@@ -114,20 +114,20 @@ const ButtonWithBorder = styled(Flex)`
 	width: 100%;
 	height: ${space(4)}px;
 	cursor: pointer;
-`
+`;
 const PageSpan = ({ mx }) => {
 	return (
 		<Sans size='3' display='inline' mx={mx} color='black30'>
 			...
 		</Sans>
-	)
-}
+	);
+};
 
 const renderPage = (
 	pageCursor,
 	onClick: (cursor: string, page: number) => void
 ) => {
-	const { cursor, isCurrent, page } = pageCursor
+	const { cursor, isCurrent, page } = pageCursor;
 	return (
 		<Page
 			onClick={() => onClick(cursor, page)}
@@ -135,8 +135,8 @@ const renderPage = (
 			active={isCurrent}
 			key={cursor + page}
 		/>
-	)
-}
+	);
+};
 
 const Page = ({ num, onClick, ...props }) => {
 	return (
@@ -145,14 +145,14 @@ const Page = ({ num, onClick, ...props }) => {
 				{num}
 			</Sans>
 		</Button>
-	)
-}
+	);
+};
 
 const activeButton = css`
 	background: ${color('black5')};
 	border-radius: 2px;
 	border: 0;
-`
+`;
 
 const Button = styled.button.attrs<{ active?: boolean, }>({})`
 	cursor: pointer;
@@ -168,7 +168,7 @@ const Button = styled.button.attrs<{ active?: boolean, }>({})`
 	&:hover {
 		${activeButton};
 	}
-`
+`;
 const PrevButton = ({ onClick, disabled }) => {
 	return (
 		<PrevNextContainer className={disabled ? 'disabled' : null}>
@@ -178,8 +178,8 @@ const PrevButton = ({ onClick, disabled }) => {
 				</a>
 			</Sans>
 		</PrevNextContainer>
-	)
-}
+	);
+};
 
 const NextButton = ({ onClick, disabled }) => {
 	return (
@@ -190,22 +190,22 @@ const NextButton = ({ onClick, disabled }) => {
 				</a>
 			</Sans>
 		</PrevNextContainer>
-	)
-}
+	);
+};
 
 const PrevNextContainer = styled.span`
 	&.disabled {
 		opacity: 0.1;
 	}
-`
+`;
 
 const PrevNextFlex = styled(Flex)`
 	&.disabled {
 		opacity: 0.1;
 	}
-`
+`;
 
 // Tests
-ButtonWithBorder.displayName = 'ButtonWithBorder'
-PrevButton.displayName = 'PrevButton'
-NextButton.displayName = 'NextButton'
+ButtonWithBorder.displayName = 'ButtonWithBorder';
+PrevButton.displayName = 'PrevButton';
+NextButton.displayName = 'NextButton';

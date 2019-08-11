@@ -1,9 +1,9 @@
-import { storiesOf } from '@storybook/react'
-import React from 'react'
-import styled from 'styled-components'
-import { Box } from '../Box'
-import { Serif } from '../Typography'
-import { DonutChart } from './DonutChart'
+import { storiesOf } from '@storybook/react';
+import React from 'react';
+import styled from 'styled-components';
+import { Box } from '../Box';
+import { Serif } from '../Typography';
+import { DonutChart } from './DonutChart';
 
 storiesOf('Components/DonutChart', module).add(
 	'DonutChart with labels',
@@ -51,10 +51,10 @@ storiesOf('Components/DonutChart', module).add(
 					]}
 				/>
 			</Box>
-		)
+		);
 	},
 	{ chromatic: { delay: 500 } }
-)
+);
 
 storiesOf('Components/DonutChart', module).add(
 	'DonutChart with custom margin',
@@ -106,10 +106,10 @@ storiesOf('Components/DonutChart', module).add(
 					]}
 				/>
 			</Box>
-		)
+		);
 	},
 	{ chromatic: { delay: 500 } }
-)
+);
 
 storiesOf('Components/DonutChart', module).add(
 	'DonutChart with title/description labels',
@@ -161,10 +161,10 @@ storiesOf('Components/DonutChart', module).add(
 					]}
 				/>
 			</Box>
-		)
+		);
 	},
 	{ chromatic: { delay: 500 } }
-)
+);
 
 storiesOf('Components/DonutChart', module).add(
 	'DonutChart without labels and 0 margin',
@@ -209,10 +209,10 @@ storiesOf('Components/DonutChart', module).add(
 					]}
 				/>
 			</Box>
-		)
+		);
 	},
 	{ chromatic: { delay: 500 } }
-)
+);
 
 storiesOf('Components/DonutChart', module).add(
 	'Chart minimum width',
@@ -257,10 +257,10 @@ storiesOf('Components/DonutChart', module).add(
 					]}
 				/>
 			</Box>
-		)
+		);
 	},
 	{ chromatic: { delay: 500 } }
-)
+);
 
 storiesOf('Components/DonutChart', module).add(
 	'DonutChart resizes when container size changes',
@@ -311,10 +311,10 @@ storiesOf('Components/DonutChart', module).add(
 					/>
 				</GrowingBox>
 			</>
-		)
+		);
 	},
 	{ chromatic: { delay: 500 } }
-)
+);
 
 const GrowingBox = styled(Box)`
 	width: 200px;
@@ -324,4 +324,4 @@ const GrowingBox = styled(Box)`
 	&:hover {
 		width: 400px;
 	}
-`
+`;

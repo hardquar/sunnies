@@ -1,6 +1,6 @@
-import React from 'react'
-import { color } from '../helpers'
-import { Icon, IconProps } from './Icon'
+import React from 'react';
+import { color } from '../helpers';
+import { Icon, IconProps } from './Icon';
 
 /** UserSingleIcon */
 export const UserSingleIcon: React.SFC<IconProps> = (props) => {
@@ -13,9 +13,9 @@ export const UserSingleIcon: React.SFC<IconProps> = (props) => {
 				fillRule='nonzero'
 			/>
 		</Icon>
-	)
-}
+	);
+};
 
 // TODO: remove this alias once clients have been updated
 /** SoloIcon */
-export const SoloIcon = UserSingleIcon
+export const SoloIcon = UserSingleIcon;

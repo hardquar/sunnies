@@ -1,12 +1,12 @@
-import { color, flex, space, textAlign, width } from 'styled-system'
+import { color, flex, space, textAlign, width } from 'styled-system';
 
 import {
 	Col as _Col,
 	Container as _Container,
 	Row as _Row
-} from 'styled-bootstrap-grid'
+} from 'styled-bootstrap-grid';
 
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 /**
  * TODO: v2 of `styled-bootstrap-grid` contains TS typings, but we need to
@@ -18,13 +18,13 @@ export const Grid: any = styled(_Container)`
 	overflow: hidden;
 	max-width: ${(props) => props.theme.grid.breakpoints.xl}px;
 	${space};
-`
+`;
 
 /** Grid row */
 export const Row: any = styled(_Row)`
 	${color};
 	${space};
-`
+`;
 
 /** Grid column */
 export const Col: any = styled(_Col)`
@@ -33,8 +33,8 @@ export const Col: any = styled(_Col)`
 	${space};
 	${textAlign};
 	${width};
-`
+`;
 
-Grid.displayName = 'Grid'
-Row.displayName = 'Row'
-Col.displayName = 'Col'
+Grid.displayName = 'Grid';
+Row.displayName = 'Row';
+Col.displayName = 'Col';

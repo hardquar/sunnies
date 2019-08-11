@@ -1,1 +1,1 @@
-declare module 'styled-bootstrap-grid'
+declare module 'styled-bootstrap-grid';

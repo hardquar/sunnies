@@ -4,8 +4,8 @@
  */
 export function isReactNative(): boolean {
 	if (typeof navigator !== 'undefined' && navigator.product === 'ReactNative') {
-		return true
+		return true;
 	} else {
-		return false
+		return false;
 	}
 }

@@ -1,30 +1,30 @@
-import { storiesOf } from '@storybook/react'
-import React, { Component } from 'react'
-import { Box } from '../Box/Box'
-import { Separator } from '../Separator/Separator'
-import { Join } from './Join'
+import { storiesOf } from '@storybook/react';
+import React, { Component } from 'react';
+import { Box } from '../Box/Box';
+import { Separator } from '../Separator/Separator';
+import { Join } from './Join';
 
 const BlankFunction = () => {
-	return null
-}
+	return null;
+};
 
 const NonBlankFunction = () => {
-	return <div>Non blank Function</div>
-}
+	return <div>Non blank Function</div>;
+};
 
-const BlankSFC: React.SFC = () => null
+const BlankSFC: React.SFC = () => null;
 
-const NonBlankSFC: React.SFC = () => <div>Non blanks stateless component</div>
+const NonBlankSFC: React.SFC = () => <div>Non blanks stateless component</div>;
 
 class BlankComponent extends Component {
 	render() {
-		return null
+		return null;
 	}
 }
 
 class NonBlankComponent extends Component {
 	render() {
-		return <Box>Non Blank Component</Box>
+		return <Box>Non Blank Component</Box>;
 	}
 }
 
@@ -35,14 +35,14 @@ storiesOf('Components/Join', module)
 				<Box>Fist in the list</Box>
 				<Box>Second in the list</Box>
 			</Join>
-		)
+		);
 	})
 	.add('with one component', () => {
 		return (
 			<Join separator={<Separator m={1} />}>
 				<Box>Only one component here</Box>
 			</Join>
-		)
+		);
 	})
 	.add('with some of the children empty', () => {
 		return (
@@ -60,5 +60,5 @@ storiesOf('Components/Join', module)
 				<Box>Another box with content</Box>
 				<div />
 			</Join>
-		)
-	})
+		);
+	});

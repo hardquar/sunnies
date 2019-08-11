@@ -1,4 +1,4 @@
-import { ChartTooltipProps } from '../ChartTooltip'
+import { ChartTooltipProps } from '../ChartTooltip';
 
 export interface PointDescriptor {
 	value: number,
@@ -7,5 +7,5 @@ export interface PointDescriptor {
 }
 
 export interface ChartProps {
-	points: PointDescriptor[],
+	points: Array<PointDescriptor>,
 }

@@ -1,5 +1,5 @@
-import React from 'react'
-import { Icon, IconProps } from './Icon'
+import React from 'react';
+import { Icon, IconProps } from './Icon';
 
 /** https://stripe.com/docs/api#card_object-brand */
 export type CreditCardType =
@@ -7,7 +7,7 @@ export type CreditCardType =
 	| 'Discover'
 	| 'MasterCard'
 	| 'Unknown'
-	| 'Visa'
+	| 'Visa';
 
 interface CreditCardIconProps extends IconProps {
 	type?: CreditCardType | string,
@@ -15,15 +15,15 @@ interface CreditCardIconProps extends IconProps {
 
 /** CreditCardIcon */
 export const CreditCardIcon = ({ type, ...rest }: CreditCardIconProps) => {
-	const { parts, title } = cardTypeMap[type] || cardTypeMap.Unknown
+	const { parts, title } = cardTypeMap[type] || cardTypeMap.Unknown;
 
 	return (
 		<Icon viewBox='0 0 30 20' {...rest}>
 			<title>{title}</title>
 			{parts}
 		</Icon>
-	)
-}
+	);
+};
 
 const AmexIcon = () => (
 	<>
@@ -43,7 +43,7 @@ const AmexIcon = () => (
 			<rect stroke='#E5E5E5' x='.5' y='.5' width='29' height='19' rx='2' />
 		</g>
 	</>
-)
+);
 
 const DiscoverIcon = () => (
 	<>
@@ -57,7 +57,7 @@ const DiscoverIcon = () => (
 			<rect stroke='#E5E5E5' x='.5' y='.5' width='29' height='19' rx='2' />
 		</g>
 	</>
-)
+);
 
 const FallbackIcon = () => (
 	<>
@@ -75,7 +75,7 @@ const FallbackIcon = () => (
 			<rect fill='#D4D4D4' x='5' y='10' width='7' height='3' rx='1.5' />
 		</g>
 	</>
-)
+);
 
 const MastercardIcon = () => (
 	<>
@@ -99,7 +99,7 @@ const MastercardIcon = () => (
 			</g>
 		</g>
 	</>
-)
+);
 const VisaIcon = () => (
 	<>
 		<g fill='none' fillRule='evenodd'>
@@ -122,7 +122,7 @@ const VisaIcon = () => (
 			/>
 		</g>
 	</>
-)
+);
 
 const cardTypeMap = {
 	'American Express': { parts: <AmexIcon />, title: 'amex' },
@@ -130,4 +130,4 @@ const cardTypeMap = {
 	MasterCard: { parts: <MastercardIcon />, title: 'mastercard' },
 	Unknown: { parts: <FallbackIcon />, title: 'credit card' },
 	Visa: { parts: <VisaIcon />, title: 'visa' }
-}
+};

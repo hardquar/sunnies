@@ -1,9 +1,9 @@
-import React from 'react'
-import styled, { css } from 'styled-components'
-import { color, space } from '../../helpers'
-import { Flex, FlexProps } from '../Flex'
+import React from 'react';
+import styled, { css } from 'styled-components';
+import { color, space } from '../../helpers';
+import { Flex, FlexProps } from '../Flex';
 
-import { CheckIcon } from '../../svgs'
+import { CheckIcon } from '../../svgs';
 
 import {
 	BorderProps,
@@ -11,14 +11,14 @@ import {
 	SizeProps,
 	space as styledSpace,
 	SpaceProps
-} from 'styled-system'
+} from 'styled-system';
 
 /**
  * Spec: zpl.io/bAvnwlB
  */
 
-const SIZE = 2
-const BORDER_WIDTH = 2
+const SIZE = 2;
+const BORDER_WIDTH = 2;
 
 export interface CheckboxProps {
 	/** Disable checkbox interactions */
@@ -44,20 +44,20 @@ export interface CheckboxToggleProps
  */
 export class Checkbox extends React.Component<CheckboxProps> {
 	labelColor = () => {
-		const { disabled, error } = this.props
-		if (disabled) return { color: color('black10') }
-		if (error) return { color: color('red100') }
-	}
+		const { disabled, error } = this.props;
+		if (disabled) return { color: color('black10') };
+		if (error) return { color: color('red100') };
+	};
 
 	iconColor = () => {
-		const { disabled, selected } = this.props
-		if (disabled && selected) return 'black30'
-		if (disabled) return 'black5'
-		return 'white100'
-	}
+		const { disabled, selected } = this.props;
+		if (disabled && selected) return 'black30';
+		if (disabled) return 'black5';
+		return 'white100';
+	};
 
 	render() {
-		const { selected, children, error, disabled, hover } = this.props
+		const { selected, children, error, disabled, hover } = this.props;
 
 		return (
 			<Container
@@ -82,7 +82,7 @@ export class Checkbox extends React.Component<CheckboxProps> {
 				</CheckboxButton>
 				<Label style={this.labelColor()}>{children}</Label>
 			</Container>
-		)
+		);
 	}
 }
 
@@ -97,11 +97,11 @@ const checkBorderColor = ({
 	selected,
 	error
 }: CheckboxFeedbackState) => {
-	if (disabled) return color('black10')
-	if (selected) return color('black100')
-	if (error) return color('red100')
-	return color('black10')
-}
+	if (disabled) return color('black10');
+	if (selected) return color('black100');
+	if (error) return color('red100');
+	return color('black10');
+};
 
 const checkBackgroundColor = ({
 	disabled,
@@ -109,13 +109,13 @@ const checkBackgroundColor = ({
 }: CheckboxFeedbackState) => {
 	switch (true) {
 		case disabled:
-			return color('black5')
+			return color('black5');
 		case selected:
-			return color('black100')
+			return color('black100');
 		default:
-			return color('white100')
+			return color('white100');
 	}
-}
+};
 
 const CheckboxButton = styled.div<CheckboxToggleProps>`
 	${borders};
@@ -131,30 +131,30 @@ const CheckboxButton = styled.div<CheckboxToggleProps>`
 		top: -${BORDER_WIDTH}px;
 		left: -${BORDER_WIDTH}px;
 	}
-`
+`;
 
-const Label = styled.div``
+const Label = styled.div``;
 
 const hoverStyles = ({ selected, hover, disabled }) => {
 	const styles = `
     background-color: ${color('black10')};
     border-color: ${color('black10')};
-  `
+  `;
 	if (hover && !selected && !disabled) {
 		return css`
 			${CheckboxButton} {
 				${styles};
 			}
-		`
+		`;
 	}
 	if (!selected && !disabled) {
 		return css`
 			&:hover ${CheckboxButton} {
 				${styles};
 			}
-		`
+		`;
 	}
-}
+};
 
 interface ContainerProps extends FlexProps {
 	selected: boolean,
@@ -166,4 +166,4 @@ const Container = styled(Flex)<ContainerProps>`
 	cursor: ${({ disabled }) => !disabled && 'pointer'};
 	transition: color 0.25s;
 	${hoverStyles};
-`
+`;

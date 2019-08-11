@@ -1,9 +1,9 @@
 // @ts-ignore
-import React from 'react'
+import React from 'react';
 
-import { color, space } from '../../helpers'
-import { styledWrapper } from '../../platform/primitives'
-import { Flex, FlexProps } from '../Flex'
+import { color, space } from '../../helpers';
+import { styledWrapper } from '../../platform/primitives';
+import { Flex, FlexProps } from '../Flex';
 
 import {
 	background,
@@ -16,7 +16,7 @@ import {
 	SpaceProps,
 	width,
 	WidthProps
-} from 'styled-system'
+} from 'styled-system';
 
 export interface BorderBoxProps
 	extends BackgroundProps,
@@ -41,4 +41,4 @@ export const BorderBoxBase = styledWrapper(Flex)<BorderBoxProps>`
   ${maxWidth};
   ${styledSpace};
   ${width};
-`
+`;

@@ -1,18 +1,18 @@
-import { mount } from 'enzyme'
-import { Settings } from 'luxon'
-import React from 'react'
-import { TimeRemaining } from '../TimeRemaining'
+import { mount } from 'enzyme';
+import { Settings } from 'luxon';
+import React from 'react';
+import { TimeRemaining } from '../TimeRemaining';
 
 describe('TimeRemaining', () => {
-	const defaultZone = Settings.defaultZoneName
+	const defaultZone = Settings.defaultZoneName;
 
 	beforeEach(() => {
-		Settings.defaultZoneName = 'America/New_York'
-	})
+		Settings.defaultZoneName = 'America/New_York';
+	});
 
 	afterEach(() => {
-		Settings.defaultZoneName = defaultZone
-	})
+		Settings.defaultZoneName = defaultZone;
+	});
 
 	it('doesn\'t render hours if end hour is the same as current hour', () => {
 		const wrapper = mount(
@@ -21,9 +21,9 @@ describe('TimeRemaining', () => {
 				currentTime='2019-01-05T15:00:30.000-04:00'
 				highlight='purple100'
 			/>
-		)
-		expect(wrapper.html()).toContain('09d 29m 30s')
-	})
+		);
+		expect(wrapper.html()).toContain('09d 29m 30s');
+	});
 
 	it('doesn\'t render minutes if end hour is the same as current hour', () => {
 		const wrapper = mount(
@@ -32,7 +32,7 @@ describe('TimeRemaining', () => {
 				currentTime='2019-01-05T15:30:00.000-04:00'
 				highlight='purple100'
 			/>
-		)
-		expect(wrapper.html()).toContain('09d 30s')
-	})
-})
+		);
+		expect(wrapper.html()).toContain('09d 30s');
+	});
+});

@@ -1,8 +1,8 @@
-import React, { SFC } from 'react'
-import { Avatar } from '../Avatar'
-import { Flex } from '../Flex'
-import { SpacerProps } from '../Spacer'
-import { Sans, Serif } from '../Typography'
+import React, { SFC } from 'react';
+import { Avatar } from '../Avatar';
+import { Flex } from '../Flex';
+import { SpacerProps } from '../Spacer';
+import { Sans, Serif } from '../Typography';
 
 interface EntityHeaderProps extends SpacerProps {
 	href?: string,
@@ -65,7 +65,7 @@ export const EntityHeader: SFC<EntityHeaderProps> = ({
 				</Flex>
 			)}
 		</Flex>
-	)
-}
+	);
+};
 
-EntityHeader.displayName = 'EntityHeader'
+EntityHeader.displayName = 'EntityHeader';

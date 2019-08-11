@@ -1,6 +1,6 @@
-import { storiesOf } from '@storybook/react'
-import React from 'react'
-import { LargeSelect, SelectSmall } from './Select'
+import { storiesOf } from '@storybook/react';
+import React from 'react';
+import { LargeSelect, SelectSmall } from './Select';
 
 storiesOf('Components/Select', module)
 	.add('LargeSelect', () => {
@@ -18,7 +18,7 @@ storiesOf('Components/Select', module)
 				]}
 				selected='lastValue'
 			/>
-		)
+		);
 	})
 	.add('SelectSmall with title', () => {
 		return (
@@ -35,7 +35,7 @@ storiesOf('Components/Select', module)
 				]}
 				title='Sort'
 			/>
-		)
+		);
 	})
 	.add('SelectSmall without title', () => {
 		return (
@@ -52,5 +52,5 @@ storiesOf('Components/Select', module)
 				]}
 				selected='SecondOption'
 			/>
-		)
-	})
+		);
+	});

@@ -1,1 +1,1 @@
-export * from './TimeRemaining'
+export * from './TimeRemaining';

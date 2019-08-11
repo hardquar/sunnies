@@ -1,6 +1,6 @@
-import { createGlobalStyle, css } from 'styled-components'
-import { Display, Sans, Serif } from '../elements/Typography'
-import { color } from './color'
+import { createGlobalStyle, css } from 'styled-components';
+import { Display, Sans, Serif } from '../elements/Typography';
+import { color } from './color';
 
 /**
  * Injects globally relevant styles, including helper classes for our Typography.
@@ -138,13 +138,13 @@ export function injectGlobalStyles<P>(
     }
     
     ${additionalStyles};
-  `
+  `;
 
-	GlobalStyles.displayName = 'GlobalStyles'
+	GlobalStyles.displayName = 'GlobalStyles';
 
 	return {
 		GlobalStyles
-	}
+	};
 }
 
 // Mixins
@@ -153,8 +153,8 @@ const noUnderline = css`
 	&:hover {
 		text-decoration: underline;
 	}
-`
+`;
 
 const colorLink = css`
 	color: ${color('purple100')};
-`
+`;

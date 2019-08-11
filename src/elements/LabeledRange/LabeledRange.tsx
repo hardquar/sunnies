@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
-import { space, SpaceProps } from 'styled-system'
-import { Flex, Sans, Slider, SliderProps } from '../'
+import React from 'react';
+import styled from 'styled-components';
+import { space, SpaceProps } from 'styled-system';
+import { Flex, Sans, Slider, SliderProps } from '../';
 
 interface LabeledRangeProps extends SliderProps {
 	label: string,
@@ -23,44 +23,44 @@ export class LabeledRange extends React.Component<
 > {
 	static defaultProps = {
 		disabled: false
-	}
+	};
 
 	state = {
 		min: this.props.defaultValue[0],
 		max: this.props.defaultValue[1]
-	}
+	};
 
 	componentWillReceiveProps(newProps: LabeledRangeProps) {
-		const [min, max] = newProps.defaultValue
+		const [min, max] = newProps.defaultValue;
 		this.setState({
 			min,
 			max
-		})
+		});
 	}
 
 	updateMinMax = ([min, max]) => {
-		this.setState({ min, max })
-	}
+		this.setState({ min, max });
+	};
 
 	maxIndicator() {
-		return this.props.max === this.state.max ? '+' : ''
+		return this.props.max === this.state.max ? '+' : '';
 	}
 
 	toString() {
-		const { min, max } = this.state
-		const result = `${min} - ${max}${this.maxIndicator()}`
+		const { min, max } = this.state;
+		const result = `${min} - ${max}${this.maxIndicator()}`;
 
 		if (this.props.unit) {
-			return `${result} ${this.props.unit}`
+			return `${result} ${this.props.unit}`;
 		} else {
-			return result
+			return result;
 		}
 	}
 
 	render() {
-		const { formatter, label, disabled, disabledText } = this.props
-		const { min, max } = this.state
-		const disabledWithText = disabled && disabledText
+		const { formatter, label, disabled, disabledText } = this.props;
+		const { min, max } = this.state;
+		const disabledWithText = disabled && disabledText;
 		return (
 			<Flex width='100%' flexDirection='column'>
 				<Header mt='-6px'>
@@ -90,13 +90,13 @@ export class LabeledRange extends React.Component<
 							mx={1}
 							{...this.props}
 							onChange={(minMax) => {
-								this.updateMinMax(minMax)
+								this.updateMinMax(minMax);
 							}}
 						/>
 					</SliderContainer>
 				</Flex>
 			</Flex>
-		)
+		);
 	}
 }
 
@@ -105,10 +105,10 @@ const Header = styled.div.attrs<SpaceProps>({})`
 	padding-bottom: 16px;
 	user-select: none;
 	${space};
-`
+`;
 
 const SliderContainer = styled.div`
 	width: 100%;
-`
+`;
 
-Header.displayName = 'Header'
+Header.displayName = 'Header';

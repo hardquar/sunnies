@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 import {
 	BaseImage,
 	BaseResponsiveImage,
 	ImageProps,
 	ResponsiveImageProps
-} from './Image.shared'
-import { LazyImage } from './LazyImage'
+} from './Image.shared';
+import { LazyImage } from './LazyImage';
 
 /** Props for a web-only Image component. */
 export interface WebImageProps extends ImageProps {
@@ -34,8 +34,8 @@ export const Image = ({
 			{...props}
 			onContextMenu={(e) => preventRightClick && e.preventDefault()}
 		/>
-	)
-}
+	);
+};
 
 /** Props for a web-only ResponsiveImage component. */
 export interface WebResponsiveImageProps extends ResponsiveImageProps {
@@ -53,6 +53,6 @@ export const ResponsiveImage = ({
 		imageComponent={BaseResponsiveImage}
 		{...props}
 	/>
-)
+);
 
-export { LazyImage }
+export { LazyImage };

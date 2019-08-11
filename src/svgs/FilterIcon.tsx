@@ -1,6 +1,6 @@
-import React from 'react'
-import { color } from '../helpers'
-import { Icon, IconProps } from './Icon'
+import React from 'react';
+import { color } from '../helpers';
+import { Icon, IconProps } from './Icon';
 
 /** FilterIcon */
 export const FilterIcon: React.SFC<IconProps> = (props) => {
@@ -13,5 +13,5 @@ export const FilterIcon: React.SFC<IconProps> = (props) => {
 				fillRule='nonzero'
 			/>
 		</Icon>
-	)
-}
+	);
+};

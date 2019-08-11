@@ -1,9 +1,9 @@
 // @ts-ignore
-import React from 'react'
+import React from 'react';
 
-import { space, SpaceProps, width, WidthProps } from 'styled-system'
-import { color } from '../../helpers'
-import { styled as primitives } from '../../platform/primitives'
+import { space, SpaceProps, width, WidthProps } from 'styled-system';
+import { color } from '../../helpers';
+import { styled as primitives } from '../../platform/primitives';
 
 export interface SeparatorProps extends SpaceProps, WidthProps {}
 
@@ -15,8 +15,8 @@ export const Separator = primitives.View<SeparatorProps>`
   border-bottom-width: 0;
   ${space};
   ${width};
-`
+`;
 
 Separator.defaultProps = {
 	width: '100%'
-}
+};

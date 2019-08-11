@@ -1,13 +1,13 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
-import { BorderBox } from '../BorderBox'
-import { Sans } from '../Typography'
+import { BorderBox } from '../BorderBox';
+import { Sans } from '../Typography';
 
 const Wrapper = styled.div`
 	position: relative;
 	display: inline-block;
-`
+`;
 
 interface TipPosition {
 	left?: number,
@@ -51,7 +51,7 @@ const Tip = styled(BorderBox)<TipProps>`
 			opacity: 0;
 		}
 	}
-`
+`;
 
 export interface TooltipProps {
 	content: React.ReactNode,
@@ -66,42 +66,42 @@ export class Tooltip extends React.Component<TooltipProps> {
 	static defaultProps = {
 		size: 'lg',
 		width: 230
-	}
+	};
 
 	state = {
 		active: false,
 		tipPosition: { left: 0, center: false, right: null }
-	}
+	};
 
-	private innerWrapper = React.createRef<HTMLDivElement>()
+	private innerWrapper = React.createRef<HTMLDivElement>();
 
 	computeTipPosition = () => {
-		let left = 0
-		let right = null
-		let center = false
+		let left = 0;
+		let right = null;
+		let center = false;
 
-		const current = this.innerWrapper.current
+		const current = this.innerWrapper.current;
 
 		if (current) {
-			const clientRect = current.getBoundingClientRect()
-			const innerWrapperLeft = clientRect.left
-			const innerWrapperRight = clientRect.right
-			const innerWrapperWidth = clientRect.width
+			const clientRect = current.getBoundingClientRect();
+			const innerWrapperLeft = clientRect.left;
+			const innerWrapperRight = clientRect.right;
+			const innerWrapperWidth = clientRect.width;
 
-			left = innerWrapperWidth / 2
-			center = true
-			const spillOver = this.props.width / 2 - left
+			left = innerWrapperWidth / 2;
+			center = true;
+			const spillOver = this.props.width / 2 - left;
 
 			if (spillOver > innerWrapperLeft) {
-				center = false
-				left = 0
-				right = null
+				center = false;
+				left = 0;
+				right = null;
 			}
 
 			if (spillOver > window.innerWidth - innerWrapperRight) {
-				center = false
-				left = null
-				right = 0
+				center = false;
+				left = null;
+				right = 0;
 			}
 		}
 
@@ -109,31 +109,31 @@ export class Tooltip extends React.Component<TooltipProps> {
 			center,
 			left,
 			right
-		}
-	}
+		};
+	};
 
 	componentDidMount() {
-		const tipPosition = this.computeTipPosition()
-		this.setState({ tipPosition })
+		const tipPosition = this.computeTipPosition();
+		this.setState({ tipPosition });
 	}
 
 	handleClick = () => {
-		this.setState({ active: !this.state.active })
-	}
+		this.setState({ active: !this.state.active });
+	};
 
 	handleMouseOver = () => {
-		this.setState({ active: true })
-	}
+		this.setState({ active: true });
+	};
 
 	handleMouseOut = () => {
-		this.setState({ active: false })
-	}
+		this.setState({ active: false });
+	};
 
 	render() {
 		const content =
 			typeof this.props.content === 'string'
 				? formattedTip(this.props.content)
-				: this.props.content
+				: this.props.content;
 		return (
 			<Wrapper
 				onClick={this.handleClick}
@@ -152,16 +152,16 @@ export class Tooltip extends React.Component<TooltipProps> {
 				</Tip>
 				<div ref={this.innerWrapper}>{this.props.children}</div>
 			</Wrapper>
-		)
+		);
 	}
 }
 
 const formattedTip = (tip: string): string => {
-	let substring = tip.substring(0, 300)
+	let substring = tip.substring(0, 300);
 
 	if (substring !== tip) {
-		substring += '…'
+		substring += '…';
 	}
 
-	return substring
-}
+	return substring;
+};

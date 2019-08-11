@@ -1,14 +1,14 @@
-import React, { SFC, useEffect, useState } from 'react'
-import { animated, useSpring } from 'react-spring'
-import styled from 'styled-components'
-import { color, media, space } from '../../helpers'
-import { CloseIcon } from '../../svgs'
-import { ArtsyLogoBlackIcon } from '../../svgs/ArtsyLogoBlackIcon'
-import { usePrevious } from '../../utils/usePrevious'
-import { Box } from '../Box'
-import { Flex } from '../Flex'
-import { Spacer } from '../Spacer'
-import { Serif } from '../Typography'
+import React, { SFC, useEffect, useState } from 'react';
+import { animated, useSpring } from 'react-spring';
+import styled from 'styled-components';
+import { color, media, space } from '../../helpers';
+import { CloseIcon } from '../../svgs';
+import { ArtsyLogoBlackIcon } from '../../svgs/ArtsyLogoBlackIcon';
+import { usePrevious } from '../../utils/usePrevious';
+import { Box } from '../Box';
+import { Flex } from '../Flex';
+import { Spacer } from '../Spacer';
+import { Serif } from '../Typography';
 
 /**
  * refreshModalContentKey should change if the modal displays new content and should fade
@@ -35,7 +35,7 @@ interface ModalScrollContentProps {
 	FixedButton?: JSX.Element,
 }
 
-const AnimatedView = animated(Box)
+const AnimatedView = animated(Box);
 
 /**
  * Modal.
@@ -54,53 +54,53 @@ export const Modal: SFC<ModalProps> = ({
 	const [springContentAnimation, setSpringContentAnimation] = useState({
 		opacity: 1,
 		onRest: null
-	})
+	});
 	const [springModalAnimation, setSpringModalAnimation] = useState({
 		transform: 'translate(-50%, 0%) translateY(50vh)',
 		opacity: 0,
 		onRest: null
-	})
-	const [visibleContent, setVisibleContent] = useState(null)
-	const [renderModal, setRenderModal] = useState(false)
-	const previousChangeKey = usePrevious(refreshModalContentKey)
+	});
+	const [visibleContent, setVisibleContent] = useState(null);
+	const [renderModal, setRenderModal] = useState(false);
+	const previousChangeKey = usePrevious(refreshModalContentKey);
 
-	const contentAnimation = useSpring(springContentAnimation)
-	const modalAnimation = useSpring(springModalAnimation)
+	const contentAnimation = useSpring(springContentAnimation);
+	const modalAnimation = useSpring(springModalAnimation);
 
 	const handleEscapeKey = (event) => {
 		if (event && event.key === 'Escape') {
-			onClose()
+			onClose();
 		}
-	}
+	};
 
 	useEffect(() => {
 		if (previousChangeKey === refreshModalContentKey) {
-			setVisibleContent(ModalContent)
+			setVisibleContent(ModalContent);
 		} else {
 			// Fades out content if changeKey updates
 			setSpringContentAnimation({
 				opacity: 0,
 				onRest: () => fadeInNewContent()
-			})
+			});
 		}
-	}, [children])
+	}, [children]);
 
 	useEffect(() => {
 		if (show) {
-			setRenderModal(true)
+			setRenderModal(true);
 			// Binds key event for escape to close modal
-			document.addEventListener('keyup', handleEscapeKey, true)
+			document.addEventListener('keyup', handleEscapeKey, true);
 			// Fixes the body to disable scroll
-			document.body.style.overflowY = 'hidden'
-			setVisibleContent(ModalContent)
+			document.body.style.overflowY = 'hidden';
+			setVisibleContent(ModalContent);
 			setSpringModalAnimation({
 				transform: 'translate(-50%, -50%) translateY(0vh)',
 				opacity: 1,
 				onRest: null
-			})
+			});
 		} else {
-			document.body.style.overflowY = 'visible'
-			document.removeEventListener('keyup', handleEscapeKey, true)
+			document.body.style.overflowY = 'visible';
+			document.removeEventListener('keyup', handleEscapeKey, true);
 			setSpringModalAnimation({
 				transform: 'translate(-50%, -50%) translateY(0vh)',
 				opacity: 0,
@@ -109,23 +109,23 @@ export const Modal: SFC<ModalProps> = ({
 						transform: 'translate(-50%, 0%) translateY(50vh)',
 						onRest: null,
 						opacity: 0
-					})
-					onClose()
-					setRenderModal(false)
+					});
+					onClose();
+					setRenderModal(false);
 				}
-			})
+			});
 		}
-	}, [show])
+	}, [show]);
 
 	const fadeInNewContent = () => {
 		// Replaces content
-		setVisibleContent(ModalContent)
+		setVisibleContent(ModalContent);
 		// Fades in new content
 		setSpringContentAnimation({
 			opacity: 1,
 			onRest: null
-		})
-	}
+		});
+	};
 
 	const ModalContent = () => {
 		return (
@@ -157,8 +157,8 @@ export const Modal: SFC<ModalProps> = ({
 					</FixedButtonWrapper>
 				)}
 			</AnimatedView>
-		)
-	}
+		);
+	};
 
 	return (
 		<>
@@ -175,8 +175,8 @@ export const Modal: SFC<ModalProps> = ({
 				</ModalOuterWrapper>
 			)}
 		</>
-	)
-}
+	);
+};
 
 const FixedButtonWrapper = styled(Box)`
 	position: fixed;
@@ -185,7 +185,7 @@ const FixedButtonWrapper = styled(Box)`
 	width: 100%;
 	background-color: ${color('white100')};
 	border-top: 1px solid ${color('black10')};
-`
+`;
 
 const ModalOuterWrapper = styled(Box)<TransitionElementProps>`
 	position: fixed;
@@ -198,14 +198,14 @@ const ModalOuterWrapper = styled(Box)<TransitionElementProps>`
 	transition: opacity 250ms ease;
 	opacity: ${(props) => (props.show ? '1' : '0')};
 	pointer-events: ${(props) => (props.show ? 'auto' : 'none')};
-`
+`;
 
 const ModalWrapper = styled(Box)`
 	position: relative;
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-`
+`;
 
 const ModalElement = styled(AnimatedView)<TransitionElementProps>`
 	position: absolute;
@@ -225,24 +225,24 @@ const ModalElement = styled(AnimatedView)<TransitionElementProps>`
     width: 100vw;
     border-radius: 0;
   `};
-`
+`;
 
 const ModalScrollContent = styled(Box)<ModalScrollContentProps>`
 	height: 100%;
 	width: 100%;
 	overflow: scroll;
 	padding-bottom: ${(props) => (props.FixedButton ? '112px' : space(2) + 'px')};
-`
+`;
 
 const CloseIconWrapper = styled(Box)`
 	position: fixed;
 	top: ${space(2)}px;
 	right: ${space(2)}px;
 	cursor: pointer;
-`
+`;
 
 const Logo = styled(ArtsyLogoBlackIcon)`
 	width: 100px;
-`
+`;
 
-Modal.displayName = 'Modal'
+Modal.displayName = 'Modal';

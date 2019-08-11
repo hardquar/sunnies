@@ -1,7 +1,7 @@
-import React from 'react'
-import { Path } from 'react-native-svg'
-import { color } from '../helpers'
-import { Icon, IconProps } from './Icon'
+import React from 'react';
+import { Path } from 'react-native-svg';
+import { color } from '../helpers';
+import { Icon, IconProps } from './Icon';
 
 /** HeartFillIcon */
 export const HeartFillIcon: React.SFC<IconProps> = (props) => {
@@ -13,5 +13,5 @@ export const HeartFillIcon: React.SFC<IconProps> = (props) => {
 				fillRule='nonzero'
 			/>
 		</Icon>
-	)
-}
+	);
+};

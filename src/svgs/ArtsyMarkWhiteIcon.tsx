@@ -1,5 +1,5 @@
-import React from 'react'
-import { Icon, IconProps } from './Icon'
+import React from 'react';
+import { Icon, IconProps } from './Icon';
 
 /** ArtsyMarkWhiteIcon */
 export const ArtsyMarkWhiteIcon: React.SFC<IconProps> = (props) => {
@@ -18,5 +18,5 @@ export const ArtsyMarkWhiteIcon: React.SFC<IconProps> = (props) => {
 				/>
 			</g>
 		</Icon>
-	)
-}
+	);
+};

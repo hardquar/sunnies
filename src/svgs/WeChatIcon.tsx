@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
-import { color, space } from '../helpers'
-import { Icon, IconProps } from './Icon'
+import React from 'react';
+import styled from 'styled-components';
+import { color, space } from '../helpers';
+import { Icon, IconProps } from './Icon';
 
 interface WeChatIconState {
 	hover: boolean,
@@ -10,19 +10,19 @@ interface WeChatIconState {
 /** WeChatIcon */
 export class WeChatIcon extends React.Component<IconProps, WeChatIconState> {
 	constructor(props: Readonly<IconProps>) {
-		super(props)
+		super(props);
 		this.state = {
 			hover: false
-		}
+		};
 	}
 
 	handleMouseEnter = () => {
-		this.setState({ hover: true })
-	}
+		this.setState({ hover: true });
+	};
 
 	handleMouseLeave = () => {
-		this.setState({ hover: false })
-	}
+		this.setState({ hover: false });
+	};
 
 	render() {
 		return (
@@ -46,13 +46,13 @@ export class WeChatIcon extends React.Component<IconProps, WeChatIconState> {
 					</QRToolTip>
 				)}
 			</WeChatContainer>
-		)
+		);
 	}
 }
 
-const QR_SIZE = 125
-const QR_PADDING = space(2)
-const QR_CONTAINER_SIZE = QR_SIZE + QR_PADDING * 2
+const QR_SIZE = 125;
+const QR_PADDING = space(2);
+const QR_CONTAINER_SIZE = QR_SIZE + QR_PADDING * 2;
 
 const QRToolTip = styled.div`
 	position: absolute;
@@ -81,9 +81,9 @@ const QRToolTip = styled.div`
 		width: ${QR_SIZE};
 		height: ${QR_SIZE};
 	}
-`
+`;
 
 const WeChatContainer = styled.a`
 	position: relative;
 	cursor: pointer;
-`
+`;

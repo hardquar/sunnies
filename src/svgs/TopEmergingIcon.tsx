@@ -1,6 +1,6 @@
-import React from 'react'
-import { color } from '../helpers'
-import { Icon, IconProps } from './Icon'
+import React from 'react';
+import { color } from '../helpers';
+import { Icon, IconProps } from './Icon';
 
 /** TopEmergingIcon */
 export const TopEmergingIcon: React.SFC<IconProps> = (props) => {
@@ -20,5 +20,5 @@ export const TopEmergingIcon: React.SFC<IconProps> = (props) => {
 				/>
 			</g>
 		</Icon>
-	)
-}
+	);
+};

@@ -1,6 +1,6 @@
-import React from 'react'
-import { color } from '../helpers'
-import { Icon, IconProps } from './Icon'
+import React from 'react';
+import { color } from '../helpers';
+import { Icon, IconProps } from './Icon';
 
 /** UserMultiIcon */
 export const UserMultiIcon: React.SFC<IconProps> = (props) => {
@@ -13,9 +13,9 @@ export const UserMultiIcon: React.SFC<IconProps> = (props) => {
 				fillRule='nonzero'
 			/>
 		</Icon>
-	)
-}
+	);
+};
 
 // TODO: remove this alias once clients have been updated
 /** GroupIcon */
-export const GroupIcon = UserMultiIcon
+export const GroupIcon = UserMultiIcon;

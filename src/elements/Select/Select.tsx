@@ -1,21 +1,21 @@
-import React, { SFC } from 'react'
-import styled, { css } from 'styled-components'
-import { color, space } from '../../helpers'
-import { Sans } from '../Typography'
+import React, { SFC } from 'react';
+import styled, { css } from 'styled-components';
+import { color, space } from '../../helpers';
+import { Sans } from '../Typography';
 
 import {
 	PositionProps,
 	space as styledSpace,
 	SpaceProps,
 	themeGet
-} from 'styled-system'
+} from 'styled-system';
 
 interface Option {
 	value: string,
 	text: string,
 }
 export interface SelectProps extends PositionProps, SpaceProps {
-	options: Option[],
+	options: Array<Option>,
 	selected?: string,
 	disabled?: boolean,
 	error?: string,
@@ -43,8 +43,8 @@ export const LargeSelect: SFC<SelectProps> = (props) => {
 				))}
 			</select>
 		</LargeSelectContainer>
-	)
-}
+	);
+};
 
 /**
  * A small version of drop-down select menu
@@ -73,8 +73,8 @@ export const SelectSmall: SFC<SelectProps> = (props) => {
 				</select>
 			</label>
 		</SelectSmallContainer>
-	)
-}
+	);
+};
 
 const hideDefaultSkin = css`
 	background: none;
@@ -95,8 +95,8 @@ const hideDefaultSkin = css`
 	option:not(:checked) {
 		color: black; /* prevent <option>s from becoming transparent as well */
 	}
-`
-const carretSize = 4
+`;
+const carretSize = 4;
 const caretArrow = css<SelectProps>`
 	border-left: ${carretSize}px solid transparent;
 	border-right: ${carretSize}px solid transparent;
@@ -104,7 +104,7 @@ const caretArrow = css<SelectProps>`
 		${(props) => (props.disabled ? color('black10') : color('black100'))};
 	width: 0;
 	height: 0;
-`
+`;
 
 const LargeSelectContainer = styled.div<SelectProps>`
 	position: relative;
@@ -140,7 +140,7 @@ const LargeSelectContainer = styled.div<SelectProps>`
 
 		${caretArrow};
 	}
-`
+`;
 
 const SelectSmallContainer = styled.div<SelectProps>`
 	position: relative;
@@ -177,4 +177,4 @@ const SelectSmallContainer = styled.div<SelectProps>`
 		position: absolute;
 		top: ${5 + space(0.5)}px;
 	}
-`
+`;

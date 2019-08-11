@@ -1,10 +1,10 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
-import { Flex, Sans, Tab, Tabs, TabsProps } from '../'
-import { space } from '../../helpers'
-import { CheckIcon, ChevronIcon } from '../../svgs'
-import { sharedTabsStyles } from '../Tabs'
+import { Flex, Sans, Tab, Tabs, TabsProps } from '../';
+import { space } from '../../helpers';
+import { CheckIcon, ChevronIcon } from '../../svgs';
+import { sharedTabsStyles } from '../Tabs';
 
 interface StepperProps extends TabsProps {
 	/** The initial step stepper renders */
@@ -31,11 +31,11 @@ export const Stepper = (props: StepperProps) => {
 			transformTabBtn={transformTabBtn}
 			{...props}
 		/>
-	)
-}
+	);
+};
 
 /** Step */
-export const Step = (props) => <Tab {...props} />
+export const Step = (props) => <Tab {...props} />;
 
 const DisabledStepButton = ({ children }) => (
 	<DisabledStepContainer>
@@ -43,25 +43,26 @@ const DisabledStepButton = ({ children }) => (
 			{children}
 		</Sans>
 	</DisabledStepContainer>
-)
+);
 
 const transformTabBtn = (
 	element: JSX.Element,
 	tabIndex: number,
 	props: any
 ): JSX.Element => {
-	const { currentStepIndex, initialTabIndex = 0, disableNavigation } = props
-	const returnDisabledButton = disableNavigation && tabIndex !== initialTabIndex
+	const { currentStepIndex, initialTabIndex = 0, disableNavigation } = props;
+	const returnDisabledButton =
+		disableNavigation && tabIndex !== initialTabIndex;
 
 	const disabledButton = (
 		<DisabledStepButton key={tabIndex}>
 			{element.props.children}
 		</DisabledStepButton>
-	)
+	);
 
 	// Don't allow users to jump ahead
 	if (tabIndex > currentStepIndex) {
-		return disabledButton
+		return disabledButton;
 
 		// Step done
 	} else if (currentStepIndex && tabIndex < currentStepIndex) {
@@ -75,29 +76,29 @@ const transformTabBtn = (
 					: element}
 				<div /> {/* hack for getting rid of last-child in Tabs.tsx */}
 			</Flex>
-		)
+		);
 		// Disabled
 	} else if (returnDisabledButton) {
-		return disabledButton
+		return disabledButton;
 
 		// Step
 	} else {
-		return element
+		return element;
 	}
-}
+};
 
 const ChevronWrapper = styled.span`
 	margin: 0 ${space(2)}px;
 	line-height: normal;
-`
+`;
 
 /** CheckMarkWrapper */
 export const CheckMarkWrapper = styled.span`
 	margin-right: ${space(1)}px;
 	line-height: normal;
-`
+`;
 
 const DisabledStepContainer = styled.div`
 	${sharedTabsStyles.tabContainer};
 	cursor: default;
-`
+`;

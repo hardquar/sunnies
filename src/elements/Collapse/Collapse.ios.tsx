@@ -1,8 +1,8 @@
-import React from 'react'
-import { View } from 'react-native'
-import { animated, Spring } from 'react-spring/renderprops-native.cjs'
+import React from 'react';
+import { View } from 'react-native';
+import { animated, Spring } from 'react-spring/renderprops-native.cjs';
 
-const AnimatedView = animated(View)
+const AnimatedView = animated(View);
 
 export interface CollapseProps {
 	/** Determines whether content is expanded or collapsed */
@@ -24,22 +24,22 @@ interface State {
 
 /** Collapses content with animation when open is not true */
 export class Collapse extends React.Component<CollapseProps, State> {
-	measureRef: View
+	measureRef: View;
 
 	state: State = {
 		isMounted: false,
 		isMeasuring: false,
 		isAnimating: false,
 		hasMeasured: false
-	}
+	};
 
 	componentDidMount() {
-		this.setState({ isMounted: true })
+		this.setState({ isMounted: true });
 	}
 
 	handleMeasureRef = (ref) => {
-		this.measureRef = ref
-	}
+		this.measureRef = ref;
+	};
 
 	measureChildren = () => {
 		this.setState({ isMeasuring: true }, () => {
@@ -47,8 +47,8 @@ export class Collapse extends React.Component<CollapseProps, State> {
 				if (!this.measureRef) {
 					this.setState({
 						isMeasuring: false
-					})
-					return
+					});
+					return;
 				}
 
 				// @ts-ignore
@@ -57,16 +57,21 @@ export class Collapse extends React.Component<CollapseProps, State> {
 						isMeasuring: false,
 						hasMeasured: true,
 						measuredHeight: height
-					})
-				})
-			})
-		})
-	}
+					});
+				});
+			});
+		});
+	};
 
 	handleLayout = (ev) => {
-		const { open } = this.props
-		const { hasMeasured, isMeasuring, measuredHeight, isAnimating } = this.state
-		const height = ev.nativeEvent.layout.height
+		const { open } = this.props;
+		const {
+			hasMeasured,
+			isMeasuring,
+			measuredHeight,
+			isAnimating
+		} = this.state;
+		const height = ev.nativeEvent.layout.height;
 		if (
 			!hasMeasured ||
 			!open ||
@@ -74,31 +79,31 @@ export class Collapse extends React.Component<CollapseProps, State> {
 			measuredHeight === height ||
 			isAnimating
 		) {
-			return
+			return;
 		}
 		this.setState({
 			measuredHeight: height
-		})
-	}
+		});
+	};
 
 	handleFrame = (animatedValue) => {
 		if (this.props.onAnimationFrame) {
-			this.props.onAnimationFrame(animatedValue)
+			this.props.onAnimationFrame(animatedValue);
 		}
-	}
+	};
 
 	componentWillReceiveProps(nextProps) {
-		const willExpand = nextProps.open && !this.props.open
+		const willExpand = nextProps.open && !this.props.open;
 		if (nextProps.open !== this.props.open) {
 			this.setState({ isAnimating: true }, () => {
 				if (willExpand && !this.measureRef && this.state.hasMeasured) {
 					// We've previously measured children and can animate without further work.
-					return
+					return;
 				} else if (!this.state.hasMeasured) {
 					// Children are ready to measure, measureRef might be mounted already.
-					this.measureChildren()
+					this.measureChildren();
 				}
-			})
+			});
 		}
 	}
 
@@ -109,15 +114,15 @@ export class Collapse extends React.Component<CollapseProps, State> {
 		>
 			{this.props.children}
 		</View>
-	)
+	);
 
 	render() {
-		const { isMeasuring, isMounted, measuredHeight } = this.state
-		const { open, children } = this.props
+		const { isMeasuring, isMounted, measuredHeight } = this.state;
+		const { open, children } = this.props;
 
 		// We must render children once in order to measure and derive a static height for animation.
 		if (isMeasuring) {
-			return this.measureView()
+			return this.measureView();
 		}
 
 		return (
@@ -127,7 +132,7 @@ export class Collapse extends React.Component<CollapseProps, State> {
 				from={{ height: 0 }}
 				to={{ height: open && measuredHeight ? measuredHeight : 0 }}
 				onRest={() => {
-					this.setState({ isAnimating: false })
+					this.setState({ isAnimating: false });
 				}}
 				onFrame={this.handleFrame}
 			>
@@ -140,6 +145,6 @@ export class Collapse extends React.Component<CollapseProps, State> {
 					</AnimatedView>
 				)}
 			</Spring>
-		)
+		);
 	}
 }

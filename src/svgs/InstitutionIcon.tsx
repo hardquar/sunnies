@@ -1,6 +1,6 @@
-import React from 'react'
-import { color } from '../helpers'
-import { Icon, IconProps } from './Icon'
+import React from 'react';
+import { color } from '../helpers';
+import { Icon, IconProps } from './Icon';
 
 /** InstitutionIcon */
 export const InstitutionIcon: React.SFC<IconProps> = (props) => {
@@ -17,9 +17,9 @@ export const InstitutionIcon: React.SFC<IconProps> = (props) => {
 				/>
 			</g>
 		</Icon>
-	)
-}
+	);
+};
 
 // TODO: remove this alias once clients have been updated
 /** MuseumIcon */
-export const MuseumIcon = InstitutionIcon
+export const MuseumIcon = InstitutionIcon;

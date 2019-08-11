@@ -1,6 +1,6 @@
-import React from 'react'
-import { LazyImage } from '../Image/LazyImage'
-import { AvatarProps, BaseAvatar, sizeValue } from './Avatar.shared'
+import React from 'react';
+import { LazyImage } from '../Image/LazyImage';
+import { AvatarProps, BaseAvatar, sizeValue } from './Avatar.shared';
 
 interface AvatarWebProps extends AvatarProps {
 	lazyLoad?: boolean,
@@ -13,7 +13,7 @@ export const Avatar = ({
 	lazyLoad = false,
 	size = 'md'
 }: AvatarWebProps) => {
-	const { diameter } = sizeValue(size)
+	const { diameter } = sizeValue(size);
 
 	return (
 		<BaseAvatar
@@ -30,5 +30,5 @@ export const Avatar = ({
 				/>
 			)}
 		/>
-	)
-}
+	);
+};

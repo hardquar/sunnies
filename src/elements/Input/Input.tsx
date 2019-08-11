@@ -1,9 +1,9 @@
-import React from 'react'
-import styled from 'styled-components'
-import { themeGet } from 'styled-system'
-import { color, space } from '../../helpers'
-import { Box } from '../Box'
-import { Sans, Serif } from '../Typography'
+import React from 'react';
+import styled from 'styled-components';
+import { themeGet } from 'styled-system';
+import { color, space } from '../../helpers';
+import { Box } from '../Box';
+import { Sans, Serif } from '../Typography';
 
 export interface InputProps extends React.HTMLProps<HTMLInputElement> {
 	description?: string,
@@ -44,8 +44,8 @@ export const Input: React.SFC<InputProps> = ({
 				</Sans>
 			)}
 		</Box>
-	)
-}
+	);
+};
 
 interface StyledInputProps extends React.HTMLProps<HTMLInputElement> {
 	disabled: boolean,
@@ -56,12 +56,12 @@ interface StyledInputProps extends React.HTMLProps<HTMLInputElement> {
  * func to compute border color
  */
 export const computeBorderColor = ({ disabled, error, pseudo = null }) => {
-	if (disabled) return 'black10'
-	if (error) return 'red100'
-	if (pseudo === 'hover') return 'black60'
-	if (pseudo === 'focus') return 'purple100'
-	return 'black10'
-}
+	if (disabled) return 'black10';
+	if (error) return 'red100';
+	if (pseudo === 'hover') return 'black60';
+	if (pseudo === 'focus') return 'purple100';
+	return 'black10';
+};
 
 const StyledInput = styled.input<StyledInputProps>`
 	font-family: ${themeGet('fontFamily.serif.regular')};
@@ -86,10 +86,10 @@ const StyledInput = styled.input<StyledInputProps>`
 		border-color: ${({ disabled, error }) =>
 			color(computeBorderColor({ disabled, error, pseudo: 'focus' }))};
 	}
-`
-StyledInput.displayName = 'StyledInput'
+`;
+StyledInput.displayName = 'StyledInput';
 
 const Required = styled.span`
 	color: ${color('purple100')};
-`
-Required.displayName = 'Required'
+`;
+Required.displayName = 'Required';

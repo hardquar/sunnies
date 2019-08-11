@@ -1,8 +1,8 @@
-import React from 'react'
-import styled from 'styled-components'
-import { space, SpaceProps } from 'styled-system'
-import { ChevronIcon, Flex, Sans, Separator } from '../../'
-import { SansSize } from '../../Theme'
+import React from 'react';
+import styled from 'styled-components';
+import { space, SpaceProps } from 'styled-system';
+import { ChevronIcon, Flex, Sans, Separator } from '../../';
+import { SansSize } from '../../Theme';
 
 export interface ToggleProps {
 	disabled?: boolean,
@@ -20,32 +20,32 @@ export interface ToggleState {
 export class Toggle extends React.Component<ToggleProps> {
 	static defaultProps = {
 		textSize: '2'
-	}
+	};
 
 	state = {
 		expanded: false,
 		disabled: false
-	}
+	};
 
 	constructor(props) {
-		super(props)
+		super(props);
 
 		this.state = {
 			...props
-		}
+		};
 	}
 
 	toggleExpand = () => {
 		if (!this.props.disabled) {
 			this.setState({
 				expanded: !this.state.expanded
-			})
+			});
 		}
-	}
+	};
 
 	render() {
-		const { disabled, expanded } = this.state
-		const { children, label, textSize } = this.props
+		const { disabled, expanded } = this.state;
+		const { children, label, textSize } = this.props;
 
 		return (
 			<Flex width='100%' flexDirection='column' pb={2}>
@@ -77,7 +77,7 @@ export class Toggle extends React.Component<ToggleProps> {
 					</Flex>
 				)}
 			</Flex>
-		)
+		);
 	}
 }
 
@@ -86,6 +86,6 @@ const Header = styled.div.attrs<ToggleProps & SpaceProps>({})`
 	pointer-events: ${(props) => (props.disabled ? 'none' : 'auto')};
 	user-select: none;
 	${space};
-`
+`;
 
-Header.displayName = 'Header'
+Header.displayName = 'Header';

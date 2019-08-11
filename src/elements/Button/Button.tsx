@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import styled, { css } from 'styled-components'
-import { themeProps } from '../../Theme'
-import { Spinner } from '../Spinner'
-import { Sans, SansProps } from '../Typography'
+import React, { Component } from 'react';
+import styled, { css } from 'styled-components';
+import { themeProps } from '../../Theme';
+import { Spinner } from '../Spinner';
+import { Sans, SansProps } from '../Typography';
 
 import {
 	borderRadius,
@@ -11,13 +11,13 @@ import {
 	space,
 	textAlign,
 	width
-} from 'styled-system'
+} from 'styled-system';
 import {
 	ButtonBaseProps,
 	ButtonProps,
 	defaultSize,
 	defaultVariant
-} from './Button.shared'
+} from './Button.shared';
 
 /** A button with various size and color settings */
 export class Button extends Component<ButtonProps> {
@@ -25,29 +25,29 @@ export class Button extends Component<ButtonProps> {
 		size: defaultSize,
 		variant: defaultVariant,
 		theme: themeProps
-	}
+	};
 
 	getSize(): { height: string, size: '2' | '3t', px: number, } {
-		const { inline } = this.props
+		const { inline } = this.props;
 		switch (this.props.size) {
 			case 'small':
 				return {
 					height: inline ? '17px' : '26px',
 					size: '2',
 					px: inline ? 0 : 2
-				}
+				};
 			case 'medium':
 				return {
 					height: inline ? '21px' : '41px',
 					size: '3t',
 					px: inline ? 0 : 2
-				}
+				};
 			case 'large':
 				return {
 					height: inline ? '21px' : '50px',
 					size: '3t',
 					px: inline ? 0 : 3
-				}
+				};
 		}
 	}
 
@@ -56,7 +56,7 @@ export class Button extends Component<ButtonProps> {
 			case 'primaryBlack':
 				return css`
 					${(props) => {
-						const { colors } = props.theme
+						const { colors } = props.theme;
 
 						return `
                 background-color: ${colors.black100};
@@ -70,13 +70,13 @@ export class Button extends Component<ButtonProps> {
                     color: ${colors.white100};
                   }
                 }
-              `
+              `;
 					}};
-				`
+				`;
 			case 'primaryWhite':
 				return css`
 					${(props) => {
-						const { colors } = props.theme
+						const { colors } = props.theme;
 
 						return `
                 background-color: ${colors.white100};
@@ -90,13 +90,13 @@ export class Button extends Component<ButtonProps> {
                     color: ${colors.white100};
                   }
                 }
-              `
+              `;
 					}};
-				`
+				`;
 			case 'secondaryGray':
 				return css`
 					${(props) => {
-						const { colors } = props.theme
+						const { colors } = props.theme;
 
 						return `
                 background-color: ${colors.black10};
@@ -110,13 +110,13 @@ export class Button extends Component<ButtonProps> {
                     color: ${colors.black100};
                   }
                 }
-              `
+              `;
 					}};
-				`
+				`;
 			case 'secondaryOutline':
 				return css`
 					${(props) => {
-						const { colors } = props.theme
+						const { colors } = props.theme;
 						return `
                 background-color: ${colors.white100};
                 border-color: ${colors.black10};
@@ -129,20 +129,20 @@ export class Button extends Component<ButtonProps> {
                     color: ${colors.black100};
                   }
                 }
-              `
+              `;
 					}};
-				`
+				`;
 			case 'noOutline':
 				return css`
 					${(props) => {
-						const { colors } = props.theme
+						const { colors } = props.theme;
 						return `
                 background-color: transparent;
                 border-color: transparent;
                 color: ${colors.black100};
-              `
+              `;
 					}};
-				`
+				`;
 			default:
 		}
 	}
@@ -153,9 +153,9 @@ export class Button extends Component<ButtonProps> {
 			...this.getSize(),
 			buttonSize: this.props.size,
 			variantStyles: this.getVariant()
-		}
+		};
 
-		return <ButtonBase {...buttonProps}>{this.props.children}</ButtonBase>
+		return <ButtonBase {...buttonProps}>{this.props.children}</ButtonBase>;
 	}
 }
 
@@ -164,13 +164,13 @@ export class ButtonBase extends Component<ButtonBaseProps & SansProps> {
 	static defaultProps = {
 		border: 1,
 		borderRadius: 3
-	}
+	};
 
 	onClick = (event) => {
 		if (!this.props.loading && this.props.onClick) {
-			this.props.onClick(event)
+			this.props.onClick(event);
 		}
-	}
+	};
 
 	render() {
 		const {
@@ -183,10 +183,10 @@ export class ButtonBase extends Component<ButtonBaseProps & SansProps> {
 			weight,
 			onClick,
 			...rest
-		} = this.props
+		} = this.props;
 
-		const loadingClass = loading ? 'loading' : ''
-		const disabledClass = disabled ? 'disabled' : ''
+		const loadingClass = loading ? 'loading' : '';
+		const disabledClass = disabled ? 'disabled' : '';
 
 		return (
 			<Container
@@ -222,7 +222,7 @@ export class ButtonBase extends Component<ButtonBaseProps & SansProps> {
 					</Sans>
 				)}
 			</Container>
-		)
+		);
 	}
 }
 
@@ -231,12 +231,12 @@ const VisibleText = styled(Sans)`
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-`
+`;
 
 const HiddenText = styled(Sans)`
 	opacity: 0;
 	pointer-events: none;
-`
+`;
 
 const Container = styled.button<ButtonBaseProps>`
 	cursor: pointer;
@@ -254,7 +254,7 @@ const Container = styled.button<ButtonBaseProps>`
 		if (!props.loading) {
 			return `
         transition: 0.25s ease;
-      `
+      `;
 		}
 	}};
 
@@ -270,14 +270,14 @@ const Container = styled.button<ButtonBaseProps>`
 
 	&.disabled {
 		${(props) => {
-			const { colors } = props.theme
+			const { colors } = props.theme;
 
 			return `
         background-color: ${colors.black10};
         border-color: ${colors.black10};
         color: ${colors.white100};
         pointer-events: none;
-      `
+      `;
 		}};
 	}
-`
+`;

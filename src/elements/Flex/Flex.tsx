@@ -1,4 +1,4 @@
-import { styled as primitives } from '../../platform/primitives'
+import { styled as primitives } from '../../platform/primitives';
 
 import {
 	alignContent,
@@ -36,14 +36,14 @@ import {
 	WidthProps,
 	zIndex,
 	ZIndexProps
-} from 'styled-system'
+} from 'styled-system';
 
 // @ts-ignore
-import { ClassAttributes, HTMLAttributes } from 'react'
+import { ClassAttributes, HTMLAttributes } from 'react';
 
 const flexGrow = style({
 	prop: 'flexGrow'
-})
+});
 
 export interface FlexProps
 	extends AlignItemsProps,
@@ -89,6 +89,6 @@ export const Flex = primitives.View<FlexProps>`
   ${space};
   ${width};
   ${zIndex};
-`
+`;
 
-Flex.displayName = 'Flex'
+Flex.displayName = 'Flex';

@@ -1,7 +1,7 @@
-import { css } from 'styled-components'
-import { color } from '../../helpers'
-import { styledWrapper } from '../../platform/primitives'
-import { BorderBoxBase, BorderBoxProps } from './BorderBoxBase'
+import { css } from 'styled-components';
+import { color } from '../../helpers';
+import { styledWrapper } from '../../platform/primitives';
+import { BorderBoxBase, BorderBoxProps } from './BorderBoxBase';
 
 /**
  * A `div` that has a common border and padding set by default, with an optional
@@ -15,6 +15,6 @@ export const BorderBox = styledWrapper(BorderBoxBase)<BorderBoxProps>`
 				border-color: ${color('black60')};
 			}
 		`};
-`
+`;
 
-BorderBox.displayName = 'BorderBox'
+BorderBox.displayName = 'BorderBox';

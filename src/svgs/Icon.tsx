@@ -1,6 +1,6 @@
 // @ts-ignore
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 import {
 	left,
 	LeftProps,
@@ -12,8 +12,8 @@ import {
 	SpaceProps,
 	top,
 	TopProps
-} from 'styled-system'
-import { Color } from '../Theme'
+} from 'styled-system';
+import { Color } from '../Theme';
 
 // : React.SVGProps<SVGSVGElement>
 
@@ -37,10 +37,10 @@ export const Icon = styled.svg.attrs<IconProps>({})`
 	${right};
 	${left};
 	${position};
-`
+`;
 
 Icon.defaultProps = {
 	fill: 'black100',
 	height: '18px',
 	width: '18px'
-}
+};

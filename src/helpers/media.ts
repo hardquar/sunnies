@@ -1,7 +1,7 @@
-import { css } from 'styled-components'
-import { breakpoints } from '../Theme'
+import { css } from 'styled-components';
+import { breakpoints } from '../Theme';
 
-type Media = { [S in keyof typeof breakpoints]: typeof css }
+type Media = { [S in keyof typeof breakpoints]: typeof css };
 
 /**
  * A helper to construct media query strings for responsive style targeting.
@@ -26,7 +26,7 @@ export const media: Media = Object.entries(breakpoints).reduce(
 					${css(strings, ...args)};
 				}
 			`
-		}
+		};
 	},
 	{}
-) as Media
+) as Media;

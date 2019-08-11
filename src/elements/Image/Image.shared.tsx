@@ -1,8 +1,8 @@
 // @ts-ignore
-import React from 'react'
-import styled from 'styled-components'
-import { Image } from '../../platform/primitives'
-import { Tag } from '../Tag'
+import React from 'react';
+import styled from 'styled-components';
+import { Image } from '../../platform/primitives';
+import { Tag } from '../Tag';
 
 import {
 	borderRadius,
@@ -17,7 +17,7 @@ import {
 	SpaceProps,
 	width,
 	WidthProps
-} from 'styled-system'
+} from 'styled-system';
 
 /** Props for web & iOS images */
 export interface BaseImageProps {
@@ -42,7 +42,7 @@ export const BaseImage = styled(Tag.as(Image))<ImageProps>`
 	${width};
 	${height};
 	${borderRadius}
-`
+`;
 
 export interface ResponsiveImageProps
 	extends BaseImageProps,
@@ -63,8 +63,8 @@ export const BaseResponsiveImage = styled(Tag)<ResponsiveImageProps>`
 	${space};
 	${width};
 	${maxWidth};
-`
+`;
 BaseResponsiveImage.defaultProps = {
 	width: '100%',
 	ratio: 1
-}
+};

@@ -1,8 +1,8 @@
-import debounce from 'lodash/debounce'
-import React from 'react'
-import styled, { css } from 'styled-components'
-import { Flex, FlexProps } from '../../elements/Flex'
-import { color, space } from '../../helpers'
+import debounce from 'lodash/debounce';
+import React from 'react';
+import styled, { css } from 'styled-components';
+import { Flex, FlexProps } from '../../elements/Flex';
+import { color, space } from '../../helpers';
 
 import {
 	BorderProps,
@@ -10,7 +10,7 @@ import {
 	SizeProps,
 	space as styledSpace,
 	SpaceProps
-} from 'styled-system'
+} from 'styled-system';
 
 /**
  * Spec: zpl.io/bAvnwlB
@@ -55,11 +55,11 @@ export const Radio: React.SFC<RadioProps> = (props) => {
 		value,
 		label,
 		...others
-	} = props
+	} = props;
 
 	// Ensures that only one call to `onSelect` occurs, regardless of whether the
 	// user clicks the radio element or the label.
-	const onSelect = _onSelect && debounce(_onSelect, 0)
+	const onSelect = _onSelect && debounce(_onSelect, 0);
 
 	return (
 		<Container
@@ -99,8 +99,8 @@ export const Radio: React.SFC<RadioProps> = (props) => {
 				{label ? children : null}
 			</Flex>
 		</Container>
-	)
-}
+	);
+};
 
 /**
  * A radio button with a border
@@ -125,25 +125,25 @@ export const BorderedRadio = styled(Radio)<RadioProps>`
 		border-bottom-left-radius: 0;
 		border-bottom-right-radius: 0;
 	}
-`
+`;
 
 const hoverStyles = ({ selected, hover }) => {
-	const styles = `background-color: ${color('black10')};`
+	const styles = `background-color: ${color('black10')};`;
 	if (hover && !selected) {
 		return css`
 			${RadioButton} {
 				${styles};
 			}
-		`
+		`;
 	}
 	if (!selected) {
 		return css`
 			&:hover ${RadioButton} {
 				${styles};
 			}
-		`
+		`;
 	}
-}
+};
 
 interface ContainerProps extends FlexProps {
 	disabled: boolean,
@@ -156,7 +156,7 @@ const Container = styled(Flex)<ContainerProps>`
 	cursor: ${({ disabled }) => !disabled && 'pointer'};
 	user-select: none;
 	${hoverStyles};
-`
+`;
 
 const Label = styled.label`
 	display: block;
@@ -168,13 +168,13 @@ const Label = styled.label`
 			cursor: inherit;
 			color: ${color('black10')};
 		`};
-`
+`;
 
 const HiddenInput = styled.input`
 	position: absolute;
 	opacity: 0;
 	pointer-events: none;
-`
+`;
 
 const InnerCircle = styled.div`
 	width: ${space(1)}px;
@@ -184,7 +184,7 @@ const InnerCircle = styled.div`
 	left: 3px;
 	top: 3px;
 	background-color: ${color('white100')};
-`
+`;
 
 interface RadioFeedbackState {
 	disabled?: boolean,
@@ -194,21 +194,21 @@ interface RadioFeedbackState {
 const radioBackgroundColor = ({ disabled, selected }: RadioFeedbackState) => {
 	switch (true) {
 		case disabled:
-			return color('black10')
+			return color('black10');
 		case selected:
-			return color('black100')
+			return color('black100');
 		default:
-			return color('white100')
+			return color('white100');
 	}
-}
+};
 
 const radioBorderColor = ({ disabled, selected }: RadioFeedbackState) =>
-	selected && !disabled ? color('black100') : color('black10')
+	selected && !disabled ? color('black100') : color('black10');
 
 const disabledInnerCircleBackgroundColor = ({
 	disabled,
 	selected
-}: RadioFeedbackState) => disabled && !selected && color('black10')
+}: RadioFeedbackState) => disabled && !selected && color('black10');
 
 const RadioButton = styled.div<RadioToggleProps>`
 	${borders};
@@ -224,4 +224,4 @@ const RadioButton = styled.div<RadioToggleProps>`
 	${InnerCircle} {
 		background-color: ${disabledInnerCircleBackgroundColor};
 	}
-`
+`;

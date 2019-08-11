@@ -1,5 +1,5 @@
-import React from 'react'
-import { LabeledRange, SliderProps } from '../'
+import React from 'react';
+import { LabeledRange, SliderProps } from '../';
 
 interface PriceRangeProps extends SliderProps {
 	currency?: string,
@@ -12,19 +12,19 @@ export class PriceRange extends React.Component<PriceRangeProps> {
 	static defaultProps = {
 		currency: 'USD',
 		disabled: false
-	}
+	};
 
 	formatter(min, max, maxIndicator) {
 		const formatOptions = {
 			style: 'currency',
 			currency: this.props.currency,
 			minimumFractionDigits: 0
-		}
+		};
 
-		const minPrice = min.toLocaleString('en-US', formatOptions)
-		const maxPrice = max.toLocaleString('en-US', formatOptions)
+		const minPrice = min.toLocaleString('en-US', formatOptions);
+		const maxPrice = max.toLocaleString('en-US', formatOptions);
 
-		return `${minPrice} - ${maxPrice}${maxIndicator}`
+		return `${minPrice} - ${maxPrice}${maxIndicator}`;
 	}
 
 	render() {
@@ -36,6 +36,6 @@ export class PriceRange extends React.Component<PriceRangeProps> {
 				disabledText={this.props.disabledText}
 				{...this.props}
 			/>
-		)
+		);
 	}
 }

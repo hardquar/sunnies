@@ -1,14 +1,14 @@
-import { Range } from 'rc-slider'
-import React from 'react'
-import styled from 'styled-components'
-import { StyledComponentClass } from 'styled-components'
+import { Range } from 'rc-slider';
+import React from 'react';
+import styled from 'styled-components';
+import { StyledComponentClass } from 'styled-components';
 import {
 	BorderProps,
 	borders,
 	space as styledSpace,
 	SpaceProps
-} from 'styled-system'
-import { color, space } from '../../helpers'
+} from 'styled-system';
+import { color, space } from '../../helpers';
 
 export interface SliderProps extends BorderProps, SpaceProps {
 	/**
@@ -39,7 +39,7 @@ export interface SliderProps extends BorderProps, SpaceProps {
 	/**
 	 * Set initial positions of handles.
 	 */
-	defaultValue: number[],
+	defaultValue: Array<number>,
 	/**
 	 * onAfterChange will be triggered when ontouchend or onmouseup is triggered.
 	 */
@@ -52,7 +52,7 @@ export interface SliderProps extends BorderProps, SpaceProps {
 
 const Inner: React.SFC<SliderProps> = (props) => (
 	<Range {...props} prefixCls={props.className} />
-)
+);
 
 /**
  * A slider component that allows to define a range of values. nin and max
@@ -132,4 +132,4 @@ export const Slider: StyledComponentClass<SliderProps, any> = styled(Inner)`
 			border-color: ${color('black60')};
 		}
 	}
-`
+`;

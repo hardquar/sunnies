@@ -1,5 +1,5 @@
-import { DateTime } from 'luxon'
-import React from 'react'
+import { DateTime } from 'luxon';
+import React from 'react';
 import {
 	Flex,
 	ProgressBarTimer,
@@ -7,11 +7,11 @@ import {
 	Spacer,
 	StackableBorderBox,
 	TimeRemaining
-} from '../'
+} from '../';
 
-import { TimerIcon } from '../../svgs'
+import { TimerIcon } from '../../svgs';
 
-const FIVE_HOURS_IN_SECONDS = 60 * 60 * 5
+const FIVE_HOURS_IN_SECONDS = 60 * 60 * 5;
 
 /** StaticCountdownTimer */
 export const StaticCountdownTimer: React.SFC<{
@@ -21,19 +21,20 @@ export const StaticCountdownTimer: React.SFC<{
 	countdownEnd: string,
 	currentTime: string,
 }> = ({ action, note, countdownEnd, countdownStart, currentTime }) => {
-	const dateTime = DateTime.fromISO(countdownEnd).toLocal()
-	const minutes = dateTime.minute < 10 ? '0' + dateTime.minute : dateTime.minute
-	const amPm = dateTime.hour >= 12 ? 'pm' : 'am'
-	let hour
+	const dateTime = DateTime.fromISO(countdownEnd).toLocal();
+	const minutes =
+		dateTime.minute < 10 ? '0' + dateTime.minute : dateTime.minute;
+	const amPm = dateTime.hour >= 12 ? 'pm' : 'am';
+	let hour;
 	if (dateTime.hour > 12) {
-		hour = dateTime.hour - 12
+		hour = dateTime.hour - 12;
 	} else if (dateTime.hour === 0) {
-		hour = 12
+		hour = 12;
 	} else {
-		hour = dateTime.hour
+		hour = dateTime.hour;
 	}
-	const time = `${hour}:${minutes}${amPm}`
-	const actionDeadline = `${dateTime.monthShort} ${dateTime.day}, ${time} ${dateTime.offsetNameShort}`
+	const time = `${hour}:${minutes}${amPm}`;
+	const actionDeadline = `${dateTime.monthShort} ${dateTime.day}, ${time} ${dateTime.offsetNameShort}`;
 
 	const highlight =
 		DateTime.fromISO(countdownEnd).diff(
@@ -41,7 +42,7 @@ export const StaticCountdownTimer: React.SFC<{
 			'seconds'
 		).seconds < FIVE_HOURS_IN_SECONDS
 			? 'red100'
-			: 'purple100'
+			: 'purple100';
 
 	return (
 		<StackableBorderBox flexDirection='column'>
@@ -72,5 +73,5 @@ export const StaticCountdownTimer: React.SFC<{
 				{note}
 			</Sans>
 		</StackableBorderBox>
-	)
-}
+	);
+};

@@ -1,6 +1,6 @@
-import React from 'react'
-import { color } from '../helpers'
-import { Icon, IconProps } from './Icon'
+import React from 'react';
+import { color } from '../helpers';
+import { Icon, IconProps } from './Icon';
 
 /** ArtsyMarkBlackIcon */
 export const ArtsyMarkBlackIcon: React.SFC<IconProps> = (props) => {
@@ -12,9 +12,9 @@ export const ArtsyMarkBlackIcon: React.SFC<IconProps> = (props) => {
 				<path d='M12.854 5.677h-2.53L5.64 17.737h2.422l1.265-3.382h4.541l1.247 3.382h2.424l-4.685-12.06zm-2.82 6.636l1.555-4.197 1.537 4.197h-3.093z' />
 			</g>
 		</Icon>
-	)
-}
+	);
+};
 
 // TODO: remove this alias once clients have been updated
 /** ArtsyMarkIcon */
-export const ArtsyMarkIcon = ArtsyMarkBlackIcon
+export const ArtsyMarkIcon = ArtsyMarkBlackIcon;

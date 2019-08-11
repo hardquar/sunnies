@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-import { ArrowDownIcon } from './ArrowDownIcon'
-import { ArrowLeftIcon } from './ArrowLeftIcon'
-import { ArrowRightIcon } from './ArrowRightIcon'
-import { ArrowUpIcon } from './ArrowUpIcon'
-import { IconProps } from './Icon'
+import { ArrowDownIcon } from './ArrowDownIcon';
+import { ArrowLeftIcon } from './ArrowLeftIcon';
+import { ArrowRightIcon } from './ArrowRightIcon';
+import { ArrowUpIcon } from './ArrowUpIcon';
+import { IconProps } from './Icon';
 
-type Direction = 'left' | 'right' | 'up' | 'down'
+type Direction = 'left' | 'right' | 'up' | 'down';
 
 // TODO: This is for backwards compat with Volt; need to update there
 export enum Rotation {
@@ -21,14 +21,14 @@ const rotationMap = {
 	[Rotation.RIGHT]: ArrowRightIcon,
 	[Rotation.UP]: ArrowUpIcon,
 	[Rotation.DOWN]: ArrowDownIcon
-}
+};
 
 const directionMap = {
 	left: ArrowLeftIcon,
 	right: ArrowRightIcon,
 	up: ArrowUpIcon,
 	down: ArrowDownIcon
-}
+};
 
 interface ChevronProps extends IconProps {
 	direction?: Direction | Rotation,
@@ -39,6 +39,6 @@ export const ChevronIcon = ({
 	direction = 'right',
 	...props
 }: ChevronProps) => {
-	const Arrow = rotationMap[direction] || directionMap[direction]
-	return <Arrow {...props} />
-}
+	const Arrow = rotationMap[direction] || directionMap[direction];
+	return <Arrow {...props} />;
+};

@@ -1,6 +1,6 @@
-import React from 'react'
-import { color } from '../helpers'
-import { Icon, IconProps } from './Icon'
+import React from 'react';
+import { color } from '../helpers';
+import { Icon, IconProps } from './Icon';
 
 /** ArrowUpIcon */
 export const ArrowUpIcon: React.SFC<IconProps> = (props) => {
@@ -13,5 +13,5 @@ export const ArrowUpIcon: React.SFC<IconProps> = (props) => {
 				fillRule='evenodd'
 			/>
 		</Icon>
-	)
-}
+	);
+};

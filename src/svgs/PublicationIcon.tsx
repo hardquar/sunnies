@@ -1,6 +1,6 @@
-import React from 'react'
-import { color } from '../helpers'
-import { Icon, IconProps } from './Icon'
+import React from 'react';
+import { color } from '../helpers';
+import { Icon, IconProps } from './Icon';
 
 /** PublicationIcon */
 export const PublicationIcon: React.SFC<IconProps> = (props) => {
@@ -13,9 +13,9 @@ export const PublicationIcon: React.SFC<IconProps> = (props) => {
 				fillRule='nonzero'
 			/>
 		</Icon>
-	)
-}
+	);
+};
 
 // TODO: remove this alias once clients have been updated
 /** BookIcon */
-export const BookIcon = PublicationIcon
+export const BookIcon = PublicationIcon;

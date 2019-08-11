@@ -1,7 +1,7 @@
-import { ReactNode } from 'react'
-import { css } from 'styled-components'
-import { themeProps } from '../../Theme'
-import { BoxProps } from '../Box'
+import { ReactNode } from 'react';
+import { css } from 'styled-components';
+import { themeProps } from '../../Theme';
+import { BoxProps } from '../Box';
 
 /**
  * Spec: zpl.io/2j8Knq6
@@ -13,15 +13,15 @@ export type ButtonVariant =
 	| 'primaryWhite'
 	| 'secondaryGray'
 	| 'secondaryOutline'
-	| 'noOutline'
+	| 'noOutline';
 /** Default button color variant */
-export const defaultVariant: ButtonVariant = 'primaryBlack'
+export const defaultVariant: ButtonVariant = 'primaryBlack';
 
 /** The size of the button */
-export type ButtonSize = 'small' | 'medium' | 'large'
+export type ButtonSize = 'small' | 'medium' | 'large';
 
 /** Default button size */
-export const defaultSize: ButtonSize = 'medium'
+export const defaultSize: ButtonSize = 'medium';
 
 export interface ButtonProps extends ButtonBaseProps {
 	children: ReactNode,
@@ -59,7 +59,7 @@ export interface ButtonBaseProps extends BoxProps {
 export function getColorsForVariant(variant: ButtonVariant) {
 	const {
 		colors: { black100, black10, black30, white100, purple100 }
-	} = themeProps
+	} = themeProps;
 
 	switch (variant) {
 		case 'primaryBlack':
@@ -74,7 +74,7 @@ export function getColorsForVariant(variant: ButtonVariant) {
 					borderColor: purple100,
 					color: white100
 				}
-			}
+			};
 		case 'primaryWhite':
 			return {
 				default: {
@@ -87,7 +87,7 @@ export function getColorsForVariant(variant: ButtonVariant) {
 					borderColor: purple100,
 					color: white100
 				}
-			}
+			};
 		case 'secondaryGray':
 			return {
 				default: {
@@ -100,7 +100,7 @@ export function getColorsForVariant(variant: ButtonVariant) {
 					borderColor: black30,
 					color: black100
 				}
-			}
+			};
 		case 'secondaryOutline':
 			return {
 				default: {
@@ -113,7 +113,7 @@ export function getColorsForVariant(variant: ButtonVariant) {
 					borderColor: black100,
 					color: black100
 				}
-			}
+			};
 		case 'noOutline':
 			return {
 				default: {
@@ -126,7 +126,7 @@ export function getColorsForVariant(variant: ButtonVariant) {
 					borderColor: black100,
 					color: black100
 				}
-			}
+			};
 		default:
 	}
 }
@@ -136,7 +136,7 @@ export function getColorsForVariant(variant: ButtonVariant) {
  * @param variant
  */
 export const getStylesForVariant = (variant: ButtonVariant) => {
-	const { default: enabled, hover } = getColorsForVariant(variant)
+	const { default: enabled, hover } = getColorsForVariant(variant);
 
 	return css`
 		${() => {
@@ -152,7 +152,7 @@ export const getStylesForVariant = (variant: ButtonVariant) => {
               color: ${hover.color};
             }
           }
-        `
+        `;
 		}};
-	`
-}
+	`;
+};

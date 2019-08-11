@@ -1,7 +1,7 @@
-import React from 'react'
-import { Path } from 'react-native-svg'
-import { color } from '../helpers'
-import { Icon, IconProps } from './Icon'
+import React from 'react';
+import { Path } from 'react-native-svg';
+import { color } from '../helpers';
+import { Icon, IconProps } from './Icon';
 
 /** CloseIcon */
 export const CloseIcon: React.SFC<IconProps> = (props) => {
@@ -13,5 +13,5 @@ export const CloseIcon: React.SFC<IconProps> = (props) => {
 				fillRule='evenodd'
 			/>
 		</Icon>
-	)
-}
+	);
+};

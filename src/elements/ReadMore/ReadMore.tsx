@@ -1,9 +1,9 @@
-import { isString } from 'lodash'
-import React, { Component } from 'react'
-import { renderToStaticMarkup } from 'react-dom/server'
-import styled from 'styled-components'
-import { DisplayProps } from 'styled-system'
-import truncate from 'trunc-html'
+import { isString } from 'lodash';
+import React, { Component } from 'react';
+import { renderToStaticMarkup } from 'react-dom/server';
+import styled from 'styled-components';
+import { DisplayProps } from 'styled-system';
+import truncate from 'trunc-html';
 
 export interface ReadMoreProps extends DisplayProps {
 	isExpanded?: boolean,
@@ -18,31 +18,31 @@ export interface ReadMoreState {
 
 /** ReadMore */
 export class ReadMore extends Component<ReadMoreProps, ReadMoreState> {
-	private html: string
+	private html: string;
 
 	state = {
 		isExpanded: true
-	}
+	};
 
 	static defaultProps = {
 		isExpanded: false,
 		maxChars: Infinity
-	}
+	};
 
 	constructor(props) {
-		super(props)
+		super(props);
 
 		this.html = isString(props.content)
 			? props.content
-			: renderToStaticMarkup(<>{props.content}</>)
+			: renderToStaticMarkup(<>{props.content}</>);
 
-		const RE = /(<([^>]+)>)/gi // Strip HTML tags to get innerText char count
-		const { length } = this.html.replace(RE, '') //
-		const isExpanded = props.isExpanded || length < props.maxChars
+		const RE = /(<([^>]+)>)/gi; // Strip HTML tags to get innerText char count
+		const { length } = this.html.replace(RE, ''); //
+		const isExpanded = props.isExpanded || length < props.maxChars;
 
 		this.state = {
 			isExpanded
-		}
+		};
 	}
 
 	expandText() {
@@ -51,22 +51,22 @@ export class ReadMore extends Component<ReadMoreProps, ReadMoreState> {
 				isExpanded: true
 			},
 			() => {
-				this.props.onReadMoreClicked && this.props.onReadMoreClicked()
+				this.props.onReadMoreClicked && this.props.onReadMoreClicked();
 			}
-		)
+		);
 	}
 
 	getContent() {
 		if (this.state.isExpanded) {
-			return this.html
+			return this.html;
 		} else {
-			return truncate(this.html, this.props.maxChars).html
+			return truncate(this.html, this.props.maxChars).html;
 		}
 	}
 
 	render() {
-		const content = this.getContent()
-		const isExpanded = this.state.isExpanded || this.props.isExpanded
+		const content = this.getContent();
+		const isExpanded = this.state.isExpanded || this.props.isExpanded;
 
 		return (
 			<Container onClick={this.expandText.bind(this)} isExpanded={isExpanded}>
@@ -78,7 +78,7 @@ export class ReadMore extends Component<ReadMoreProps, ReadMoreState> {
 
 				{!this.state.isExpanded && <ReadMoreLink>Read more</ReadMoreLink>}
 			</Container>
-		)
+		);
 	}
 }
 
@@ -90,15 +90,15 @@ const ReadMoreLink = ({ children }) => {
 				<ReadMoreLinkText>{children}</ReadMoreLinkText>
 			</ReadMoreLinkContainer>
 		</span>
-	)
-}
+	);
+};
 
 const ReadMoreLinkContainer = styled.span`
 	cursor: pointer;
 	text-decoration: underline;
 	display: inline-block;
 	white-space: nowrap;
-`
+`;
 
 // NOTE: Couldn't use @artsy/palette / Sans due to root element being a `div`;
 // as html content from CMS comes through as a p tag, markup is rendered invalid.
@@ -109,7 +109,7 @@ const ReadMoreLinkText = styled.span`
 	font-weight: 500;
 	font-size: 12px;
 	line-height: 16px;
-`
+`;
 
 const Container = styled.div.attrs<ReadMoreState>({})`
 	cursor: ${(p) => (p.isExpanded ? 'auto' : 'pointer')};
@@ -123,6 +123,6 @@ const Container = styled.div.attrs<ReadMoreState>({})`
 	> span > *:last-child {
 		display: inline;
 	}
-`
+`;
 
-Container.displayName = 'Container'
+Container.displayName = 'Container';

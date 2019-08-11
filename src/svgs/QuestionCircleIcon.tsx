@@ -1,6 +1,6 @@
-import React from 'react'
-import { color } from '../helpers'
-import { Icon, IconProps } from './Icon'
+import React from 'react';
+import { color } from '../helpers';
+import { Icon, IconProps } from './Icon';
 
 /** QuestionCircleIcon */
 export const QuestionCircleIcon: React.SFC<IconProps> = (props) => {
@@ -12,9 +12,9 @@ export const QuestionCircleIcon: React.SFC<IconProps> = (props) => {
 				fillRule='nonzero'
 			/>
 		</Icon>
-	)
-}
+	);
+};
 
 // TODO: remove this alias once clients have been updated
 /** HelpIcon */
-export const HelpIcon = QuestionCircleIcon
+export const HelpIcon = QuestionCircleIcon;

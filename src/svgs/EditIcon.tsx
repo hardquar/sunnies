@@ -1,6 +1,6 @@
-import React from 'react'
-import { color } from '../helpers'
-import { Icon, IconProps } from './Icon'
+import React from 'react';
+import { color } from '../helpers';
+import { Icon, IconProps } from './Icon';
 
 /** EditIcon */
 export const EditIcon: React.SFC<IconProps> = (props) => {
@@ -15,5 +15,5 @@ export const EditIcon: React.SFC<IconProps> = (props) => {
 				/>
 			</g>
 		</Icon>
-	)
-}
+	);
+};

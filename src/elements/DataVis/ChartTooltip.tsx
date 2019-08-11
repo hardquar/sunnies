@@ -1,21 +1,21 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Flex, FlexProps } from '../Flex'
-import { Sans } from '../Typography'
+import React from 'react';
+import styled from 'styled-components';
+import { Flex, FlexProps } from '../Flex';
+import { Sans } from '../Typography';
 
 const ChartTooltipWrapper = styled(Flex)`
 	text-align: center;
 	align-items: center;
 	flex-direction: column;
 	white-space: nowrap;
-`
+`;
 
 /**
  * Returns tooltip component based on the type of tooltip param passed to it
  * @param tooltip either a component or hash containing `title` and `description`
  */
 export const coerceTooltip = (tooltip: React.ReactNode | ChartTooltipProps) =>
-	isChartTooltipProps(tooltip) ? <ChartTooltip {...tooltip} /> : tooltip
+	isChartTooltipProps(tooltip) ? <ChartTooltip {...tooltip} /> : tooltip;
 
 /**
  * Similart to `coerceTooltip` but without padding
@@ -28,7 +28,7 @@ export const coerceTooltipWithoutPadding = (
 		<ChartTooltip noPadding {...tooltip} />
 	) : (
 		tooltip
-	)
+	);
 
 export interface ChartTooltipProps extends FlexProps {
 	title: React.ReactNode,
@@ -42,8 +42,8 @@ export function isChartTooltipProps(obj: any): obj is ChartTooltipProps {
 		obj &&
 		typeof obj === 'object' &&
 		Object.keys(obj).some((key) => key === 'title') &&
-		Object.keys(obj).some((key) => key === 'description')
-	return result
+		Object.keys(obj).some((key) => key === 'description');
+	return result;
 }
 
 /**
@@ -68,4 +68,4 @@ export const ChartTooltip = ({
 			{description}
 		</Sans>
 	</ChartTooltipWrapper>
-)
+);

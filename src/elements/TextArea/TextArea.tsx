@@ -1,12 +1,12 @@
-import React, { ChangeEvent } from 'react'
-import styled, { css } from 'styled-components'
-import { themeGet } from 'styled-system'
-import { color } from '../../helpers/color'
-import { space } from '../../helpers/space'
-import { Collapse } from '../Collapse'
-import { Flex } from '../Flex'
-import { Spacer } from '../Spacer'
-import { Sans, Serif } from '../Typography/Typography'
+import React, { ChangeEvent } from 'react';
+import styled, { css } from 'styled-components';
+import { themeGet } from 'styled-system';
+import { color } from '../../helpers/color';
+import { space } from '../../helpers/space';
+import { Collapse } from '../Collapse';
+import { Flex } from '../Flex';
+import { Spacer } from '../Spacer';
+import { Sans, Serif } from '../Typography/Typography';
 
 const StyledTextArea = styled.textarea`
 	transition: border-color 0.25s ease;
@@ -24,11 +24,11 @@ const StyledTextArea = styled.textarea`
 		}
 	`};
 	resize: vertical;
-`
+`;
 
 const Required = styled.span`
 	color: ${color('purple100')};
-`
+`;
 
 export interface TextAreaProps {
 	error?: string,
@@ -58,42 +58,42 @@ export interface TextAreaChange {
 export class TextArea extends React.Component<TextAreaProps, TextAreaState> {
 	state: TextAreaState = {
 		value: this.props.defaultValue || ''
-	}
+	};
 
 	componentDidMount() {
-		const { defaultValue } = this.props
+		const { defaultValue } = this.props;
 		if (defaultValue) {
-			this.handleTextChange(defaultValue)
+			this.handleTextChange(defaultValue);
 		}
 	}
 
 	handleTextChange(nextValue: string) {
 		this.setState({ value: nextValue }, () => {
-			const { onChange } = this.props
-			const { value } = this.state
+			const { onChange } = this.props;
+			const { value } = this.state;
 			onChange &&
 				onChange({
 					value,
 					exceedsCharacterLimit: this.characterLimitExceeded()
-				})
-		})
+				});
+		});
 	}
 
 	characterLimitExceeded() {
-		const { characterLimit } = this.props
-		const { value } = this.state
-		return Boolean(characterLimit && value.length > characterLimit)
+		const { characterLimit } = this.props;
+		const { value } = this.state;
+		return Boolean(characterLimit && value.length > characterLimit);
 	}
 
 	onChange = (ev: ChangeEvent<HTMLTextAreaElement>) => {
-		this.handleTextChange(ev.currentTarget.value)
-	}
+		this.handleTextChange(ev.currentTarget.value);
+	};
 
 	render() {
-		const { error, characterLimit, title, description, ...others } = this.props
-		const { value } = this.state
+		const { error, characterLimit, title, description, ...others } = this.props;
+		const { value } = this.state;
 
-		const hasError = Boolean(error || this.characterLimitExceeded())
+		const hasError = Boolean(error || this.characterLimitExceeded());
 
 		return (
 			<Flex flexDirection='column'>
@@ -137,6 +137,6 @@ export class TextArea extends React.Component<TextAreaProps, TextAreaState> {
 					)}
 				</Flex>
 			</Flex>
-		)
+		);
 	}
 }

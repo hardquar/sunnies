@@ -1,5 +1,5 @@
-import React from 'react'
-import { color } from '../../helpers'
+import React from 'react';
+import { color } from '../../helpers';
 
 /**
  * Point is the component responsible for rendering a data point
@@ -24,5 +24,5 @@ export const Point = ({
 			opacity={opacity}
 			fill={hovered ? color('black30') : color('black10')}
 		/>
-	)
-}
+	);
+};

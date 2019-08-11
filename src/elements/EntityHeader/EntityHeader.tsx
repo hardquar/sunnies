@@ -1,12 +1,12 @@
-import React, { SFC } from 'react'
-import styled from 'styled-components'
-import { Color } from '../../Theme'
-import { Avatar } from '../Avatar'
-import { Box } from '../Box'
-import { Flex } from '../Flex'
-import { Link } from '../Link'
-import { SpacerProps } from '../Spacer'
-import { Sans, Serif } from '../Typography'
+import React, { SFC } from 'react';
+import styled from 'styled-components';
+import { Color } from '../../Theme';
+import { Avatar } from '../Avatar';
+import { Box } from '../Box';
+import { Flex } from '../Flex';
+import { Link } from '../Link';
+import { SpacerProps } from '../Spacer';
+import { Sans, Serif } from '../Typography';
 
 interface EntityHeaderProps extends SpacerProps {
 	href?: string,
@@ -37,12 +37,12 @@ export const EntityHeader: SFC<EntityHeaderProps> = ({
 	FollowButton,
 	...remainderProps
 }) => {
-	const ContainerComponent = href ? FlexLink : Flex
+	const ContainerComponent = href ? FlexLink : Flex;
 	// new () => React.Component < any, any >
 	// StyledComponentClass < React.ClassAttributes < HTMLAnchorElement >
 	const containerProps: ContainerComponentProps = href
 		? { color: 'black100', noUnderline: true, href }
-		: {}
+		: {};
 
 	return (
 		<ContainerComponent {...remainderProps} {...containerProps}>
@@ -72,7 +72,7 @@ export const EntityHeader: SFC<EntityHeaderProps> = ({
 								onClick={(event) => {
 									// Capture click event so that interacting with Follow doesn't
 									// trigger Container's link.
-									event.stopPropagation()
+									event.stopPropagation();
 								}}
 							>
 								{FollowButton}
@@ -82,11 +82,11 @@ export const EntityHeader: SFC<EntityHeaderProps> = ({
 				</Sans>
 			</Flex>
 		</ContainerComponent>
-	)
-}
+	);
+};
 
 const FlexLink = styled(Link)`
 	display: flex;
-`
+`;
 
-EntityHeader.displayName = 'EntityHeader'
+EntityHeader.displayName = 'EntityHeader';

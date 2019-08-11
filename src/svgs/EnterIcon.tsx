@@ -1,6 +1,6 @@
-import React from 'react'
-import { color } from '../helpers'
-import { Icon, IconProps } from './Icon'
+import React from 'react';
+import { color } from '../helpers';
+import { Icon, IconProps } from './Icon';
 
 /** EnterIcon */
 export const EnterIcon: React.SFC<IconProps> = (props) => {
@@ -15,5 +15,5 @@ export const EnterIcon: React.SFC<IconProps> = (props) => {
 				/>
 			</g>
 		</Icon>
-	)
-}
+	);
+};

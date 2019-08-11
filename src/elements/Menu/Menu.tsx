@@ -1,14 +1,14 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
-import { display } from 'styled-system'
-import { color } from '../../helpers/color'
-import { BorderBox } from '../BorderBox'
-import { Box, BoxProps } from '../Box'
-import { Flex } from '../Flex'
-import { Separator } from '../Separator'
-import { Spacer } from '../Spacer'
-import { Sans } from '../Typography'
+import { display } from 'styled-system';
+import { color } from '../../helpers/color';
+import { BorderBox } from '../BorderBox';
+import { Box, BoxProps } from '../Box';
+import { Flex } from '../Flex';
+import { Separator } from '../Separator';
+import { Spacer } from '../Spacer';
+import { Sans } from '../Typography';
 
 interface MenuProps {
 	children?: React.ReactNode,
@@ -42,12 +42,12 @@ export const Menu: React.FC<MenuProps> = ({
 				</Flex>
 			</BorderBox>
 		</MenuContainer>
-	)
-}
+	);
+};
 
 const MenuContainer = styled(Box)`
 	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.05);
-`
+`;
 
 // Menu Item
 
@@ -72,8 +72,8 @@ export const MenuItem: React.FC<MenuItemProps> = ({
 				</Sans>
 			</Box>
 		</MenuLink>
-	)
-}
+	);
+};
 
 const MenuLink = styled.a`
 	cursor: pointer;
@@ -93,4 +93,4 @@ const MenuLink = styled.a`
 		display: flex;
 		align-items: center;
 	}
-`
+`;

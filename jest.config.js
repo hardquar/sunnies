@@ -2,7 +2,7 @@ module.exports = {
   transform: {
 		'.(tsx?)$': 'babel-jest'
   },
-  testEnvironment: 'node',
+  testEnvironment: 'jsdom', // necessary for enzyme
 	// testMatch: ['**/*.test.ts'],
 	testRegex: '(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js|jsx)$',
   coverageDirectory: './coverage/',
@@ -21,7 +21,7 @@ module.exports = {
 		'js',
 		'json'
   ],
-  setupTestFrameworkScriptFile: '<rootDir>/jest.setup.ts',
+  setupFilesAfterEnv: ['./src/utils/jestSetup.ts'],
   globals: {
     'ts-jest': {
       tsConfigFile: './tsconfig.json',
@@ -45,4 +45,4 @@ module.exports = {
 		'<rootDir>/dist/',
 		'<rootDir>/www/'
 	]
-}
+};

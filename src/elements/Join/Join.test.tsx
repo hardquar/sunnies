@@ -1,6 +1,6 @@
-import { mount } from 'enzyme'
-import React from 'react'
-import { Join } from '../Join'
+import { mount } from 'enzyme';
+import React from 'react';
+import { Join } from '../Join';
 
 describe('Join', () => {
 	it('renders a separator', () => {
@@ -13,11 +13,11 @@ describe('Join', () => {
 					<div>you</div>
 				</Join>
 			</div>
-		)
+		);
 
-		expect(wrapper.text()).toEqual('hi,how,are,you')
-		expect(wrapper.html()).toContain('foundSeparator')
-	})
+		expect(wrapper.text()).toEqual('hi,how,are,you');
+		expect(wrapper.html()).toContain('foundSeparator');
+	});
 
 	it('renders blank component with separator unfortunately', () => {
 		const wrapper = mount(
@@ -27,11 +27,11 @@ describe('Join', () => {
 					<div />
 				</Join>
 			</div>
-		)
+		);
 
-		expect(wrapper.text()).toEqual('hi,')
-		expect(wrapper.html()).toContain('foundSeparator')
-	})
+		expect(wrapper.text()).toEqual('hi,');
+		expect(wrapper.html()).toContain('foundSeparator');
+	});
 
 	it('does not render separator with only one component in children', () => {
 		const wrapper = mount(
@@ -40,9 +40,9 @@ describe('Join', () => {
 					<div>hi</div>
 				</Join>
 			</div>
-		)
+		);
 
-		expect(wrapper.text()).toEqual('hi')
-		expect(wrapper.html()).not.toContain('foundSeparator')
-	})
-})
+		expect(wrapper.text()).toEqual('hi');
+		expect(wrapper.html()).not.toContain('foundSeparator');
+	});
+});

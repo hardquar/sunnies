@@ -1,6 +1,6 @@
-import React from 'react'
-import { color } from '../helpers'
-import { Icon, IconProps } from './Icon'
+import React from 'react';
+import { color } from '../helpers';
+import { Icon, IconProps } from './Icon';
 
 /** EyeClosedIcon */
 export const EyeClosedIcon: React.SFC<IconProps> = (props) => {
@@ -13,9 +13,9 @@ export const EyeClosedIcon: React.SFC<IconProps> = (props) => {
 				<path d='M15.054 2.053l.805.81-12.893 12.79-.805-.81z' />
 			</g>
 		</Icon>
-	)
-}
+	);
+};
 
 // TODO: remove this alias once clients have been updated
 /** ClosedEyeIcon */
-export const ClosedEyeIcon = EyeClosedIcon
+export const ClosedEyeIcon = EyeClosedIcon;

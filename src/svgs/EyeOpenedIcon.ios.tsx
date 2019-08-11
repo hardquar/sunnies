@@ -1,7 +1,7 @@
-import React from 'react'
-import { G, Path } from 'react-native-svg'
-import { color } from '../helpers'
-import { Icon, IconProps } from './Icon'
+import React from 'react';
+import { G, Path } from 'react-native-svg';
+import { color } from '../helpers';
+import { Icon, IconProps } from './Icon';
 
 /** EyeOpenedIcon */
 export const EyeOpenedIcon: React.SFC<IconProps> = (props) => {
@@ -12,5 +12,5 @@ export const EyeOpenedIcon: React.SFC<IconProps> = (props) => {
 				<Path d='M9 11.571a2.857 2.857 0 1 1 0-5.714 2.857 2.857 0 0 1 0 5.714zm0-1.142A1.714 1.714 0 1 0 9 7a1.714 1.714 0 0 0 0 3.429z' />
 			</G>
 		</Icon>
-	)
-}
+	);
+};

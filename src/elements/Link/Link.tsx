@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 import {
 	color as styledColor,
 	display,
@@ -7,11 +7,11 @@ import {
 	PositionProps,
 	space,
 	SpaceProps
-} from 'styled-system'
-import { color } from '../../helpers'
-import { Color } from '../../Theme'
+} from 'styled-system';
+import { color } from '../../helpers';
+import { Color } from '../../Theme';
 
-type UnderlineBehaviors = 'default' | 'hover' | 'none'
+type UnderlineBehaviors = 'default' | 'hover' | 'none';
 
 export interface LinkProps extends DisplayProps, PositionProps, SpaceProps {
 	color?: Color,
@@ -24,16 +24,16 @@ const computeUnderline = (
 	state: string,
 	behavior: UnderlineBehaviors
 ): string => {
-	const blocklist: UnderlineBehaviors[] =
-		state === 'hover' ? ['none'] : ['hover', 'none']
-	const none = blocklist.includes(behavior)
-	return none ? 'none' : 'underline'
-}
+	const blocklist: Array<UnderlineBehaviors> =
+		state === 'hover' ? ['none'] : ['hover', 'none'];
+	const none = blocklist.includes(behavior);
+	return none ? 'none' : 'underline';
+};
 
 const backwardsCompatCompute = (state: string, props: LinkProps) => {
-	const behavior = props.noUnderline ? 'hover' : props.underlineBehavior
-	return computeUnderline(state, behavior)
-}
+	const behavior = props.noUnderline ? 'hover' : props.underlineBehavior;
+	return computeUnderline(state, behavior);
+};
 
 /**
  * Basic <a> tag styled with additional LinkProps
@@ -52,10 +52,10 @@ export const Link = styled.a<LinkProps>`
 	${position};
 	${space};
 	${styledColor};
-`
+`;
 
-Link.displayName = 'Link'
+Link.displayName = 'Link';
 
 Link.defaultProps = {
 	underlineBehavior: 'default'
-}
+};

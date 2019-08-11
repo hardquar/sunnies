@@ -1,6 +1,6 @@
-import React from 'react'
-import { color } from '../helpers'
-import { Icon, IconProps } from './Icon'
+import React from 'react';
+import { color } from '../helpers';
+import { Icon, IconProps } from './Icon';
 
 /** MagnifyingGlassIcon */
 export const MagnifyingGlassIcon: React.SFC<IconProps> = (props) => {
@@ -13,5 +13,5 @@ export const MagnifyingGlassIcon: React.SFC<IconProps> = (props) => {
 				fillRule='nonzero'
 			/>
 		</Icon>
-	)
-}
+	);
+};

@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
-import { color, space } from '../../helpers'
+import { color, space } from '../../helpers';
 
 const ProgressBarBackground = styled.div`
 	height: 3px;
@@ -9,7 +9,7 @@ const ProgressBarBackground = styled.div`
 	margin: ${space(0.5)}px 0 ${space(1)}px;
 	display: flex;
 	justify-content: flex-start;
-`
+`;
 
 /** ProgressBar */
 export const ProgressBar: React.SFC<{
@@ -26,5 +26,5 @@ export const ProgressBar: React.SFC<{
 				}}
 			/>
 		</ProgressBarBackground>
-	)
-}
+	);
+};

@@ -1,6 +1,6 @@
-import React from 'react'
-import { color } from '../helpers'
-import { Icon, IconProps } from './Icon'
+import React from 'react';
+import { color } from '../helpers';
+import { Icon, IconProps } from './Icon';
 
 /** LogoutIcon */
 export const LogoutIcon: React.SFC<IconProps> = (props) => {
@@ -15,9 +15,9 @@ export const LogoutIcon: React.SFC<IconProps> = (props) => {
 				/>
 			</g>
 		</Icon>
-	)
-}
+	);
+};
 
 // TODO: remove this alias once clients have been updated
 /** PowerIcon */
-export const PowerIcon = LogoutIcon
+export const PowerIcon = LogoutIcon;

@@ -1,19 +1,19 @@
-import { interpolateArray } from 'd3-interpolate'
-import { line as d3Line } from 'd3-shape'
-import { maxBy } from 'lodash'
-import React from 'react'
-import { Spring } from 'react-spring/renderprops.cjs'
-import styled from 'styled-components'
-import { color } from '../../helpers'
-import { PointDescriptor } from '../DataVis/utils/SharedTypes'
-import { Line } from './Line'
-import { Point } from './Point'
+import { interpolateArray } from 'd3-interpolate';
+import { line as d3Line } from 'd3-shape';
+import { maxBy } from 'lodash';
+import React from 'react';
+import { Spring } from 'react-spring/renderprops.cjs';
+import styled from 'styled-components';
+import { color } from '../../helpers';
+import { PointDescriptor } from '../DataVis/utils/SharedTypes';
+import { Line } from './Line';
+import { Point } from './Point';
 
 interface LineChartSVGProps {
 	width: number,
 	height: number,
 	margin: number,
-	points: PointDescriptor[],
+	points: Array<PointDescriptor>,
 	hoverIndex: number,
 	hasEnteredViewport: boolean,
 }
@@ -29,22 +29,22 @@ export const LineChartSVG: React.FC<LineChartSVGProps> = ({
 	hoverIndex,
 	hasEnteredViewport
 }: LineChartSVGProps) => {
-	const values = points.map((d) => d.value)
-	const maxValue: number = maxBy(points, (item) => item.value).value
+	const values = points.map((d) => d.value);
+	const maxValue: number = maxBy(points, (item) => item.value).value;
 
-	const zeros = values.map(() => 0)
-	const valuesInterpolator = interpolateArray(zeros, values)
+	const zeros = values.map(() => 0);
+	const valuesInterpolator = interpolateArray(zeros, values);
 
-	const w = width - 2 * margin
-	const h = height - 2 * margin
+	const w = width - 2 * margin;
+	const h = height - 2 * margin;
 
 	// maps value to x/y position
-	const displayYPosition = (d) => (maxValue ? h - (d * h) / maxValue : h)
-	const displayXPosition = (_d, i) => (i / (points.length - 1)) * w
+	const displayYPosition = (d) => (maxValue ? h - (d * h) / maxValue : h);
+	const displayXPosition = (_d, i) => (i / (points.length - 1)) * w;
 
 	const line = d3Line()
 		.x(displayXPosition)
-		.y(displayYPosition)
+		.y(displayYPosition);
 	return (
 		<Svg width={width} height={height}>
 			<g transform={`translate(0, ${margin})`}>
@@ -56,7 +56,7 @@ export const LineChartSVG: React.FC<LineChartSVGProps> = ({
 						delay={500}
 					>
 						{({ num }) => {
-							const interpolatedValues: any = valuesInterpolator(num)
+							const interpolatedValues: any = valuesInterpolator(num);
 							return (
 								<>
 									<Line path={line(interpolatedValues as any)} />
@@ -69,18 +69,18 @@ export const LineChartSVG: React.FC<LineChartSVGProps> = ({
 												cx={displayXPosition(value, index)}
 												cy={displayYPosition(value)}
 											/>
-										)
+										);
 									})}
 								</>
-							)
+							);
 						}}
 					</Spring>
 				</g>
 			</g>
 		</Svg>
-	)
-}
+	);
+};
 
 const Svg = styled.svg`
 	position: absolute;
-`
+`;

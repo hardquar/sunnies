@@ -1,4 +1,4 @@
-import { FontFamily } from './index'
+import { FontFamily } from './index';
 
 /**
  * A map of the font families and their settings
@@ -18,4 +18,4 @@ export const fontFamily: FontFamily = {
 	display: {
 		regular: 'AvantGardeGothicITC'
 	}
-}
+};

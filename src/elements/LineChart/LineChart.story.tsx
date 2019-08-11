@@ -1,8 +1,8 @@
-import { storiesOf } from '@storybook/react'
-import React from 'react'
-import { Box } from '../Box'
-import { Serif } from '../Typography'
-import { LineChart } from './LineChart'
+import { storiesOf } from '@storybook/react';
+import React from 'react';
+import { Box } from '../Box';
+import { Serif } from '../Typography';
+import { LineChart } from './LineChart';
 
 storiesOf('Components/LineChart', module)
 	.add(
@@ -69,7 +69,7 @@ storiesOf('Components/LineChart', module)
 						]}
 					/>
 				</Box>
-			)
+			);
 		},
 		{ chromatic: { delay: 1000 } }
 	)
@@ -139,7 +139,7 @@ storiesOf('Components/LineChart', module)
 						]}
 					/>
 				</Box>
-			)
+			);
 		},
 		{ chromatic: { delay: 1000 } }
-	)
+	);

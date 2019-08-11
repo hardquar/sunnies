@@ -1,6 +1,6 @@
-import { FontFamily } from './'
+import { FontFamily } from './';
 
-const sansFallback = '\'Helvetica Neue\', Helvetica, Arial, sans-serif'
+const sansFallback = '\'Helvetica Neue\', Helvetica, Arial, sans-serif';
 
 /**
  * A map of the font families and their settings
@@ -40,4 +40,4 @@ export const fontFamily: FontFamily = {
 		regular:
 			'\'ITC Avant Garde Gothic W04\',\'AvantGardeGothicITCW01D 731075\', AvantGardeGothicITCW01Dm, Helvetica, sans-serif'
 	}
-}
+};

@@ -1,18 +1,18 @@
-import React, { useRef, useState } from 'react'
-import styled from 'styled-components'
-import { media, space } from '../../helpers'
-import { ChartHoverTooltip } from '../DataVis/ChartHoverTooltip'
-import { coerceTooltip } from '../DataVis/ChartTooltip'
-import { ProvideMousePosition } from '../DataVis/MousePositionContext'
-import { ChartProps } from '../DataVis/utils/SharedTypes'
-import { useHasEnteredViewport } from '../DataVis/utils/useHasEnteredViewPort'
-import { useWrapperWidth } from '../DataVis/utils/useWrapperWidth'
-import { Flex } from '../Flex'
-import { Sans } from '../Typography'
-import { LineChartSVG } from './LineChartSVG'
+import React, { useRef, useState } from 'react';
+import styled from 'styled-components';
+import { media, space } from '../../helpers';
+import { ChartHoverTooltip } from '../DataVis/ChartHoverTooltip';
+import { coerceTooltip } from '../DataVis/ChartTooltip';
+import { ProvideMousePosition } from '../DataVis/MousePositionContext';
+import { ChartProps } from '../DataVis/utils/SharedTypes';
+import { useHasEnteredViewport } from '../DataVis/utils/useHasEnteredViewPort';
+import { useWrapperWidth } from '../DataVis/utils/useWrapperWidth';
+import { Flex } from '../Flex';
+import { Sans } from '../Typography';
+import { LineChartSVG } from './LineChartSVG';
 
-const margin = space(2)
-const DEFAULT_HEIGHT = 87
+const margin = space(2);
+const DEFAULT_HEIGHT = 87;
 
 export interface LineChartProps extends ChartProps {
 	height?: number,
@@ -26,13 +26,13 @@ export const LineChart: React.FC<LineChartProps> = ({
 	points,
 	height = DEFAULT_HEIGHT
 }: LineChartProps) => {
-	const [hoverIndex, setHoverIndex] = useState(-1)
+	const [hoverIndex, setHoverIndex] = useState(-1);
 
-	const wrapperRef = useRef<HTMLDivElement>(null)
+	const wrapperRef = useRef<HTMLDivElement>(null);
 
-	const hasEnteredViewport = useHasEnteredViewport(wrapperRef)
+	const hasEnteredViewport = useHasEnteredViewport(wrapperRef);
 
-	const width = useWrapperWidth(wrapperRef)
+	const width = useWrapperWidth(wrapperRef);
 
 	return (
 		<ProvideMousePosition>
@@ -78,8 +78,8 @@ export const LineChart: React.FC<LineChartProps> = ({
 				)}
 			</Flex>
 		</ProvideMousePosition>
-	)
-}
+	);
+};
 
 interface HoverHandlerProps {
 	children: React.ReactNode,
@@ -94,7 +94,7 @@ const HoverHandler: React.FC<HoverHandlerProps> = ({
 	hoverIndex,
 	setHoverIndex
 }: HoverHandlerProps) => {
-	const hover = hoverIndex === index
+	const hover = hoverIndex === index;
 	return (
 		<PointHoverArea
 			onMouseEnter={() => setHoverIndex(index)}
@@ -103,8 +103,8 @@ const HoverHandler: React.FC<HoverHandlerProps> = ({
 		>
 			{hover && <ChartHoverTooltip>{children}</ChartHoverTooltip>}
 		</PointHoverArea>
-	)
-}
+	);
+};
 
 /**
  * The rectangle area around Dots which triggers mouseover for tooltip
@@ -115,7 +115,7 @@ export const PointHoverArea = styled.div`
 	margin: 0 1%; /* gap between area enabling tooptips */
 	opacity: 0;
 	transition: opacity 0.4s ease-in;
-`
+`;
 
 interface AxisContainerProps {
 	first: boolean,
@@ -129,11 +129,11 @@ const BarAxisLabelContainer = styled.div<AxisContainerProps>`
 	${media.xs`
     display: ${({ first, last }) => (first || last ? 'auto' : 'none')};;
   `};
-`
+`;
 
 const AxisLabelX = styled(Sans)`
 	position: absolute;
 	text-align: center;
 	white-space: nowrap;
 	transform: translateX(-33%);
-`
+`;

@@ -1,6 +1,6 @@
-import { storiesOf } from '@storybook/react'
-import React from 'react'
-import { Button } from './Button'
+import { storiesOf } from '@storybook/react';
+import React from 'react';
+import { Button } from './Button';
 
 storiesOf('Components/Button', module)
 	.add('small', () => {
@@ -22,7 +22,7 @@ storiesOf('Components/Button', module)
 					noOutline
 				</Button>
 			</>
-		)
+		);
 	})
 	.add('medium', () => {
 		return (
@@ -43,7 +43,7 @@ storiesOf('Components/Button', module)
 					noOutline
 				</Button>
 			</>
-		)
+		);
 	})
 	.add('large', () => {
 		return (
@@ -64,5 +64,5 @@ storiesOf('Components/Button', module)
 					noOutline
 				</Button>
 			</>
-		)
-	})
+		);
+	});

@@ -1,17 +1,17 @@
-import { maxBy } from 'lodash'
-import React, { useEffect, useRef, useState } from 'react'
-import styled from 'styled-components'
-import { color, space } from '../../helpers'
-import { ChartTooltipProps, coerceTooltip } from '../DataVis/ChartTooltip'
-import { ProvideMousePosition } from '../DataVis/MousePositionContext'
-import { useHasEnteredViewport } from '../DataVis/utils/useHasEnteredViewPort'
-import { Flex } from '../Flex'
-import { Sans } from '../Typography'
-import { Bar } from './Bar'
+import { maxBy } from 'lodash';
+import React, { useEffect, useRef, useState } from 'react';
+import styled from 'styled-components';
+import { color, space } from '../../helpers';
+import { ChartTooltipProps, coerceTooltip } from '../DataVis/ChartTooltip';
+import { ProvideMousePosition } from '../DataVis/MousePositionContext';
+import { useHasEnteredViewport } from '../DataVis/utils/useHasEnteredViewPort';
+import { Flex } from '../Flex';
+import { Sans } from '../Typography';
+import { Bar } from './Bar';
 
 const ChartContainer = styled(Flex)`
 	border-bottom: 1px solid ${color('black10')};
-`
+`;
 
 function useHighlightLabelPositionConstraints(
 	wrapperDiv: HTMLDivElement | null,
@@ -20,31 +20,31 @@ function useHighlightLabelPositionConstraints(
 	// Constrain highlight label to be within the bounds of the graph
 	useEffect(() => {
 		if (!wrapperDiv || !labelDiv) {
-			return
+			return;
 		}
 		// reset highlight label position
-		labelDiv.style.left = null
-		labelDiv.style.right = null
+		labelDiv.style.left = null;
+		labelDiv.style.right = null;
 		// force layout to find centered position
-		labelDiv.offsetWidth
+		labelDiv.offsetWidth;
 
-		const wrapperRect = wrapperDiv.getBoundingClientRect()
-		const labelRect = labelDiv.getBoundingClientRect()
+		const wrapperRect = wrapperDiv.getBoundingClientRect();
+		const labelRect = labelDiv.getBoundingClientRect();
 
 		// check for overlap with BarChart left bound
-		const labelLeftOffset = wrapperRect.left - labelRect.left
+		const labelLeftOffset = wrapperRect.left - labelRect.left;
 		if (labelLeftOffset > 0) {
 			// label is too far to the left, compensate
-			labelDiv.style.left = labelLeftOffset + 'px'
-			return
+			labelDiv.style.left = labelLeftOffset + 'px';
+			return;
 		}
 		// check for overlap with BarChart right bound
-		const labelRightOffset = labelRect.right - wrapperRect.right
+		const labelRightOffset = labelRect.right - wrapperRect.right;
 		if (labelRightOffset > 0) {
 			// label is too far to the right, compensate
-			labelDiv.style.right = labelRightOffset + 'px'
+			labelDiv.style.right = labelRightOffset + 'px';
 		}
-	})
+	});
 }
 
 export interface BarDescriptor {
@@ -57,7 +57,7 @@ export interface BarDescriptor {
 }
 
 export interface BarChartProps {
-	bars: BarDescriptor[],
+	bars: Array<BarDescriptor>,
 	minLabel: React.ReactNode,
 	maxLabel: React.ReactNode,
 }
@@ -67,18 +67,18 @@ export interface BarChartProps {
  * @param props props
  */
 export const BarChart = ({ bars, minLabel, maxLabel }: BarChartProps) => {
-	const wrapperRef = useRef<HTMLDivElement>(null)
-	const highlightLabelRef = useRef<HTMLDivElement>(null)
+	const wrapperRef = useRef<HTMLDivElement>(null);
+	const highlightLabelRef = useRef<HTMLDivElement>(null);
 
 	useHighlightLabelPositionConstraints(
 		wrapperRef.current,
 		highlightLabelRef.current
-	)
+	);
 
-	const hasEnteredViewport = useHasEnteredViewport(wrapperRef)
-	const [minHeight, setMinHeight] = useState(0)
-	const maxValue: number = maxBy(bars, (item) => item.value).value
-	const allZero = bars.every((item) => item.value === 0)
+	const hasEnteredViewport = useHasEnteredViewport(wrapperRef);
+	const [minHeight, setMinHeight] = useState(0);
+	const maxValue: number = maxBy(bars, (item) => item.value).value;
+	const allZero = bars.every((item) => item.value === 0);
 	return (
 		<ProvideMousePosition>
 			<Flex
@@ -99,7 +99,7 @@ export const BarChart = ({ bars, minLabel, maxLabel }: BarChartProps) => {
 							index
 						) => {
 							const heightPercent =
-								maxValue === 0 ? 100 : (100 / maxValue) * value
+								maxValue === 0 ? 100 : (100 / maxValue) * value;
 							return (
 								<Bar
 									key={index}
@@ -113,7 +113,7 @@ export const BarChart = ({ bars, minLabel, maxLabel }: BarChartProps) => {
 									onClick={onClick}
 									onHover={onHover}
 								/>
-							)
+							);
 						}
 					)}
 				</ChartContainer>
@@ -138,14 +138,14 @@ export const BarChart = ({ bars, minLabel, maxLabel }: BarChartProps) => {
 				)}
 			</Flex>
 		</ProvideMousePosition>
-	)
-}
+	);
+};
 
 const BarAxisLabelContainer = styled.div`
 	flex: 1;
 	min-height: ${space(2)}px;
 	position: relative;
-`
+`;
 
 const AxisLabelX = styled(Sans)`
 	position: absolute;
@@ -153,4 +153,4 @@ const AxisLabelX = styled(Sans)`
 	white-space: nowrap;
 	left: 50%;
 	transform: translateX(-50%);
-`
+`;

@@ -1,1 +1,1 @@
-export * from './LabeledRange'
+export * from './LabeledRange';

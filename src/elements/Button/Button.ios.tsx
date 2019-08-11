@@ -1,18 +1,18 @@
-import React, { Component } from 'react'
-import { TouchableWithoutFeedback } from 'react-native'
-import { animated, Spring } from 'react-spring/renderprops-native.cjs'
-import styled from 'styled-components/native'
-import { themeProps } from '../../Theme'
-import { Box } from '../Box'
-import { Flex } from '../Flex'
-import { Spinner } from '../Spinner'
-import { Sans } from '../Typography'
+import React, { Component } from 'react';
+import { TouchableWithoutFeedback } from 'react-native';
+import { animated, Spring } from 'react-spring/renderprops-native.cjs';
+import styled from 'styled-components/native';
+import { themeProps } from '../../Theme';
+import { Box } from '../Box';
+import { Flex } from '../Flex';
+import { Spinner } from '../Spinner';
+import { Sans } from '../Typography';
 import {
 	ButtonProps,
 	defaultSize,
 	defaultVariant,
 	getColorsForVariant
-} from './Button.shared'
+} from './Button.shared';
 
 enum DisplayState {
 	Enabled = 'default',
@@ -31,30 +31,30 @@ export class Button extends Component<ButtonProps, ButtonState> {
 		size: defaultSize,
 		variant: defaultVariant,
 		theme: themeProps
-	}
+	};
 
 	state = {
 		previous: DisplayState.Enabled,
 		current: DisplayState.Enabled
-	}
+	};
 
 	getSize(): { height: number | string, size: '2' | '3t', px: number, } {
-		const { inline } = this.props
+		const { inline } = this.props;
 		switch (this.props.size) {
 			case 'small':
-				return { height: inline ? 17 : 26, size: '2', px: inline ? 0 : 1 }
+				return { height: inline ? 17 : 26, size: '2', px: inline ? 0 : 1 };
 			case 'medium':
-				return { height: inline ? 21 : 41, size: '3t', px: inline ? 0 : 2 }
+				return { height: inline ? 21 : 41, size: '3t', px: inline ? 0 : 2 };
 			case 'large':
-				return { height: inline ? 21 : 50, size: '3t', px: inline ? 0 : 3 }
+				return { height: inline ? 21 : 50, size: '3t', px: inline ? 0 : 3 };
 		}
 	}
 
 	get loadingStyles() {
-		const { inline, loading } = this.props
+		const { inline, loading } = this.props;
 
 		if (!loading) {
-			return {}
+			return {};
 		}
 
 		if (inline) {
@@ -62,38 +62,38 @@ export class Button extends Component<ButtonProps, ButtonState> {
 				backgroundColor: 'rgba(0, 0, 0, 0)',
 				color: 'rgba(0, 0, 0, 0)',
 				borderWidth: 0
-			}
+			};
 		}
 
-		const { black100 } = themeProps.colors
+		const { black100 } = themeProps.colors;
 
 		return {
 			backgroundColor: black100,
 			borderColor: black100,
 			color: 'rgba(0, 0, 0, 0)'
-		}
+		};
 	}
 
 	get spinnerColor() {
-		const { inline, variant } = this.props
+		const { inline, variant } = this.props;
 
 		if (inline) {
-			return variant === 'primaryWhite' ? 'white100' : 'black100'
+			return variant === 'primaryWhite' ? 'white100' : 'black100';
 		}
 
-		return 'white100'
+		return 'white100';
 	}
 
 	onPress = (args) => {
 		if (this.props.onPress) {
 			// Did someone tap really fast? Flick the highlighted state
-			const { current } = this.state
+			const { current } = this.state;
 
 			if (this.state.current === DisplayState.Enabled) {
 				this.setState({
 					previous: current,
 					current: DisplayState.Highlighted
-				})
+				});
 				setTimeout(
 					() =>
 						this.setState({
@@ -101,15 +101,15 @@ export class Button extends Component<ButtonProps, ButtonState> {
 							current: DisplayState.Enabled
 						}),
 					0.3
-				)
+				);
 			} else {
 				// Was already selected
-				this.setState({ current: DisplayState.Enabled })
+				this.setState({ current: DisplayState.Enabled });
 			}
 
-			this.props.onPress(args)
+			this.props.onPress(args);
 		}
-	}
+	};
 
 	render() {
 		const {
@@ -119,15 +119,15 @@ export class Button extends Component<ButtonProps, ButtonState> {
 			inline,
 			longestText,
 			...rest
-		} = this.props
-		const { px, size, height } = this.getSize()
-		const variantColors = getColorsForVariant(this.props.variant)
-		const opacity = this.props.disabled ? 0.1 : 1.0
+		} = this.props;
+		const { px, size, height } = this.getSize();
+		const variantColors = getColorsForVariant(this.props.variant);
+		const opacity = this.props.disabled ? 0.1 : 1.0;
 
-		const { current, previous } = this.state
+		const { current, previous } = this.state;
 
-		const from = variantColors[previous]
-		const to = variantColors[current]
+		const from = variantColors[previous];
+		const to = variantColors[current];
 
 		return (
 			<Spring native from={from} to={to}>
@@ -138,13 +138,13 @@ export class Button extends Component<ButtonProps, ButtonState> {
 							this.setState({
 								previous: DisplayState.Enabled,
 								current: DisplayState.Highlighted
-							})
+							});
 						}}
 						onPressOut={() => {
 							this.setState({
 								previous: DisplayState.Highlighted,
 								current: DisplayState.Enabled
-							})
+							});
 						}}
 						disabled={disabled}
 					>
@@ -177,7 +177,7 @@ export class Button extends Component<ButtonProps, ButtonState> {
 					</TouchableWithoutFeedback>
 				)}
 			</Spring>
-		)
+		);
 	}
 }
 
@@ -191,11 +191,11 @@ const VisibleTextContainer = styled(Box)`
 	flex-direction: row;
 	width: 100%;
 	height: 100%;
-`
+`;
 
 const HiddenText = styled(Sans)`
 	opacity: 0;
-`
+`;
 
 const Container = styled(Box)<ButtonProps>`
 	align-items: center;
@@ -204,6 +204,6 @@ const Container = styled(Box)<ButtonProps>`
 	border-width: 1;
 	border-radius: 3;
 	width: ${(p) => (p.block ? '100%' : 'auto')};
-`
+`;
 
-const AnimatedContainer = animated(Container)
+const AnimatedContainer = animated(Container);

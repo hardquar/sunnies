@@ -1,17 +1,17 @@
-import React, { useEffect, useRef, useState } from 'react'
-import styled from 'styled-components'
-import { color, media, space } from '../../helpers'
-import { breakpoints } from '../../Theme'
-import { Box } from '../Box'
+import React, { useEffect, useRef, useState } from 'react';
+import styled from 'styled-components';
+import { color, media, space } from '../../helpers';
+import { breakpoints } from '../../Theme';
+import { Box } from '../Box';
 import {
 	BaseTooltipPositioner,
 	ChartHoverTooltip
-} from '../DataVis/ChartHoverTooltip'
-import { Flex } from '../Flex'
+} from '../DataVis/ChartHoverTooltip';
+import { Flex } from '../Flex';
 
-const MAX_BAR_HEIGHT = 80
-const MIN_BAR_HEIGHT = 10
-const BAR_HEIGHT_RANGE = MAX_BAR_HEIGHT - MIN_BAR_HEIGHT
+const MAX_BAR_HEIGHT = 80;
+const MIN_BAR_HEIGHT = 10;
+const BAR_HEIGHT_RANGE = MAX_BAR_HEIGHT - MIN_BAR_HEIGHT;
 
 interface BarBoxProps {
 	isHighlighted?: boolean,
@@ -38,7 +38,7 @@ const BarBox = styled(Box)`
 				props.isHighlighted ? color('black60') : color('black30')};
 		}
 	}
-`
+`;
 
 const HighlightLabelPositioner = styled(BaseTooltipPositioner)`
 	z-index: 1;
@@ -48,7 +48,7 @@ const HighlightLabelPositioner = styled(BaseTooltipPositioner)`
 	transition: opacity 0.8s ease;
 	flex-direction: column;
 	align-items: center;
-`
+`;
 const HighlightLabelBox = styled(Flex)`
 	${media.xs`
     display: none;
@@ -58,14 +58,14 @@ const HighlightLabelBox = styled(Flex)`
 	border: 1px solid ${color('black10')};
 	border-radius: 2px;
 	text-align: center;
-`
+`;
 
 // the little dotted line which connects the label to the bar
 const LabelLineSvg = styled.svg`
 	${media.xs`
     display: none;
   `};
-`
+`;
 const LabelLine = () => (
 	<LabelLineSvg width='2' height='10' viewBox='0 0 2 10'>
 		<path
@@ -75,7 +75,7 @@ const LabelLine = () => (
 			fill={color('black30')}
 		/>
 	</LabelLineSvg>
-)
+);
 
 const HighlightLabel = ({
 	children,
@@ -91,21 +91,21 @@ const HighlightLabel = ({
 	opacity: number,
 	innerRef: React.RefObject<HTMLDivElement>,
 }) => {
-	const ref = useRef<HTMLDivElement>(null)
+	const ref = useRef<HTMLDivElement>(null);
 	useEffect(() => {
-		onMeasureHighlightLabel(ref.current.offsetHeight)
-	})
+		onMeasureHighlightLabel(ref.current.offsetHeight);
+	});
 	return (
 		<HighlightLabelPositioner ref={ref as any} style={{ opacity }}>
 			<HighlightLabelBox ref={innerRef as any}>{children}</HighlightLabelBox>
 			<LabelLine />
 			<TriangleHighlight />
 		</HighlightLabelPositioner>
-	)
-}
+	);
+};
 
-const TRIANGLE_HEIGHT = 4
-const TRIANGLE_BOTTOM_PADDING = space(0.5)
+const TRIANGLE_HEIGHT = 4;
+const TRIANGLE_BOTTOM_PADDING = space(0.5);
 
 // https://css-tricks.com/snippets/css/css-triangle/
 const TriangleHighlight = styled.div`
@@ -119,7 +119,7 @@ const TriangleHighlight = styled.div`
 	border-left: ${TRIANGLE_HEIGHT}px solid transparent;
 	border-right: ${TRIANGLE_HEIGHT}px solid transparent;
 	border-top: ${TRIANGLE_HEIGHT}px solid ${color('black60')};
-`
+`;
 
 /**
  * Bar is the main component responsible for rendering an individual bar
@@ -154,7 +154,7 @@ export const Bar = ({
 	onClick?: any,
 	onHover?: any,
 }) => {
-	const [hover, setHover] = useState(false)
+	const [hover, setHover] = useState(false);
 	// Before the bar has entered the view port it will have a height of 0
 	// but it still needs to know how big it will eventually be once visible,
 	// to allow the parent BarChart container to set an appropriate min-height
@@ -163,8 +163,8 @@ export const Bar = ({
 		// bar heights start at MIN_BAR_HEIGHT, unless the intended height === 0
 		heightPercent === 0 && !highlightLabel
 			? 0
-			: MIN_BAR_HEIGHT + (BAR_HEIGHT_RANGE / 100) * heightPercent
-	const currentHeight = hasEnteredViewport ? finalBarHeight : 0
+			: MIN_BAR_HEIGHT + (BAR_HEIGHT_RANGE / 100) * heightPercent;
+	const currentHeight = hasEnteredViewport ? finalBarHeight : 0;
 
 	return (
 		<BarBox
@@ -188,5 +188,5 @@ export const Bar = ({
 			)}
 			{hover && label && <ChartHoverTooltip>{label}</ChartHoverTooltip>}
 		</BarBox>
-	)
-}
+	);
+};

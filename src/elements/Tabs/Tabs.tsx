@@ -1,18 +1,18 @@
-import React, { Ref } from 'react'
-import styled, { css } from 'styled-components'
-import { JustifyContentProps, WidthProps } from 'styled-system'
-import { Box } from '../Box'
-import { Flex, FlexProps } from '../Flex'
-import { Join } from '../Join'
-import { Sans } from '../Typography'
+import React, { Ref } from 'react';
+import styled, { css } from 'styled-components';
+import { JustifyContentProps, WidthProps } from 'styled-system';
+import { Box } from '../Box';
+import { Flex, FlexProps } from '../Flex';
+import { Join } from '../Join';
+import { Sans } from '../Typography';
 
-import { color, media, space } from '../../helpers'
+import { color, media, space } from '../../helpers';
 
 export interface TabLike extends JSX.Element {
 	props: TabProps,
 }
 
-type TabNameType = string | JSX.Element
+type TabNameType = string | JSX.Element;
 export interface TabInfo {
 	/** Display name of the newly selected Tab */
 	name: TabNameType,
@@ -25,7 +25,7 @@ export interface TabInfo {
 }
 
 // tslint:disable-next-line:ban-types
-type InnerRef<T> = Extract<Ref<T>, Function>
+type InnerRef<T> = Extract<Ref<T>, Function>;
 
 export interface TabsProps extends WidthProps, JustifyContentProps {
 	/** Function that will be called when a new Tab is selected */
@@ -49,7 +49,7 @@ export interface TabsProps extends WidthProps, JustifyContentProps {
 	// to keep the active tab in view
 	autoScroll?: boolean,
 
-	children: TabLike[],
+	children: Array<TabLike>,
 }
 
 export interface TabsState {
@@ -62,92 +62,92 @@ export class Tabs extends React.Component<TabsProps, TabsState> {
 		justifyContent: 'left',
 		transformTabBtn: (Button) => Button,
 		separator: <Box ml={2} />
-	}
+	};
 
 	constructor(props: any) {
-		super(props)
+		super(props);
 
 		const activeTabIndex =
-			props.initialTabIndex || this.props.children.findIndex((tab) => !!tab)
+			props.initialTabIndex || this.props.children.findIndex((tab) => !!tab);
 		this.state = {
 			activeTabIndex
-		}
+		};
 	}
 
 	setActiveTab = (activeTabIndex: any) => {
 		this.setState({
 			activeTabIndex
-		})
+		});
 		if (this.props.onChange) {
 			this.props.onChange({
 				tabIndex: activeTabIndex,
 				name: this.props.children[activeTabIndex].props.name,
 				data: this.props.children[activeTabIndex].props.data
-			})
+			});
 		}
-	}
+	};
 
-	containerRef: HTMLDivElement | null = null
-	activeTabRef: HTMLDivElement | null = null
+	containerRef: HTMLDivElement | null = null;
+	activeTabRef: HTMLDivElement | null = null;
 
 	handleScroll = () => {
 		if (!this.props.autoScroll || !this.containerRef || !this.activeTabRef) {
-			return
+			return;
 		}
 
-		const contentWidth = this.containerRef.scrollWidth
-		const boxWidth = this.containerRef.offsetWidth
+		const contentWidth = this.containerRef.scrollWidth;
+		const boxWidth = this.containerRef.offsetWidth;
 
 		if (boxWidth >= contentWidth) {
-			return
+			return;
 		}
 
-		const containerRect = this.containerRef.getBoundingClientRect()
-		const activeTabRect = this.activeTabRef.getBoundingClientRect()
-		const activeTabOffset = activeTabRect.left - containerRect.left
+		const containerRect = this.containerRef.getBoundingClientRect();
+		const activeTabRect = this.activeTabRef.getBoundingClientRect();
+		const activeTabOffset = activeTabRect.left - containerRect.left;
 		const desiredActiveTabOffset =
-			containerRect.width / 2 - activeTabRect.width / 2
-		const offsetDiff = activeTabOffset - desiredActiveTabOffset
-		const currentScroll = this.containerRef.scrollLeft
-		const desiredScroll = currentScroll + offsetDiff
-		this.containerRef.scrollTo({ left: desiredScroll })
-	}
+			containerRect.width / 2 - activeTabRect.width / 2;
+		const offsetDiff = activeTabOffset - desiredActiveTabOffset;
+		const currentScroll = this.containerRef.scrollLeft;
+		const desiredScroll = currentScroll + offsetDiff;
+		this.containerRef.scrollTo({ left: desiredScroll });
+	};
 
 	componentDidMount() {
-		window.addEventListener('resize', this.handleScroll)
-		this.handleScroll()
+		window.addEventListener('resize', this.handleScroll);
+		this.handleScroll();
 	}
 
 	componentDidUpdate() {
-		this.handleScroll()
+		this.handleScroll();
 	}
 
 	componentWillUnmount() {
-		window.removeEventListener('resize', this.handleScroll)
+		window.removeEventListener('resize', this.handleScroll);
 	}
 
 	renderTab = (tab: any, index: any) => {
 		if (!tab) {
-			return false
+			return false;
 		}
-		const { name } = tab.props
+		const { name } = tab.props;
 		return this.state.activeTabIndex === index
 			? this.props.transformTabBtn(
 					<ActiveTabButton key={index}>{name}</ActiveTabButton>,
 					index,
-					this.props
+					this.props,
 				)
 			: this.props.transformTabBtn(
 					<TabButton key={index} onClick={() => this.setActiveTab(index)}>
 						{name}
 					</TabButton>,
 					index,
-					this.props
-				)
-	}
+					this.props,
+				);
+	};
 
 	render() {
-		const { children = [], separator } = this.props
+		const { children = [], separator } = this.props;
 		return (
 			<>
 				<TabsContainer
@@ -158,7 +158,7 @@ export class Tabs extends React.Component<TabsProps, TabsState> {
 				</TabsContainer>
 				<Box pt={3}>{children[this.state.activeTabIndex]}</Box>
 			</>
-		)
+		);
 	}
 }
 
@@ -179,8 +179,8 @@ export const TabsContainer: React.SFC<
 				</TabsPaddingContainer>
 			</TabsScrollContainer>
 		</TabsOuterContainer>
-	)
-}
+	);
+};
 
 interface TabProps {
 	/** Display name of the Tab */
@@ -196,7 +196,7 @@ interface TabProps {
 /** An individual tab */
 export class Tab extends React.Component<TabProps> {
 	render() {
-		return this.props.children || null
+		return this.props.children || null;
 	}
 }
 
@@ -207,8 +207,8 @@ const TabButton = ({ children, ...props }: any) => {
 				{children}
 			</Sans>
 		</TabContainer>
-	)
-}
+	);
+};
 
 const ActiveTabButton: React.SFC = ({ children }) => {
 	return (
@@ -217,8 +217,8 @@ const ActiveTabButton: React.SFC = ({ children }) => {
 				{children}
 			</Sans>
 		</ActiveTabContainer>
-	)
-}
+	);
+};
 
 /** Sharable tab styles  */
 export const sharedTabsStyles = {
@@ -233,7 +233,7 @@ export const sharedTabsStyles = {
 		white-space: nowrap;
 		border-bottom: 1px solid ${color('black60')};
 	`
-}
+};
 
 const TabsOuterContainer = styled(Flex)`
 	width: 100%;
@@ -245,7 +245,7 @@ const TabsOuterContainer = styled(Flex)`
 		position: relative;
 		top: 1px;
 	}
-`
+`;
 // TODO: This justifyContent ternary should be removed after we move TabCarousel to Palette
 const TabsPaddingContainer = styled(Flex)<JustifyContentProps>`
 	width: ${(props) => (props.justifyContent ? 'auto' : '100%')};
@@ -253,7 +253,7 @@ const TabsPaddingContainer = styled(Flex)<JustifyContentProps>`
 	${media.xs`
     padding: 0 ${space(2)}px;
   `};
-`
+`;
 
 const TabsScrollContainer = styled(Flex)`
 	${media.xs`
@@ -262,20 +262,20 @@ const TabsScrollContainer = styled(Flex)`
     -webkit-overflow-scrolling: touch;
   `};
 	margin-bottom: 0;
-`
+`;
 
 const TabContainer = styled.div`
 	${sharedTabsStyles.tabContainer};
-`
+`;
 
 /** The active container */
 export const ActiveTabContainer = styled.div`
 	${sharedTabsStyles.activeTabContainer};
-`
+`;
 
 const SupWrapper = styled.sup`
 	margin-left: 2px;
-`
+`;
 
 /** Embeddable sup container */
 export const Sup: React.SFC<{}> = ({ children }) => (
@@ -284,4 +284,4 @@ export const Sup: React.SFC<{}> = ({ children }) => (
 			{children}
 		</Sans>
 	</SupWrapper>
-)
+);

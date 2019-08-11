@@ -1,1 +1,1 @@
-export * from './StackableBorderBox'
+export * from './StackableBorderBox';

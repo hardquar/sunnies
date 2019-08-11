@@ -1,6 +1,6 @@
-import React from 'react'
-import { Flex, FlexProps } from '../Flex'
-import { RadioProps } from '../Radio'
+import React from 'react';
+import { Flex, FlexProps } from '../Flex';
+import { RadioProps } from '../Radio';
 
 /**
  * Spec: zpl.io/bAvnwlB
@@ -34,15 +34,15 @@ export class RadioGroup extends React.Component<
 > {
 	state = {
 		selectedOption: this.props.defaultValue || null
-	}
+	};
 
 	onSelect = ({ value }: any) => {
 		// After state update, call back up the tree with the latest state
 		const update = () => {
 			if (this.props.onSelect) {
-				this.props.onSelect(this.state.selectedOption)
+				this.props.onSelect(this.state.selectedOption);
 			}
-		}
+		};
 
 		if (this.props.deselectable) {
 			if (this.state.selectedOption === value) {
@@ -51,13 +51,13 @@ export class RadioGroup extends React.Component<
 						selectedOption: null
 					},
 					update
-				)
-				return
+				);
+				return;
 			}
 		}
 
-		this.setState({ selectedOption: value }, update)
-	}
+		this.setState({ selectedOption: value }, update);
+	};
 
 	renderRadioButtons() {
 		return React.Children.map(
@@ -70,23 +70,29 @@ export class RadioGroup extends React.Component<
 							: this.props.disabled,
 					onSelect: child.props.onSelect
 						? (selected: any) => {
-								this.onSelect(selected)
-								child.props.onSelect(selected)
+								this.onSelect(selected);
+								child.props.onSelect(selected);
 							}
 						: this.onSelect,
 					// FIXME: Throw an error `child.props.selected' is set once we enable the dev code elimination.
 					selected: this.state.selectedOption === child.props.value
-				})
+				});
 			}
-		)
+		);
 	}
 
 	render() {
-		const { disabled, onSelect, defaultValue, children, ...others } = this.props
+		const {
+			disabled,
+			onSelect,
+			defaultValue,
+			children,
+			...others
+		} = this.props;
 		return (
 			<Flex flexDirection='column' {...others}>
 				{this.renderRadioButtons()}
 			</Flex>
-		)
+		);
 	}
 }

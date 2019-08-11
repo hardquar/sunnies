@@ -1,6 +1,6 @@
-import React from 'react'
-import { color } from '../helpers/color'
-import { Icon, IconProps } from './Icon'
+import React from 'react';
+import { color } from '../helpers/color';
+import { Icon, IconProps } from './Icon';
 
 /** PageViews Icon */
 export const PageviewsIcon: React.SFC<IconProps> = (props) => (
@@ -11,4 +11,4 @@ export const PageviewsIcon: React.SFC<IconProps> = (props) => (
 			<path d='M2.095 8.429v10.476h16.762V8.429H2.095zM0 6.333h20.952V21H0V6.333z' />
 		</g>
 	</Icon>
-)
+);

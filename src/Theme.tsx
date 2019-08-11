@@ -1,8 +1,8 @@
-import React from 'react'
-import { isReactNative } from './helpers/isReactNative'
-import { fontFamily } from './platform/fonts'
-import { ThemeProvider } from './platform/primitives'
-import StyledGrid from 'styled-bootstrap-grid'
+import React from 'react';
+import { isReactNative } from './helpers/isReactNative';
+import { fontFamily } from './platform/fonts';
+import { ThemeProvider } from './platform/primitives';
+import * as StyledGrid from 'styled-bootstrap-grid';
 
 /**
  * Spec: https://www.notion.so/artsy/Design-92030f16ed7c4c72bb3eb832b4243d04
@@ -25,7 +25,7 @@ export const breakpoints = {
 	sm: 768,
 	/** Below 767 */
 	xs: 767
-}
+};
 
 /**
  * All of the config for the Artsy theming system, based on the
@@ -80,7 +80,6 @@ export const themeProps = {
 
 	fontFamily,
 
-	// prettier-ignore
 	/** Media queries to work with in web  */
 	mediaQueries: {
 		xl: `(min-width: ${breakpoints.xl}px)`,
@@ -320,22 +319,22 @@ export const themeProps = {
 			}
 		}
 	}
-}
+};
 
 /**
  * Creates a new Grid context for web. On React Native it serves as a noop.
  */
 const GridThemeProvider = ({ children }: any) => {
 	if (isReactNative()) {
-		return children
+		return children;
 	} else {
 		return (
 			<StyledGrid.GridThemeProvider gridTheme={themeProps.grid}>
 				{children}
 			</StyledGrid.GridThemeProvider>
-		)
+		);
 	}
-}
+};
 
 /**
  * A wrapper component for passing down the Artsy theme context
@@ -345,25 +344,25 @@ export const Theme = (props: any) => {
 		<ThemeProvider theme={themeProps}>
 			<GridThemeProvider>{props.children}</GridThemeProvider>
 		</ThemeProvider>
-	)
-}
+	);
+};
 
 /** All available px spacing maps */
-export type SpacingUnit = keyof typeof themeProps['space']
+export type SpacingUnit = keyof typeof themeProps['space'];
 /** All available color keys */
-export type Color = keyof typeof themeProps['colors']
+export type Color = keyof typeof themeProps['colors'];
 /** All available width breakpoint */
-export type Breakpoint = keyof typeof breakpoints
+export type Breakpoint = keyof typeof breakpoints;
 
 /** All available type sizes */
-export type TypeSizes = typeof themeProps.typeSizes
+export type TypeSizes = typeof themeProps.typeSizes;
 /** All available sizes for our sans font */
-export type SansSize = keyof TypeSizes['sans'] | Array<keyof TypeSizes['sans']>
+export type SansSize = keyof TypeSizes['sans'] | Array<keyof TypeSizes['sans']>;
 /** All available sizes for our serif font */
 export type SerifSize =
 	| keyof TypeSizes['serif']
-	| Array<keyof TypeSizes['serif']>
+	| Array<keyof TypeSizes['serif']>;
 /** All available sizes for our display font */
 export type DisplaySize =
 	| keyof TypeSizes['display']
-	| Array<keyof TypeSizes['display']>
+	| Array<keyof TypeSizes['display']>;

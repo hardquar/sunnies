@@ -1,8 +1,8 @@
-import { storiesOf } from '@storybook/react'
-import React from 'react'
-import { Box } from '../Box'
-import { Serif } from '../Typography'
-import { BarChart } from './BarChart'
+import { storiesOf } from '@storybook/react';
+import React from 'react';
+import { Box } from '../Box';
+import { Serif } from '../Typography';
+import { BarChart } from './BarChart';
 
 storiesOf('Components/BarChart', module)
 	.add(
@@ -16,7 +16,7 @@ storiesOf('Components/BarChart', module)
 								value: 2000,
 								label: { title: 'Sept 30', description: '423 clicks' },
 								onClick: () => {
-									window.open('https://calmingmanatee.com/')
+									window.open('https://calmingmanatee.com/');
 								}
 							},
 							{
@@ -62,7 +62,7 @@ storiesOf('Components/BarChart', module)
 						maxLabel='$50,000+'
 					/>
 				</Box>
-			)
+			);
 		},
 		{ chromatic: { delay: 500 } }
 	)
@@ -121,7 +121,7 @@ storiesOf('Components/BarChart', module)
 						maxLabel='$50,000+'
 					/>
 				</Box>
-			)
+			);
 		},
 		{ chromatic: { delay: 500 } }
 	)
@@ -180,7 +180,7 @@ storiesOf('Components/BarChart', module)
 						maxLabel='$50,000+'
 					/>
 				</Box>
-			)
+			);
 		},
 		{ chromatic: { delay: 500 } }
 	)
@@ -241,7 +241,7 @@ storiesOf('Components/BarChart', module)
 						maxLabel={null}
 					/>
 				</Box>
-			)
+			);
 		},
 		{ chromatic: { delay: 500 } }
 	)
@@ -296,7 +296,7 @@ storiesOf('Components/BarChart', module)
 						maxLabel={null}
 					/>
 				</Box>
-			)
+			);
 		},
 		{ chromatic: { delay: 500 } }
 	)
@@ -340,7 +340,7 @@ storiesOf('Components/BarChart', module)
 						maxLabel='Jul 30'
 					/>
 				</Box>
-			)
+			);
 		},
 		{ chromatic: { delay: 500 } }
-	)
+	);

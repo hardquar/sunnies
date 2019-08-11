@@ -1,1 +1,1 @@
-export { BorderBoxBase as BorderBox } from './BorderBoxBase'
+export { BorderBoxBase as BorderBox } from './BorderBoxBase';

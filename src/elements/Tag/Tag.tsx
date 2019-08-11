@@ -8,9 +8,9 @@
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-import React, { ComponentClass, FunctionComponent } from 'react'
-import { styles, StylesProps } from 'styled-system'
-import { View } from '../../platform/primitives'
+import React, { ComponentClass, FunctionComponent } from 'react';
+import { styles, StylesProps } from 'styled-system';
+import { View } from '../../platform/primitives';
 
 const allPropTypes: Partial<StylesProps> = Object.keys(styles)
 	.filter((key) => typeof styles[key] === 'function')
@@ -20,34 +20,34 @@ const allPropTypes: Partial<StylesProps> = Object.keys(styles)
 			...styles[key].propTypes
 		}),
 		{}
-	)
+	);
 
 /**
  * The default set of props to remove from components rendered by styled-components
  */
-export const omitProps = [...Object.keys(allPropTypes), 'theme']
+export const omitProps = [...Object.keys(allPropTypes), 'theme'];
 
 /**
  * Removes entries from an object based on a list of keys
  */
-export const omit = (obj: object, keys: string[]) => {
-	const next = {}
+export const omit = (obj: object, keys: Array<string>) => {
+	const next = {};
 	for (const key in obj) {
-		if (keys.indexOf(key) > -1) continue
-		next[key] = obj[key]
+		if (keys.indexOf(key) > -1) continue;
+		next[key] = obj[key];
 	}
-	return next
-}
+	return next;
+};
 
-type ComponentSpecifier = string | FunctionComponent<any> | ComponentClass<any>
+type ComponentSpecifier = string | FunctionComponent<any> | ComponentClass<any>;
 
 export interface TagProps {
-	omitFromProps?: string[],
+	omitFromProps?: Array<string>,
 	is?: ComponentSpecifier,
 }
 
 const tagName = (tag) =>
-	typeof tag === 'string' ? tag : tag.displayName || 'Tag'
+	typeof tag === 'string' ? tag : tag.displayName || 'Tag';
 
 function tagBuilder(tag: ComponentSpecifier = View) {
 	const TagComponent = React.forwardRef<any, TagProps>(
@@ -56,12 +56,12 @@ function tagBuilder(tag: ComponentSpecifier = View) {
 				ref,
 				...omit(props, omitFromProps)
 			})
-	)
-	TagComponent.displayName = `Clean.${tagName(tag)}`
-	return TagComponent
+	);
+	TagComponent.displayName = `Clean.${tagName(tag)}`;
+	return TagComponent;
 }
 
-const DefaultTag = tagBuilder()
+const DefaultTag = tagBuilder();
 
 /**
  * An element to be used to prevent unwanted props from passing through
@@ -79,6 +79,6 @@ const DefaultTag = tagBuilder()
  */
 export const Tag: typeof DefaultTag & {
 	as?: typeof tagBuilder,
-} = DefaultTag
+} = DefaultTag;
 
-Tag.as = tagBuilder
+Tag.as = tagBuilder;
