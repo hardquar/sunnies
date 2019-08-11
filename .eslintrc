@@ -36,6 +36,7 @@
 		}
 	},
 	"rules": {
+		// "max-len": ["error", { "code": 80 }], // this lets you replace prettier's printWidth
 		"prettier/prettier": "warn",
 		// "semi": ["error", "always"],
 		"semi": "off",
