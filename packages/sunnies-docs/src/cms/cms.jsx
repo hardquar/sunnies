@@ -1,11 +1,11 @@
 import React, { Component } from "react"
 import CMS, { init } from "netlify-cms"
-import { Theme } from "sunnies"
+import { Theme } from "@hardquar/sunnies"
 import styled, { StyleSheetManager } from "styled-components"
 import { MdxControl, MdxPreview } from "netlify-cms-widget-mdx"
 import { MarkdownComponents, PaletteComponents, globalCSS } from '../components/GlobalComponents' // prettier-ignore
 import { config } from "../../static/admin/config"
-import { Box, Toggle } from "sunnies"
+import { Box, Toggle } from "@hardquar/sunnies"
 
 const isClient = typeof window !== "undefined"
 const isDevelopment = process.env.NODE_ENV === "development"

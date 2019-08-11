@@ -1,4 +1,4 @@
-import { Box, color, Flex, space, Spacer, Toggle } from "sunnies"
+import { Box, color, Flex, space, Spacer, Toggle } from "@hardquar/sunnies"
 import { withMDXScope } from "gatsby-mdx/context"
 import React from "react"
 import { LiveEditor, LiveError, LivePreview, LiveProvider } from "react-live"

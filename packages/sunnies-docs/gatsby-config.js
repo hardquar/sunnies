@@ -32,7 +32,7 @@ module.exports = {
         // of automatically created pages located in /pages. This is a bug in
         // gatsby-mdx. See https://github.com/ChristopherBiscardi/gatsby-mdx/issues/243
         globalScope: `
-          import * as Elements from "sunnies"
+          import * as Elements from "@hardquar/sunnies"
           import { ColorComponent } from "components/ColorComponent"
           import { CodeEditor, Playground  } from "components/Playground"
           import { Toggle as Toggler, State } from 'react-powerplug'

@@ -1,7 +1,7 @@
 // @ts-check
 
 import React from "react"
-import * as Palette from "sunnies"
+import * as Palette from "@hardquar/sunnies"
 import { CodeEditor } from "../components/Playground"
 import { ColorComponent } from "../components/ColorComponent"
 
@@ -12,7 +12,7 @@ import {
   injectGlobalStyles,
   color,
   space,
-} from "sunnies"
+} from "@hardquar/sunnies"
 
 /**
  * FIXME:

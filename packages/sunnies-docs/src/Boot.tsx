@@ -1,4 +1,4 @@
-import { Box, Theme } from "sunnies"
+import { Box, Theme } from "@hardquar/sunnies"
 import { MDXProvider } from "@mdx-js/tag"
 import { Location } from "@reach/router"
 import { NavState } from "components/Sidebar/NavState"

@@ -1,4 +1,4 @@
-import { color, Sans, space } from "sunnies"
+import { color, Sans, space } from "@hardquar/sunnies"
 import React from "react"
 import styled from "styled-components"
 

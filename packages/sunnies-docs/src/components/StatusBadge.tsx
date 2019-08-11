@@ -1,4 +1,4 @@
-import { Box, Sans } from "sunnies"
+import { Box, Sans } from "@hardquar/sunnies"
 import React from "react"
 import styled from "styled-components"
 

@@ -51,21 +51,21 @@ Add the following to your VSCode editor's settings to get linting to work in the
 
 ##### (Linking and Unlinking)
 
-To _link_ your local `sunnies` with your local project, run:
+To _link_ your local `@hardquar/sunnies` with your local project, run:
 
 ```
-$ yarn workspace sunnies link && yarn workspace sunnies watch
+$ yarn workspace @hardquar/sunnies link && yarn workspace @hardquar/sunnies watch
 ```
 (wait until you see a message that X files have been successfully compiled before moving on)
 
 ```
-$ cd ../<your_project> && yarn link sunnies && yarn start
+$ cd ../<your_project> && yarn link @hardquar/sunnies && yarn start
 ```
-To _unlink_ your local `sunnies` from your local project, run (in **<your_project>**):
+To _unlink_ your local `@hardquar/sunnies` from your local project, run (in **<your_project>**):
 
 ```
-$ yarn unlink sunnies
-$ yarn add sunnies
+$ yarn unlink @hardquar/sunnies
+$ yarn add @hardquar/sunnies
 $ yarn start
 ```
 

@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Sans, themeProps } from "sunnies"
+import { Box, Sans, themeProps } from "@hardquar/sunnies"
 
 export const ColorComponent = props => {
   return (

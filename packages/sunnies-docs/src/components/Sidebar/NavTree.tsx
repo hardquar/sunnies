@@ -1,4 +1,4 @@
-import { Box, ChevronIcon, Sans, SansSize, Spacer } from "sunnies"
+import { Box, ChevronIcon, Sans, SansSize, Spacer } from "@hardquar/sunnies"
 import { StatusBadge } from "components/StatusBadge"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import { includes, reject, sortBy } from "lodash"

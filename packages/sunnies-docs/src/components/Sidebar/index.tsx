@@ -3,7 +3,7 @@ import React from "react"
 import styled from "styled-components"
 import { NavTree } from "./NavTree"
 
-import { ArtsyMarkBlackIcon, Box, Sans, Serif } from "sunnies"
+import { ArtsyMarkBlackIcon, Box, Sans, Serif } from "@hardquar/sunnies"
 
 export const Sidebar = _props => {
   return (

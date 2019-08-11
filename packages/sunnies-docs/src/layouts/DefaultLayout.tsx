@@ -1,4 +1,4 @@
-import { Box, color, Flex, Sans, Serif } from "sunnies"
+import { Box, color, Flex, Sans, Serif } from "@hardquar/sunnies"
 import { Sidebar } from "components/Sidebar"
 import { NavState } from "components/Sidebar/NavState"
 import { StatusBadge } from "components/StatusBadge"
