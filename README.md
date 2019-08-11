@@ -1,6 +1,6 @@
 <p align="center">
   <a href="http://sunnies.com">
-    <img src="https://github.com/miloofcroton/sunnies/blob/master/assets/img/icon-large.png?raw=true" width="320" alt="Sunnies logo"/>
+    <img src="https://github.com/hardquar/sunnies/blob/master/packages/sunnies/assets/img/icon-large.png?raw=true" width="320" alt="Sunnies logo"/>
   </a>
 </p>
 
