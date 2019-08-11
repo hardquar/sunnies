@@ -1,1 +1,1 @@
-export * from "./EntityHeader"
+export * from './EntityHeader'

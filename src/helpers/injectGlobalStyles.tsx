@@ -1,15 +1,15 @@
-import { createGlobalStyle, css } from "styled-components"
-import { Display, Sans, Serif } from "../elements/Typography"
-import { color } from "./color"
+import { createGlobalStyle, css } from 'styled-components'
+import { Display, Sans, Serif } from '../elements/Typography'
+import { color } from './color'
 
 /**
  * Injects globally relevant styles, including helper classes for our Typography.
  * Apps that use palette should mount this component at the root of their tree.
  */
 export function injectGlobalStyles<P>(
-  additionalStyles?: string | ReturnType<typeof css>
+	additionalStyles?: string | ReturnType<typeof css>
 ) {
-  const GlobalStyles = createGlobalStyle<P>`
+	const GlobalStyles = createGlobalStyle<P>`
 
     *:focus {
       outline: none;
@@ -57,11 +57,11 @@ export function injectGlobalStyles<P>(
       text-decoration: underline;
 
       &:hover {
-        color: ${color("black100")};
+        color: ${color('black100')};
       }
 
       &:active {
-        color: ${color("black100")};
+        color: ${color('black100')};
       }
 
       /* ts-styled-plugin erroniously parses this; see: */
@@ -82,10 +82,10 @@ export function injectGlobalStyles<P>(
       a {
         color: inherit;
         &:hover {
-          color: ${color("black100")};
+          color: ${color('black100')};
         }
         &:active {
-          color: ${color("black100")};
+          color: ${color('black100')};
         }
         &.noUnderline {
           ${noUnderline};
@@ -103,10 +103,10 @@ export function injectGlobalStyles<P>(
       a {
         color: inherit;
         &:hover {
-          color: ${color("black100")};
+          color: ${color('black100')};
         }
         &:active {
-          color: ${color("black100")};
+          color: ${color('black100')};
         }
         &.noUnderline {
           ${noUnderline};
@@ -122,7 +122,7 @@ export function injectGlobalStyles<P>(
 
     ${Display} {
       a {
-        color: ${color("black100")};
+        color: ${color('black100')};
         &:hover {
           text-decoration: underline;
         }
@@ -140,21 +140,21 @@ export function injectGlobalStyles<P>(
     ${additionalStyles};
   `
 
-  GlobalStyles.displayName = "GlobalStyles"
+	GlobalStyles.displayName = 'GlobalStyles'
 
-  return {
-    GlobalStyles,
-  }
+	return {
+		GlobalStyles
+	}
 }
 
 // Mixins
 const noUnderline = css`
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
 `
 
 const colorLink = css`
-  color: ${color("purple100")};
+	color: ${color('purple100')};
 `

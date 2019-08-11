@@ -1,97 +1,97 @@
-import React, { CSSProperties } from "react"
-import { FontValue } from "../../platform/fonts"
-import { styled as primitives, styledWrapper } from "../../platform/primitives"
+import React, { CSSProperties } from 'react'
+import { FontValue } from '../../platform/fonts'
+import { styled as primitives, styledWrapper } from '../../platform/primitives'
 
 import {
-  DisplaySize,
-  SansSize,
-  SerifSize,
-  themeProps,
-  TypeSizes,
-} from "../../Theme"
+	DisplaySize,
+	SansSize,
+	SerifSize,
+	themeProps,
+	TypeSizes
+} from '../../Theme'
 
 // @ts-ignore
-import { StyledComponentClass } from "styled-components"
+import { StyledComponentClass } from 'styled-components'
 
 import {
-  color,
-  ColorProps,
-  display,
-  DisplayProps as StyledSystemDisplayProps,
-  fontSize,
-  FontSizeProps,
-  lineHeight,
-  LineHeightProps,
-  maxWidth,
-  MaxWidthProps,
-  space,
-  SpaceProps,
-  style,
-  textAlign,
-  TextAlignProps,
-} from "styled-system"
+	color,
+	ColorProps,
+	display,
+	DisplayProps as StyledSystemDisplayProps,
+	fontSize,
+	FontSizeProps,
+	lineHeight,
+	LineHeightProps,
+	maxWidth,
+	MaxWidthProps,
+	space,
+	SpaceProps,
+	style,
+	textAlign,
+	TextAlignProps
+} from 'styled-system'
 
-import { determineFontSizes } from "./determineFontSizes"
+import { determineFontSizes } from './determineFontSizes'
 
 /**
  * Spec: https://www.notion.so/artsy/Typography-d1f9f6731f3d47c78003d6d016c30221
  */
 
 export interface VerticalAlignProps {
-  verticalAlign?:
-    | "baseline"
-    | "sub"
-    | "super"
-    | "text-top"
-    | "text-bottom"
-    | "middle"
-    | "top"
-    | "bottom"
-    | "inherit"
-    | "initial"
-    | "unset"
+	verticalAlign?:
+		| 'baseline'
+		| 'sub'
+		| 'super'
+		| 'text-top'
+		| 'text-bottom'
+		| 'middle'
+		| 'top'
+		| 'bottom'
+		| 'inherit'
+		| 'initial'
+		| 'unset',
 }
 const verticalAlign = style({
-  prop: "verticalAlign",
+	prop: 'verticalAlign'
 })
 
 /** renderFontValue */
 export const renderFontValue = (fontValue: FontValue) => {
-  if (typeof fontValue === "string") {
-    return `font-family: ${fontValue}`
-  } else {
-    return [`font-family: ${fontValue.fontFamily}`]
-      .concat(fontValue.fontStyle ? `font-style: ${fontValue.fontStyle}` : [])
-      .concat(
-        fontValue.fontWeight ? `font-weight: ${fontValue.fontWeight}` : []
-      )
-      .join(";\n")
-  }
+	if (typeof fontValue === 'string') {
+		return `font-family: ${fontValue}`
+	} else {
+		return [`font-family: ${fontValue.fontFamily}`]
+			.concat(fontValue.fontStyle ? `font-style: ${fontValue.fontStyle}` : [])
+			.concat(
+				fontValue.fontWeight ? `font-weight: ${fontValue.fontWeight}` : []
+			)
+			.join(';\n')
+	}
 }
 
 export interface TextProps
-  extends ColorProps,
-    FontSizeProps,
-    LineHeightProps,
-    MaxWidthProps,
-    SpaceProps,
-    StyledSystemDisplayProps,
-    TextAlignProps,
-    VerticalAlignProps {
-  fontFamily?: string
-  style?: CSSProperties
-  /**
-   * React Native specific. Allows you to tell the native renderers whether
-   * this field could be multi-line or not.
-   */
-  numberOfLines?: number
-  /**
-   * React Native specific. When `numberOfLines` is set, this prop defines how
-   * text will be truncated. `numberOfLines` must be set in conjunction with
-   * this prop.
-   */
-  ellipsizeMode?: string
-  element?: keyof JSX.IntrinsicElements | React.ComponentType<any>
+	extends ColorProps,
+		FontSizeProps,
+		LineHeightProps,
+		MaxWidthProps,
+		SpaceProps,
+		StyledSystemDisplayProps,
+		TextAlignProps,
+		VerticalAlignProps {
+	fontFamily?: string,
+	style?: CSSProperties,
+	/**
+	 * React Native specific. Allows you to tell the native renderers whether
+	 * this field could be multi-line or not.
+	 */
+	numberOfLines?: number,
+	/**
+	 * React Native specific. When `numberOfLines` is set, this prop defines how
+	 * text will be truncated. `numberOfLines` must be set in conjunction with
+	 * this prop.
+	 */
+	ellipsizeMode?: string,
+	element?: keyof JSX.IntrinsicElements | React.ComponentType<any>,
 }
 
 /** Base Text component for typography */
@@ -113,23 +113,23 @@ export const Text = primitives.Text<TextProps>`
 export type FontTypes = keyof TypeSizes
 
 export interface TypeSizeKeys {
-  sans: SansSize
-  serif: SerifSize
-  display: DisplaySize
+	sans: SansSize,
+	serif: SerifSize,
+	display: DisplaySize,
 }
 
 /**
  * Any valid font family
  */
-export type FontFamily = typeof themeProps["fontFamily"]
+export type FontFamily = typeof themeProps['fontFamily']
 
 /**
  * Any valid font weight
  */
 export type FontWeights =
-  | keyof FontFamily["sans"]
-  | keyof FontFamily["serif"]
-  | keyof FontFamily["display"]
+	| keyof FontFamily['sans']
+	| keyof FontFamily['serif']
+	| keyof FontFamily['display']
 
 /**
  * Returns the weight, if given, otherwise it defaults to `regular` unless
@@ -139,20 +139,20 @@ export type FontWeights =
  * @param weight
  */
 function _fontWeight(weight?: null | FontWeights) {
-  if (weight === null) {
-    return undefined
-  }
-  return weight || "regular"
+	if (weight === null) {
+		return undefined
+	}
+	return weight || 'regular'
 }
 
 function _selectFontFamilyType(weight?: null | FontWeights, italic?: boolean) {
-  return italic ? "italic" : weight
+	return italic ? 'italic' : weight
 }
 
 interface StyledTextProps extends Partial<TextProps> {
-  size: string | string[]
-  weight?: null | FontWeights
-  italic?: boolean
+	size: string | string[],
+	weight?: null | FontWeights,
+	italic?: boolean,
 }
 
 /**
@@ -169,35 +169,35 @@ interface StyledTextProps extends Partial<TextProps> {
  *        An optional function that maps weight+italic to a font-family.
  */
 function createStyledText<P extends StyledTextProps>(
-  fontType: keyof FontFamily,
-  selectFontFamilyType: typeof _selectFontFamilyType = _selectFontFamilyType
+	fontType: keyof FontFamily,
+	selectFontFamilyType: typeof _selectFontFamilyType = _selectFontFamilyType
 ) {
-  return styledWrapper<P>(
-    ({ size, weight, italic, element, ...textProps }: StyledTextProps) => {
-      const fontFamilyType = selectFontFamilyType(_fontWeight(weight), italic)
-      // This is mostly to narrow the type of `fontFamilyType` to remove `null`.
-      if (fontFamilyType === null) {
-        throw new Error("Did not expect `fontType` to be `null`.")
-      }
-      return (
-        <Text
-          fontFamily={
-            fontFamilyType && themeProps.fontFamily[fontType][fontFamilyType]
-          }
-          {...determineFontSizes(fontType, size)}
-          // styled-components supports calling the prop `as`, but there are
-          //  issues when passing it into this component named `as`. See
-          //  https://github.com/styled-components/styled-components/issues/2448
-          //  & https://github.com/artsy/palette/pull/327#issuecomment-473434537
-          //  for context.
-          // So we are naming it `element` on the way into this component, and
-          //  renaming it to `as` when we pass it to through.
-          {...(element ? { as: element } : {})}
-          {...textProps}
-        />
-      )
-    }
-  )``
+	return styledWrapper<P>(
+		({ size, weight, italic, element, ...textProps }: StyledTextProps) => {
+			const fontFamilyType = selectFontFamilyType(_fontWeight(weight), italic)
+			// This is mostly to narrow the type of `fontFamilyType` to remove `null`.
+			if (fontFamilyType === null) {
+				throw new Error('Did not expect `fontType` to be `null`.')
+			}
+			return (
+				<Text
+					fontFamily={
+						fontFamilyType && themeProps.fontFamily[fontType][fontFamilyType]
+					}
+					{...determineFontSizes(fontType, size)}
+					// styled-components supports calling the prop `as`, but there are
+					//  issues when passing it into this component named `as`. See
+					//  https://github.com/styled-components/styled-components/issues/2448
+					//  & https://github.com/artsy/palette/pull/327#issuecomment-473434537
+					//  for context.
+					// So we are naming it `element` on the way into this component, and
+					//  renaming it to `as` when we pass it to through.
+					{...(element ? { as: element } : {})}
+					{...textProps}
+				/>
+			)
+		}
+	)``
 }
 
 /**
@@ -205,17 +205,17 @@ function createStyledText<P extends StyledTextProps>(
  */
 
 export interface SansProps extends Partial<TextProps> {
-  italic?: boolean
+	italic?: boolean,
 
-  role?: string
+	role?: string,
 
-  size: SansSize
+	size: SansSize,
 
-  /**
-   * Explicitly specify `null` to inherit weight from parent, otherwise default
-   * to `regular`.
-   */
-  weight?: null | "regular" | "medium"
+	/**
+	 * Explicitly specify `null` to inherit weight from parent, otherwise default
+	 * to `regular`.
+	 */
+	weight?: null | 'regular' | 'medium',
 }
 
 /**
@@ -226,10 +226,10 @@ export interface SansProps extends Partial<TextProps> {
  *
  * <Sans color="black10" size="3t" weight="medium" italic>Hi</Sans>
  */
-export const Sans = createStyledText<SansProps>("sans", (weight, italic) => {
-  return italic && weight === "medium"
-    ? "mediumItalic"
-    : _selectFontFamilyType(weight, italic)
+export const Sans = createStyledText<SansProps>('sans', (weight, italic) => {
+	return italic && weight === 'medium'
+		? 'mediumItalic'
+		: _selectFontFamilyType(weight, italic)
 })
 
 /**
@@ -237,15 +237,15 @@ export const Sans = createStyledText<SansProps>("sans", (weight, italic) => {
  */
 
 export interface SerifProps extends Partial<TextProps> {
-  italic?: boolean
+	italic?: boolean,
 
-  size: SerifSize
+	size: SerifSize,
 
-  /**
-   * Explicitly specify `null` to inherit weight from parent, otherwise default
-   * to `regular`.
-   */
-  weight?: null | "regular" | "semibold"
+	/**
+	 * Explicitly specify `null` to inherit weight from parent, otherwise default
+	 * to `regular`.
+	 */
+	weight?: null | 'regular' | 'semibold',
 }
 
 /**
@@ -256,23 +256,23 @@ export interface SerifProps extends Partial<TextProps> {
  *
  * <Serif color="black10" size="3t" weight="semibold">Hi</Serif>
  */
-export const Serif = createStyledText<SerifProps>("serif", (weight, italic) => {
-  if (italic && weight && weight !== "regular") {
-    throw new Error(
-      `The serif font does not have an italic font with weight \`${weight}\``
-    )
-  }
-  return _selectFontFamilyType(weight, italic)
+export const Serif = createStyledText<SerifProps>('serif', (weight, italic) => {
+	if (italic && weight && weight !== 'regular') {
+		throw new Error(
+			`The serif font does not have an italic font with weight \`${weight}\``
+		)
+	}
+	return _selectFontFamilyType(weight, italic)
 })
 
 export interface DisplayProps extends Partial<TextProps> {
-  size: DisplaySize
+	size: DisplaySize,
 
-  /**
-   * Explicitly specify `null` to inherit weight from parent, otherwise default
-   * to `regular`.
-   */
-  weight?: null | "regular"
+	/**
+	 * Explicitly specify `null` to inherit weight from parent, otherwise default
+	 * to `regular`.
+	 */
+	weight?: null | 'regular',
 }
 
 /**
@@ -284,8 +284,8 @@ export interface DisplayProps extends Partial<TextProps> {
  *
  * <Display color="black10" size="3t">Hi</Display>
  */
-export const Display = createStyledText<DisplayProps>("display")
+export const Display = createStyledText<DisplayProps>('display')
 
-Sans.displayName = "Sans"
-Serif.displayName = "Serif"
-Display.displayName = "Display"
+Sans.displayName = 'Sans'
+Serif.displayName = 'Serif'
+Display.displayName = 'Display'

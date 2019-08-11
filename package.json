@@ -86,6 +86,7 @@
     "jest-styled-components": "7.0.0-2",
     "lint-staged": "9.2.1",
     "mock-raf": "1.0.1",
+    "prettier": "^1.18.2",
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "react-native": "0.60.4",
@@ -137,10 +138,12 @@
     "watch": "concurrently --raw --kill-others 'yarn compile -w' 'yarn type-declarations -w'",
     "watch:emission": "yarn clean:emission && concurrently --raw --kill-others 'yarn compile:emission -w' 'yarn type-declarations -w --outDir ../../../emission/node_modules/@artsy/palette/dist'",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+		"build-storybook": "build-storybook",
+		"prettier-check": "prettier --check 'src/**/*.{ts,tsx}'",
+    "prettier-fix": "yarn prettier --write 'src/**/*.{ts,tsx}'",
     "visual-test": "chromatic test --exit-zero-on-changes --app-code n02zjqmdqq"
-	},
-	"lint-staged": {
+  },
+  "lint-staged": {
     ".(tsx?)$": [
       "yarn lint",
       "git add"

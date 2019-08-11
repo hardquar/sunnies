@@ -1,5 +1,5 @@
-import { css } from "styled-components"
-import { breakpoints } from "../Theme"
+import { css } from 'styled-components'
+import { breakpoints } from '../Theme'
 
 type Media = { [S in keyof typeof breakpoints]: typeof css }
 
@@ -21,11 +21,11 @@ export const media: Media = Object.entries(breakpoints).reduce(
 	(accumulator, [label, value]) => {
 		return {
 			...accumulator,
-			[label]: (strings, ...args) => css`
-        @media (max-width: ${value}px) {
-          ${css(strings, ...args)};
-        }
-      `,
+			[label]: (strings: any, ...args: any) => css`
+				@media (max-width: ${value}px) {
+					${css(strings, ...args)};
+				}
+			`
 		}
 	},
 	{}

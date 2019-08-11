@@ -1,1 +1,1 @@
-export * from "./StaticCountdownTimer"
+export * from './StaticCountdownTimer'

@@ -1,2 +1,2 @@
-export * from "./Spinner"
-export * from "./Spinner.shared"
+export * from './Spinner'
+export * from './Spinner.shared'

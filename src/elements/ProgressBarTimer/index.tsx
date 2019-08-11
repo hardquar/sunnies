@@ -1,1 +1,1 @@
-export * from "./ProgressBarTimer"
+export * from './ProgressBarTimer'

@@ -35,9 +35,11 @@
 		// ESLint
 
 		// Replaces the need for Prettier
-		"max-len": ["error", { "code": 300 }],
+		// "max-len": ["error", { "code": 300 }],
+		"max-len": "off",
 		"semi": ["error", "never"],
-		"indent": ["error", "tab", { "ignoreComments": true }],
+		// "indent": ["error", "tab", { "ignoreComments": true }],
+		"indent": "off",
 		"quotes": ["error", "single"],
 		"jsx-quotes": ["error", "prefer-single"],
 		"comma-dangle": ["error", "only-multiline"],
@@ -78,14 +80,24 @@
 		"linebreak-style": ["error", "unix"],
 
 		// TypeScript-ESLint
-		"@typescript-eslint/no-unused-vars": ["error", { "args": "none" }], // this ignores the unused var error for TS interfaces
+		"@typescript-eslint/indent": "off",
+		"@typescript-eslint/no-unused-vars": ["warn", { "args": "none" }], // this ignores the unused var error for TS interfaces
 		"@typescript-eslint/no-use-before-define": "off",
 		"@typescript-eslint/camelcase": "warn",
 		"@typescript-eslint/interface-name-prefix": "off",
-		"@typescript-eslint/array-type": ["error", "array-simple"],
+		"@typescript-eslint/array-type": ["error", "generic"],
 		"@typescript-eslint/explicit-function-return-type": "off",
-		// "@typescript-eslint/indent": ["error", "tab", { "ignoreComments": true }],
-		"@typescript-eslint/indent": "off",
+		"@typescript-eslint/explicit-member-accessibility": "off",
+		"@typescript-eslint/member-delimiter-style": ["error", {
+			"multiline": {
+        "delimiter": "comma",
+        "requireLast": true
+			},
+			"singleline": {
+					"delimiter": "comma",
+					"requireLast": true
+			},
+		}],
 
 		// Promise
 		"promise/always-return": "off",
@@ -100,9 +112,45 @@
 		"react/jsx-uses-react": "error",
 		"react/jsx-key": "error",
 		"react/jsx-uses-vars": "error",
-		"react/prop-types": "error",
+		"react/prop-types": "off",
 		"react/react-in-jsx-scope": "error",
 		"react/display-name": "off",
 		"react/no-unescaped-entities": "off",
+
+		// More for review:
+
+		// "curly": false,
+		// "interface-name": [true, "never-prefix"],
+		// "jsx-boolean-value": [true, "never"],
+		// "jsx-no-lambda": false,
+		// "jsx-no-bind": false,
+		// "max-classes-per-file": false,
+		// "member-access": [false],
+		// "member-ordering": false,
+		// "no-unused-expression": false,
+		// "no-var-requires": false,
+		// "object-literal-sort-keys": false,
+		// "ordered-imports": true,
+		// "no-console": [true, "log"],
+		// "no-namespace": [true, "allow-declarations"],
+		// "trailing-comma": false,
+		// "variable-name": [true, "ban-keywords", "allow-leading-underscore"],
+		// "completed-docs": {
+		// 	"severity": "warning",
+		// 	"options": {
+		// 		"functions": {
+		// 			"visibilities": "exported"
+		// 		},
+		// 		"classes": {
+		// 			"visibilities": "exported"
+		// 		},
+		// 		"types": {
+		// 			"visibilities": "exported"
+		// 		},
+		// 		"variables": {
+		// 			"visibilities": "exported"
+		// 		}
+		// 	}
+		// }
 	}
 }

@@ -5,9 +5,9 @@ import { useEffect, useRef } from 'react'
  * Stores state or props in a ref to compare against new props or state
  */
 export function usePrevious(value) {
-  const ref = useRef(value)
-  useEffect(() => {
+	const ref = useRef(value)
+	useEffect(() => {
 		ref.current = value
-  }, [value])
-  return ref.current
+	}, [value])
+	return ref.current
 }
