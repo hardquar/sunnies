@@ -16,7 +16,36 @@ const loadStories = () => {
 addParameters({
   options: {
     theme: create({
-      base: 'dark',
+			base: 'light',
+			colorPrimary: 'hotpink',
+			colorSecondary: 'deepskyblue',
+
+			// UI
+			appBg: 'white',
+			appContentBg: 'silver',
+			appBorderColor: 'grey',
+			appBorderRadius: 4,
+
+			// Typography
+			fontBase: '"Open Sans", sans-serif',
+			fontCode: 'monospace',
+
+			// Text colors
+			textColor: 'black',
+			textInverseColor: 'rgba(255,255,255,0.9)',
+
+			// Toolbar default and active colors
+			barTextColor: 'black',
+			barSelectedColor: 'black',
+			barBg: 'hotpink',
+
+			// Form colors
+			inputBg: 'white',
+			inputBorder: 'silver',
+			inputTextColor: 'black',
+			inputBorderRadius: 4,
+
+			// Brand
       brandTitle: 'Sunnies',
 			brandUrl: 'https://toumey.io',
 			brandImage: 'https://github.com/miloofcroton/sunnies/blob/master/assets/img/icon-med.png?raw=true',
