@@ -324,13 +324,14 @@ export const themeProps = {
 /**
  * Creates a new Grid context for web. On React Native it serves as a noop.
  */
-const GridThemeProvider = ({ children }: any) => {
+const GridThemeProvider = (props: any) => {
 	if (isReactNative()) {
-		return children;
-	} else {
+		return props.children;
+	}
+	else {
 		return (
 			<StyledGrid.GridThemeProvider gridTheme={themeProps.grid}>
-				{children}
+				{props.children}
 			</StyledGrid.GridThemeProvider>
 		);
 	}

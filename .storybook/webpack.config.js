@@ -1,17 +1,17 @@
 // @ts-check
 
-const env = require("dotenv")
-const path = require("path")
-const webpack = require("webpack")
+const env = require("dotenv");
+const path = require("path");
+const webpack = require("webpack");
 
-const ForkTsCheckerNotifierWebpackPlugin = require("fork-ts-checker-notifier-webpack-plugin")
-const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin")
-const SimpleProgressWebpackPlugin = require("simple-progress-webpack-plugin")
+const ForkTsCheckerNotifierWebpackPlugin = require("fork-ts-checker-notifier-webpack-plugin");
+const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
+const SimpleProgressWebpackPlugin = require("simple-progress-webpack-plugin");
 
 // @ts-ignore
-const package = require("../package.json")
+const package = require("../package.json");
 
-env.load()
+env.config();
 
 const cacheDirectory = path.resolve(__dirname, "../", ".cache")
 
@@ -69,8 +69,6 @@ module.exports = async ({ config, mode }) => {
     })
 	}
 
-	console.log(config.module.rules);
-
   config.module.rules.push(
     {
       test: /\.graphql$/,
@@ -85,7 +83,7 @@ module.exports = async ({ config, mode }) => {
     {
       test: /\.tsx?$/,
       include: [/src/],
-      exclude: [/node_modules/, new RegExp(package.jest.testRegex)],
+      exclude: [/node_modules/, new RegExp(package.devDependencies.jest.testRegex)],
       use: [
         {
           loader: "cache-loader",
