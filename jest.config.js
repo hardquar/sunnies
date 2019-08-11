@@ -3,8 +3,7 @@ module.exports = {
 		'.(tsx?)$': 'babel-jest'
   },
   testEnvironment: 'jsdom', // necessary for enzyme
-	// testMatch: ['**/*.test.ts'],
-	testRegex: '(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js|jsx)$',
+	testMatch: ['**/*.(test|spec).ts', '**/*.(test|spec).tsx'],
   coverageDirectory: './coverage/',
   coveragePathIgnorePatterns: [
     '.d.ts$',
@@ -21,7 +20,7 @@ module.exports = {
 		'js',
 		'json'
   ],
-  setupFilesAfterEnv: ['./src/utils/jestSetup.ts'],
+  setupFilesAfterEnv: ['./enzyme.config.js'],
   globals: {
     'ts-jest': {
       tsConfigFile: './tsconfig.json',
@@ -30,7 +29,6 @@ module.exports = {
   moduleNameMapper: {
     '@elements': '<rootDir>/src/elements',
   },
-
 	modulePathIgnorePatterns: [
 		'<rootDir>/dist/*'
 	],

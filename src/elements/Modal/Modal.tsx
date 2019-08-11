@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { color, media, space } from '../../helpers';
 import { CloseIcon } from '../../svgs';
 import { ArtsyLogoBlackIcon } from '../../svgs/ArtsyLogoBlackIcon';
-import { usePrevious } from '../../utils/usePrevious';
+import { usePrevious } from '../../util/usePrevious';
 import { Box } from '../Box';
 import { Flex } from '../Flex';
 import { Spacer } from '../Spacer';

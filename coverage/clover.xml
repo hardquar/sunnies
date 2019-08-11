@@ -1,0 +1,2236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1565515783351" clover="3.2.0">
+  <project timestamp="1565515783352" name="All files">
+    <metrics statements="1330" coveredstatements="858" conditionals="671" coveredconditionals="370" methods="454" coveredmethods="229" elements="2455" coveredelements="1457" complexity="0" loc="1330" ncloc="1330" packages="53" files="247" classes="247"/>
+    <package name="src">
+      <metrics statements="8" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+      <file name="Theme.tsx" path="/Users/jtoumey/Code/react/sunnies/src/Theme.tsx">
+        <metrics statements="8" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="17" count="22" type="stmt"/>
+        <line num="35" count="22" type="stmt"/>
+        <line num="327" count="22" type="stmt"/>
+        <line num="328" count="36" type="cond" truecount="1" falsecount="1"/>
+        <line num="329" count="0" type="stmt"/>
+        <line num="331" count="36" type="stmt"/>
+        <line num="342" count="22" type="stmt"/>
+        <line num="343" count="36" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.elements">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Avatar">
+      <metrics statements="31" coveredstatements="21" conditionals="15" coveredconditionals="11" methods="10" coveredmethods="5"/>
+      <file name="Avatar.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Avatar/Avatar.ios.tsx">
+        <metrics statements="5" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+      </file>
+      <file name="Avatar.shared.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Avatar/Avatar.shared.tsx">
+        <metrics statements="17" coveredstatements="17" conditionals="11" coveredconditionals="9" methods="3" coveredmethods="3"/>
+        <line num="16" count="6" type="stmt"/>
+        <line num="34" count="6" type="stmt"/>
+        <line num="35" count="18" type="cond" truecount="4" falsecount="0"/>
+        <line num="37" count="3" type="stmt"/>
+        <line num="39" count="3" type="stmt"/>
+        <line num="42" count="12" type="stmt"/>
+        <line num="58" count="6" type="stmt"/>
+        <line num="64" count="7" type="stmt"/>
+        <line num="66" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="67" count="2" type="stmt"/>
+        <line num="68" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="70" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="72" count="4" type="stmt"/>
+        <line num="91" count="1" type="stmt"/>
+        <line num="96" count="6" type="stmt"/>
+        <line num="98" count="4" type="stmt"/>
+        <line num="103" count="6" type="stmt"/>
+      </file>
+      <file name="Avatar.story.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Avatar/Avatar.story.tsx">
+        <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+      </file>
+      <file name="Avatar.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Avatar/Avatar.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="16" count="7" type="stmt"/>
+        <line num="18" count="7" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Avatar/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Banner">
+      <metrics statements="12" coveredstatements="12" conditionals="6" coveredconditionals="6" methods="3" coveredmethods="3"/>
+      <file name="Banner.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Banner/Banner.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Banner.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Banner/Banner.tsx">
+        <metrics statements="12" coveredstatements="12" conditionals="6" coveredconditionals="6" methods="3" coveredmethods="3"/>
+        <line num="8" count="6" type="stmt"/>
+        <line num="17" count="6" type="stmt"/>
+        <line num="22" count="6" type="stmt"/>
+        <line num="29" count="6" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="48" count="6" type="stmt"/>
+        <line num="54" count="5" type="stmt"/>
+        <line num="58" count="5" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="63" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="64" count="5" type="stmt"/>
+        <line num="66" count="5" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Banner/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.BarChart">
+      <metrics statements="67" coveredstatements="56" conditionals="35" coveredconditionals="32" methods="25" coveredmethods="18"/>
+      <file name="Bar.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/BarChart/Bar.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Bar.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/BarChart/Bar.tsx">
+        <metrics statements="28" coveredstatements="28" conditionals="19" coveredconditionals="18" methods="10" coveredmethods="10"/>
+        <line num="12" count="6" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="14" count="6" type="stmt"/>
+        <line num="21" count="6" type="stmt"/>
+        <line num="25" count="72" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="72" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="72" type="cond" truecount="2" falsecount="0"/>
+        <line num="43" count="6" type="stmt"/>
+        <line num="52" count="6" type="stmt"/>
+        <line num="64" count="6" type="stmt"/>
+        <line num="69" count="6" type="stmt"/>
+        <line num="70" count="18" type="stmt"/>
+        <line num="80" count="6" type="stmt"/>
+        <line num="94" count="18" type="stmt"/>
+        <line num="95" count="18" type="stmt"/>
+        <line num="96" count="18" type="stmt"/>
+        <line num="98" count="18" type="stmt"/>
+        <line num="107" count="6" type="stmt"/>
+        <line num="108" count="6" type="stmt"/>
+        <line num="111" count="6" type="stmt"/>
+        <line num="137" count="6" type="stmt"/>
+        <line num="157" count="72" type="stmt"/>
+        <line num="164" count="72" type="cond" truecount="3" falsecount="1"/>
+        <line num="167" count="72" type="cond" truecount="2" falsecount="0"/>
+        <line num="169" count="72" type="stmt"/>
+        <line num="172" count="1" type="stmt"/>
+        <line num="173" count="1" type="stmt"/>
+        <line num="183" count="18" type="stmt"/>
+      </file>
+      <file name="BarChart.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/BarChart/BarChart.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="BarChart.story.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/BarChart/BarChart.story.tsx">
+        <metrics statements="8" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="132" count="0" type="stmt"/>
+        <line num="191" count="0" type="stmt"/>
+        <line num="252" count="0" type="stmt"/>
+        <line num="307" count="0" type="stmt"/>
+      </file>
+      <file name="BarChart.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/BarChart/BarChart.tsx">
+        <metrics statements="31" coveredstatements="28" conditionals="16" coveredconditionals="14" methods="8" coveredmethods="8"/>
+        <line num="12" count="6" type="stmt"/>
+        <line num="21" count="31" type="stmt"/>
+        <line num="22" count="22" type="cond" truecount="4" falsecount="0"/>
+        <line num="23" count="13" type="stmt"/>
+        <line num="26" count="9" type="stmt"/>
+        <line num="27" count="9" type="stmt"/>
+        <line num="29" count="9" type="stmt"/>
+        <line num="31" count="9" type="stmt"/>
+        <line num="32" count="9" type="stmt"/>
+        <line num="35" count="9" type="stmt"/>
+        <line num="36" count="9" type="cond" truecount="1" falsecount="1"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="42" count="9" type="stmt"/>
+        <line num="43" count="9" type="cond" truecount="1" falsecount="1"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="69" count="6" type="stmt"/>
+        <line num="70" count="31" type="stmt"/>
+        <line num="71" count="31" type="stmt"/>
+        <line num="73" count="31" type="stmt"/>
+        <line num="78" count="31" type="stmt"/>
+        <line num="79" count="31" type="stmt"/>
+        <line num="80" count="103" type="stmt"/>
+        <line num="81" count="31" type="stmt"/>
+        <line num="82" count="31" type="stmt"/>
+        <line num="102" count="103" type="cond" truecount="2" falsecount="0"/>
+        <line num="103" count="103" type="stmt"/>
+        <line num="128" count="103" type="cond" truecount="2" falsecount="0"/>
+        <line num="131" count="96" type="stmt"/>
+        <line num="144" count="6" type="stmt"/>
+        <line num="150" count="6" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/BarChart/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.BorderBox">
+      <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="BorderBox.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/BorderBox/BorderBox.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="BorderBox.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/BorderBox/BorderBox.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="12" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="20" count="5" type="stmt"/>
+      </file>
+      <file name="BorderBoxBase.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/BorderBox/BorderBoxBase.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="35" count="5" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/BorderBox/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Box">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="Box.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Box/Box.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="59" count="13" type="stmt"/>
+        <line num="77" count="13" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Box/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Button">
+      <metrics statements="100" coveredstatements="33" conditionals="84" coveredconditionals="23" methods="29" coveredmethods="10"/>
+      <file name="Button.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Button/Button.ios.tsx">
+        <metrics statements="43" coveredstatements="0" conditionals="37" coveredconditionals="0" methods="10" coveredmethods="0"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="45" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="47" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="49" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="56" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="60" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="78" count="0" type="stmt"/>
+        <line num="80" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="81" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="84" count="0" type="stmt"/>
+        <line num="87" count="0" type="stmt"/>
+        <line num="88" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="90" count="0" type="stmt"/>
+        <line num="92" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="93" count="0" type="stmt"/>
+        <line num="97" count="0" type="stmt"/>
+        <line num="99" count="0" type="stmt"/>
+        <line num="107" count="0" type="stmt"/>
+        <line num="110" count="0" type="stmt"/>
+        <line num="122" count="0" type="stmt"/>
+        <line num="123" count="0" type="stmt"/>
+        <line num="124" count="0" type="stmt"/>
+        <line num="125" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="127" count="0" type="stmt"/>
+        <line num="129" count="0" type="stmt"/>
+        <line num="130" count="0" type="stmt"/>
+        <line num="132" count="0" type="stmt"/>
+        <line num="135" count="0" type="stmt"/>
+        <line num="138" count="0" type="stmt"/>
+        <line num="144" count="0" type="stmt"/>
+        <line num="186" count="0" type="stmt"/>
+        <line num="196" count="0" type="stmt"/>
+        <line num="200" count="0" type="stmt"/>
+        <line num="206" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="209" count="0" type="stmt"/>
+      </file>
+      <file name="Button.shared.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Button/Button.shared.tsx">
+        <metrics statements="13" coveredstatements="3" conditionals="6" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="18" count="7" type="stmt"/>
+        <line num="24" count="7" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="64" count="0" type="cond" truecount="0" falsecount="6"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="92" count="0" type="stmt"/>
+        <line num="105" count="0" type="stmt"/>
+        <line num="118" count="0" type="stmt"/>
+        <line num="138" count="7" type="stmt"/>
+        <line num="139" count="0" type="stmt"/>
+        <line num="141" count="0" type="stmt"/>
+        <line num="143" count="0" type="stmt"/>
+      </file>
+      <file name="Button.story.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Button/Button.story.tsx">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+      </file>
+      <file name="Button.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Button/Button.tsx">
+        <metrics statements="40" coveredstatements="30" conditionals="41" coveredconditionals="23" methods="13" coveredmethods="10"/>
+        <line num="24" count="7" type="stmt"/>
+        <line num="31" count="10" type="stmt"/>
+        <line num="32" count="10" type="cond" truecount="3" falsecount="0"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="40" count="8" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="55" count="10" type="cond" truecount="2" falsecount="4"/>
+        <line num="57" count="9" type="stmt"/>
+        <line num="59" count="9" type="stmt"/>
+        <line num="61" count="9" type="stmt"/>
+        <line num="77" count="1" type="stmt"/>
+        <line num="79" count="1" type="stmt"/>
+        <line num="81" count="1" type="stmt"/>
+        <line num="97" count="0" type="stmt"/>
+        <line num="99" count="0" type="stmt"/>
+        <line num="101" count="0" type="stmt"/>
+        <line num="117" count="0" type="stmt"/>
+        <line num="119" count="0" type="stmt"/>
+        <line num="120" count="0" type="stmt"/>
+        <line num="136" count="0" type="stmt"/>
+        <line num="138" count="0" type="stmt"/>
+        <line num="139" count="0" type="stmt"/>
+        <line num="151" count="10" type="stmt"/>
+        <line num="158" count="10" type="stmt"/>
+        <line num="164" count="7" type="stmt"/>
+        <line num="169" count="10" type="stmt"/>
+        <line num="170" count="1" type="cond" truecount="2" falsecount="2"/>
+        <line num="171" count="0" type="stmt"/>
+        <line num="186" count="10" type="stmt"/>
+        <line num="188" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="189" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="191" count="10" type="stmt"/>
+        <line num="229" count="7" type="stmt"/>
+        <line num="236" count="7" type="stmt"/>
+        <line num="241" count="7" type="stmt"/>
+        <line num="254" count="10" type="cond" truecount="1" falsecount="1"/>
+        <line num="255" count="10" type="stmt"/>
+        <line num="261" count="10" type="stmt"/>
+        <line num="273" count="10" type="stmt"/>
+        <line num="275" count="10" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Button/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Checkbox">
+      <metrics statements="34" coveredstatements="8" conditionals="35" coveredconditionals="0" methods="8" coveredmethods="0"/>
+      <file name="Checkbox.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Checkbox/Checkbox.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Checkbox.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Checkbox/Checkbox.tsx">
+        <metrics statements="34" coveredstatements="8" conditionals="35" coveredconditionals="0" methods="8" coveredmethods="0"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="21" count="5" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="49" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="54" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="55" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="67" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="95" count="5" type="stmt"/>
+        <line num="100" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="101" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="102" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="103" count="0" type="stmt"/>
+        <line num="106" count="5" type="stmt"/>
+        <line num="110" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="112" count="0" type="stmt"/>
+        <line num="114" count="0" type="stmt"/>
+        <line num="116" count="0" type="stmt"/>
+        <line num="120" count="5" type="stmt"/>
+        <line num="136" count="5" type="stmt"/>
+        <line num="138" count="5" type="stmt"/>
+        <line num="139" count="0" type="stmt"/>
+        <line num="143" count="0" type="cond" truecount="0" falsecount="5"/>
+        <line num="144" count="0" type="stmt"/>
+        <line num="150" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="151" count="0" type="stmt"/>
+        <line num="164" count="5" type="stmt"/>
+        <line num="166" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Checkbox/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Collapse">
+      <metrics statements="73" coveredstatements="15" conditionals="54" coveredconditionals="11" methods="22" coveredmethods="4"/>
+      <file name="Collapse.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Collapse/Collapse.ios.tsx">
+        <metrics statements="39" coveredstatements="0" conditionals="28" coveredconditionals="0" methods="14" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="47" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="74" count="0" type="stmt"/>
+        <line num="75" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="82" count="0" type="stmt"/>
+        <line num="84" count="0" type="stmt"/>
+        <line num="89" count="0" type="stmt"/>
+        <line num="90" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="91" count="0" type="stmt"/>
+        <line num="96" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="97" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="98" count="0" type="stmt"/>
+        <line num="99" count="0" type="cond" truecount="0" falsecount="5"/>
+        <line num="101" count="0" type="stmt"/>
+        <line num="102" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="104" count="0" type="stmt"/>
+        <line num="110" count="0" type="stmt"/>
+        <line num="111" count="0" type="stmt"/>
+        <line num="120" count="0" type="stmt"/>
+        <line num="121" count="0" type="stmt"/>
+        <line num="124" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="125" count="0" type="stmt"/>
+        <line num="128" count="0" type="stmt"/>
+        <line num="135" count="0" type="stmt"/>
+        <line num="140" count="0" type="stmt"/>
+      </file>
+      <file name="Collapse.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Collapse/Collapse.tsx">
+        <metrics statements="34" coveredstatements="15" conditionals="26" coveredconditionals="11" methods="8" coveredmethods="4"/>
+        <line num="11" count="17" type="stmt"/>
+        <line num="13" count="17" type="stmt"/>
+        <line num="14" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="20" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="21" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="26" count="17" type="cond" truecount="1" falsecount="1"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="30" count="17" type="stmt"/>
+        <line num="34" count="14" type="cond" truecount="1" falsecount="1"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="37" count="14" type="cond" truecount="2" falsecount="2"/>
+        <line num="40" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="48" count="14" type="cond" truecount="3" falsecount="1"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="67" count="17" type="stmt"/>
+        <line num="72" count="31" type="stmt"/>
+        <line num="76" count="31" type="stmt"/>
+        <line num="77" count="31" type="cond" truecount="1" falsecount="1"/>
+        <line num="79" count="31" type="cond" truecount="1" falsecount="1"/>
+        <line num="82" count="0" type="stmt"/>
+        <line num="84" count="31" type="stmt"/>
+        <line num="89" count="31" type="stmt"/>
+        <line num="91" count="45" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Collapse/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Colors">
+      <metrics statements="13" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="5" coveredmethods="0"/>
+      <file name="Colors.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Colors/Colors.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Colors.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Colors/Colors.tsx">
+        <metrics statements="13" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="18" count="5" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="34" count="5" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="43" count="5" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="50" count="5" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Colors/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.DataVis">
+      <metrics statements="31" coveredstatements="25" conditionals="14" coveredconditionals="6" methods="11" coveredmethods="7"/>
+      <file name="ChartHoverTooltip.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/DataVis/ChartHoverTooltip.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="ChartHoverTooltip.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/DataVis/ChartHoverTooltip.tsx">
+        <metrics statements="10" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="8" count="8" type="stmt"/>
+        <line num="13" count="8" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="27" count="8" type="stmt"/>
+        <line num="33" count="8" type="stmt"/>
+      </file>
+      <file name="ChartTooltip.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/DataVis/ChartTooltip.tsx">
+        <metrics statements="11" coveredstatements="9" conditionals="12" coveredconditionals="5" methods="6" coveredmethods="4"/>
+        <line num="6" count="8" type="stmt"/>
+        <line num="17" count="8" type="stmt"/>
+        <line num="18" count="225" type="cond" truecount="1" falsecount="1"/>
+        <line num="24" count="8" type="stmt"/>
+        <line num="27" count="28" type="cond" truecount="1" falsecount="1"/>
+        <line num="42" count="253" type="cond" truecount="3" falsecount="1"/>
+        <line num="44" count="532" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="46" count="253" type="stmt"/>
+        <line num="53" count="8" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+      </file>
+      <file name="MousePositionContext.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/DataVis/MousePositionContext.tsx">
+        <metrics statements="10" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
+        <line num="4" count="8" type="stmt"/>
+        <line num="7" count="8" type="stmt"/>
+        <line num="8" count="46" type="stmt"/>
+        <line num="10" count="46" type="stmt"/>
+        <line num="11" count="19" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="17" count="19" type="stmt"/>
+        <line num="18" count="19" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="23" count="46" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.elements.DataVis.utils">
+      <metrics statements="27" coveredstatements="24" conditionals="4" coveredconditionals="2" methods="8" coveredmethods="6"/>
+      <file name="SharedTypes.ts" path="/Users/jtoumey/Code/react/sunnies/src/elements/DataVis/utils/SharedTypes.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="useHasEnteredViewPort.ts" path="/Users/jtoumey/Code/react/sunnies/src/elements/DataVis/utils/useHasEnteredViewPort.ts">
+        <metrics statements="13" coveredstatements="12" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="3"/>
+        <line num="7" count="8" type="stmt"/>
+        <line num="8" count="55" type="stmt"/>
+        <line num="9" count="55" type="stmt"/>
+        <line num="10" count="19" type="stmt"/>
+        <line num="11" count="19" type="stmt"/>
+        <line num="12" count="19" type="cond" truecount="1" falsecount="1"/>
+        <line num="13" count="19" type="stmt"/>
+        <line num="14" count="19" type="stmt"/>
+        <line num="17" count="19" type="stmt"/>
+        <line num="18" count="19" type="stmt"/>
+        <line num="19" count="19" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="23" count="55" type="stmt"/>
+      </file>
+      <file name="useWrapperWidth.ts" path="/Users/jtoumey/Code/react/sunnies/src/elements/DataVis/utils/useWrapperWidth.ts">
+        <metrics statements="14" coveredstatements="12" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="3"/>
+        <line num="7" count="7" type="stmt"/>
+        <line num="8" count="10" type="stmt"/>
+        <line num="10" count="10" type="stmt"/>
+        <line num="12" count="10" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="31" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.elements.DonutChart">
+      <metrics statements="69" coveredstatements="54" conditionals="27" coveredconditionals="23" methods="23" coveredmethods="17"/>
+      <file name="DonutChart.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/DonutChart/DonutChart.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="DonutChart.story.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/DonutChart/DonutChart.story.tsx">
+        <metrics statements="13" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="114" count="0" type="stmt"/>
+        <line num="117" count="0" type="stmt"/>
+        <line num="169" count="0" type="stmt"/>
+        <line num="172" count="0" type="stmt"/>
+        <line num="217" count="0" type="stmt"/>
+        <line num="220" count="0" type="stmt"/>
+        <line num="265" count="0" type="stmt"/>
+        <line num="268" count="0" type="stmt"/>
+        <line num="319" count="0" type="stmt"/>
+      </file>
+      <file name="DonutChart.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/DonutChart/DonutChart.tsx">
+        <metrics statements="56" coveredstatements="54" conditionals="27" coveredconditionals="23" methods="17" coveredmethods="17"/>
+        <line num="20" count="6" type="stmt"/>
+        <line num="21" count="6" type="stmt"/>
+        <line num="31" count="6" type="stmt"/>
+        <line num="35" count="14" type="stmt"/>
+        <line num="36" count="14" type="stmt"/>
+        <line num="38" count="14" type="stmt"/>
+        <line num="40" count="14" type="stmt"/>
+        <line num="42" count="14" type="stmt"/>
+        <line num="45" count="14" type="stmt"/>
+        <line num="48" count="14" type="cond" truecount="1" falsecount="1"/>
+        <line num="51" count="14" type="stmt"/>
+        <line num="53" count="14" type="stmt"/>
+        <line num="54" count="14" type="stmt"/>
+        <line num="56" count="42" type="stmt"/>
+        <line num="57" count="14" type="stmt"/>
+        <line num="59" count="14" type="stmt"/>
+        <line num="65" count="14" type="stmt"/>
+        <line num="69" count="1562" type="stmt"/>
+        <line num="71" count="14" type="stmt"/>
+        <line num="72" count="42" type="stmt"/>
+        <line num="73" count="42" type="cond" truecount="2" falsecount="0"/>
+        <line num="80" count="14" type="stmt"/>
+        <line num="81" count="42" type="stmt"/>
+        <line num="82" count="42" type="stmt"/>
+        <line num="83" count="42" type="stmt"/>
+        <line num="100" count="14" type="stmt"/>
+        <line num="101" count="14" type="stmt"/>
+        <line num="109" count="14" type="stmt"/>
+        <line num="114" count="14" type="stmt"/>
+        <line num="119" count="502" type="cond" truecount="4" falsecount="0"/>
+        <line num="120" count="4" type="stmt"/>
+        <line num="122" count="502" type="stmt"/>
+        <line num="123" count="502" type="stmt"/>
+        <line num="124" count="502" type="stmt"/>
+        <line num="128" count="1506" type="stmt"/>
+        <line num="129" count="1506" type="stmt"/>
+        <line num="131" count="1506" type="cond" truecount="1" falsecount="1"/>
+        <line num="135" count="0" type="stmt"/>
+        <line num="137" count="1506" type="stmt"/>
+        <line num="142" count="1" type="stmt"/>
+        <line num="143" count="1" type="stmt"/>
+        <line num="147" count="502" type="stmt"/>
+        <line num="154" count="14" type="stmt"/>
+        <line num="175" count="6" type="stmt"/>
+        <line num="176" count="56" type="stmt"/>
+        <line num="177" count="56" type="cond" truecount="2" falsecount="0"/>
+        <line num="178" count="42" type="stmt"/>
+        <line num="179" count="14" type="cond" truecount="2" falsecount="2"/>
+        <line num="180" count="0" type="stmt"/>
+        <line num="182" count="14" type="stmt"/>
+        <line num="186" count="6" type="stmt"/>
+        <line num="187" count="28" type="stmt"/>
+        <line num="188" count="28" type="stmt"/>
+        <line num="192" count="28" type="stmt"/>
+        <line num="193" count="28" type="stmt"/>
+        <line num="197" count="28" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/DonutChart/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.EntityHeader">
+      <metrics statements="10" coveredstatements="3" conditionals="20" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="EntityHeader.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/EntityHeader/EntityHeader.ios.tsx">
+        <metrics statements="3" coveredstatements="0" conditionals="7" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+      </file>
+      <file name="EntityHeader.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/EntityHeader/EntityHeader.tsx">
+        <metrics statements="7" coveredstatements="3" conditionals="13" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="31" count="5" type="stmt"/>
+        <line num="40" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="43" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="88" count="5" type="stmt"/>
+        <line num="92" count="5" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/EntityHeader/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Flex">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="Flex.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Flex/Flex.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="44" count="14" type="stmt"/>
+        <line num="72" count="14" type="stmt"/>
+        <line num="94" count="14" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Flex/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Grid">
+      <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="Grid.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Grid/Grid.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Grid.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Grid/Grid.tsx">
+        <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="17" count="5" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="24" count="5" type="stmt"/>
+        <line num="30" count="5" type="stmt"/>
+        <line num="38" count="5" type="stmt"/>
+        <line num="39" count="5" type="stmt"/>
+        <line num="40" count="5" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/jtoumey/Code/react/sunnies/src/elements/Grid/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Image">
+      <metrics statements="26" coveredstatements="17" conditionals="13" coveredconditionals="6" methods="8" coveredmethods="3"/>
+      <file name="Image.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Image/Image.ios.tsx">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+      </file>
+      <file name="Image.shared.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Image/Image.shared.tsx">
+        <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="40" count="6" type="stmt"/>
+        <line num="57" count="6" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="67" count="6" type="stmt"/>
+      </file>
+      <file name="Image.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Image/Image.tsx">
+        <metrics statements="5" coveredstatements="2" conditionals="5" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="25" count="5" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="35" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="47" count="5" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+      </file>
+      <file name="LazyImage.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Image/LazyImage.tsx">
+        <metrics statements="13" coveredstatements="12" conditionals="8" coveredconditionals="6" methods="4" coveredmethods="3"/>
+        <line num="16" count="6" type="stmt"/>
+        <line num="17" count="486" type="cond" truecount="2" falsecount="0"/>
+        <line num="20" count="6" type="stmt"/>
+        <line num="28" count="6" type="stmt"/>
+        <line num="34" count="6" type="stmt"/>
+        <line num="41" count="6" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="46" count="6" type="stmt"/>
+        <line num="67" count="6" type="stmt"/>
+        <line num="72" count="2" type="stmt"/>
+        <line num="83" count="2" type="stmt"/>
+        <line num="84" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="106" count="0" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Image/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Input">
+      <metrics statements="16" coveredstatements="16" conditionals="19" coveredconditionals="18" methods="6" coveredmethods="6"/>
+      <file name="Input.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Input/Input.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Input.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Input/Input.tsx">
+        <metrics statements="16" coveredstatements="16" conditionals="19" coveredconditionals="18" methods="6" coveredmethods="6"/>
+        <line num="19" count="6" type="stmt"/>
+        <line num="27" count="5" type="stmt"/>
+        <line num="58" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="59" count="25" type="cond" truecount="2" falsecount="0"/>
+        <line num="60" count="21" type="cond" truecount="2" falsecount="0"/>
+        <line num="61" count="15" type="cond" truecount="2" falsecount="0"/>
+        <line num="62" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="63" count="5" type="stmt"/>
+        <line num="66" count="6" type="stmt"/>
+        <line num="72" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="73" count="5" type="stmt"/>
+        <line num="82" count="5" type="stmt"/>
+        <line num="87" count="5" type="stmt"/>
+        <line num="90" count="6" type="stmt"/>
+        <line num="92" count="6" type="stmt"/>
+        <line num="95" count="6" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Input/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Join">
+      <metrics statements="19" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="11" coveredmethods="2"/>
+      <file name="Join.story.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Join/Join.story.tsx">
+        <metrics statements="12" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+      </file>
+      <file name="Join.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Join/Join.tsx">
+        <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="27" count="7" type="stmt"/>
+        <line num="28" count="18" type="stmt"/>
+        <line num="30" count="18" type="stmt"/>
+        <line num="31" count="40" type="stmt"/>
+        <line num="37" count="40" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="22" type="stmt"/>
+        <line num="46" count="40" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Join/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.LabeledRange">
+      <metrics statements="20" coveredstatements="4" conditionals="10" coveredconditionals="0" methods="6" coveredmethods="0"/>
+      <file name="LabeledRange.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/LabeledRange/LabeledRange.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="LabeledRange.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/LabeledRange/LabeledRange.tsx">
+        <metrics statements="20" coveredstatements="4" conditionals="10" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <line num="24" count="5" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="46" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="53" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="63" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="93" count="0" type="stmt"/>
+        <line num="103" count="5" type="stmt"/>
+        <line num="110" count="5" type="stmt"/>
+        <line num="114" count="5" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/LabeledRange/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.LineChart">
+      <metrics statements="43" coveredstatements="40" conditionals="21" coveredconditionals="19" methods="21" coveredmethods="19"/>
+      <file name="Line.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/LineChart/Line.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="8" count="6" type="stmt"/>
+        <line num="9" count="917" type="stmt"/>
+      </file>
+      <file name="LineChart.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/LineChart/LineChart.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="LineChart.story.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/LineChart/LineChart.story.tsx">
+        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="80" count="0" type="stmt"/>
+      </file>
+      <file name="LineChart.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/LineChart/LineChart.tsx">
+        <metrics statements="21" coveredstatements="21" conditionals="15" coveredconditionals="15" methods="9" coveredmethods="9"/>
+        <line num="14" count="6" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="25" count="6" type="stmt"/>
+        <line num="29" count="10" type="stmt"/>
+        <line num="31" count="10" type="stmt"/>
+        <line num="33" count="10" type="stmt"/>
+        <line num="35" count="10" type="stmt"/>
+        <line num="37" count="10" type="stmt"/>
+        <line num="44" count="18" type="stmt"/>
+        <line num="62" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="65" count="18" type="stmt"/>
+        <line num="91" count="6" type="stmt"/>
+        <line num="97" count="18" type="stmt"/>
+        <line num="98" count="18" type="stmt"/>
+        <line num="100" count="1" type="stmt"/>
+        <line num="101" count="1" type="stmt"/>
+        <line num="112" count="6" type="stmt"/>
+        <line num="125" count="6" type="stmt"/>
+        <line num="126" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="130" count="18" type="cond" truecount="4" falsecount="0"/>
+        <line num="134" count="6" type="stmt"/>
+      </file>
+      <file name="LineChartSVG.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/LineChart/LineChartSVG.tsx">
+        <metrics statements="15" coveredstatements="15" conditionals="4" coveredconditionals="2" methods="8" coveredmethods="8"/>
+        <line num="24" count="6" type="stmt"/>
+        <line num="32" count="18" type="stmt"/>
+        <line num="33" count="18" type="stmt"/>
+        <line num="35" count="18" type="stmt"/>
+        <line num="36" count="6" type="stmt"/>
+        <line num="38" count="6" type="stmt"/>
+        <line num="39" count="6" type="stmt"/>
+        <line num="42" count="5502" type="cond" truecount="1" falsecount="1"/>
+        <line num="43" count="5502" type="stmt"/>
+        <line num="45" count="6" type="stmt"/>
+        <line num="48" count="6" type="stmt"/>
+        <line num="59" count="917" type="stmt"/>
+        <line num="60" count="917" type="stmt"/>
+        <line num="64" count="2751" type="stmt"/>
+        <line num="84" count="6" type="stmt"/>
+      </file>
+      <file name="Point.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/LineChart/Point.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="8" count="6" type="stmt"/>
+        <line num="19" count="2751" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/LineChart/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Link">
+      <metrics statements="13" coveredstatements="5" conditionals="8" coveredconditionals="0" methods="5" coveredmethods="0"/>
+      <file name="Link.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Link/Link.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Link.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Link/Link.tsx">
+        <metrics statements="13" coveredstatements="5" conditionals="8" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <line num="23" count="5" type="stmt"/>
+        <line num="28" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="33" count="5" type="stmt"/>
+        <line num="34" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="42" count="5" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="49" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="57" count="5" type="stmt"/>
+        <line num="59" count="5" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Link/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Menu">
+      <metrics statements="6" coveredstatements="4" conditionals="5" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="Menu.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Menu/Menu.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Menu.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Menu/Menu.tsx">
+        <metrics statements="6" coveredstatements="4" conditionals="5" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="21" count="5" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="48" count="5" type="stmt"/>
+        <line num="62" count="5" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="78" count="5" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Menu/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Message">
+      <metrics statements="3" coveredstatements="2" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="Message.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Message/Message.tsx">
+        <metrics statements="3" coveredstatements="2" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="30" count="5" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Message/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Modal">
+      <metrics statements="50" coveredstatements="40" conditionals="26" coveredconditionals="19" methods="14" coveredmethods="11"/>
+      <file name="Modal.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Modal/Modal.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Modal.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Modal/Modal.tsx">
+        <metrics statements="50" coveredstatements="40" conditionals="26" coveredconditionals="19" methods="14" coveredmethods="11"/>
+        <line num="38" count="6" type="stmt"/>
+        <line num="44" count="6" type="stmt"/>
+        <line num="54" count="12" type="stmt"/>
+        <line num="58" count="12" type="stmt"/>
+        <line num="63" count="12" type="stmt"/>
+        <line num="64" count="12" type="stmt"/>
+        <line num="65" count="12" type="stmt"/>
+        <line num="67" count="12" type="stmt"/>
+        <line num="68" count="12" type="stmt"/>
+        <line num="70" count="12" type="stmt"/>
+        <line num="71" count="6" type="cond" truecount="3" falsecount="1"/>
+        <line num="72" count="6" type="stmt"/>
+        <line num="76" count="12" type="stmt"/>
+        <line num="77" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="78" count="6" type="stmt"/>
+        <line num="81" count="0" type="stmt"/>
+        <line num="83" count="0" type="stmt"/>
+        <line num="88" count="12" type="stmt"/>
+        <line num="89" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="90" count="6" type="stmt"/>
+        <line num="92" count="6" type="stmt"/>
+        <line num="94" count="6" type="stmt"/>
+        <line num="95" count="6" type="stmt"/>
+        <line num="96" count="6" type="stmt"/>
+        <line num="102" count="0" type="stmt"/>
+        <line num="103" count="0" type="stmt"/>
+        <line num="104" count="0" type="stmt"/>
+        <line num="108" count="0" type="stmt"/>
+        <line num="113" count="0" type="stmt"/>
+        <line num="114" count="0" type="stmt"/>
+        <line num="120" count="12" type="stmt"/>
+        <line num="122" count="0" type="stmt"/>
+        <line num="124" count="0" type="stmt"/>
+        <line num="130" count="12" type="stmt"/>
+        <line num="131" count="12" type="stmt"/>
+        <line num="163" count="12" type="stmt"/>
+        <line num="169" count="1" type="stmt"/>
+        <line num="181" count="6" type="stmt"/>
+        <line num="190" count="6" type="stmt"/>
+        <line num="199" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="200" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="203" count="6" type="stmt"/>
+        <line num="210" count="6" type="stmt"/>
+        <line num="215" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="221" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="230" count="6" type="stmt"/>
+        <line num="234" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="237" count="6" type="stmt"/>
+        <line num="244" count="6" type="stmt"/>
+        <line num="248" count="6" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Modal/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Pagination">
+      <metrics statements="38" coveredstatements="38" conditionals="18" coveredconditionals="14" methods="18" coveredmethods="18"/>
+      <file name="Pagination.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Pagination/Pagination.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Pagination.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Pagination/Pagination.tsx">
+        <metrics statements="38" coveredstatements="38" conditionals="18" coveredconditionals="14" methods="18" coveredmethods="18"/>
+        <line num="17" count="5" type="stmt"/>
+        <line num="23" count="6" type="stmt"/>
+        <line num="25" count="6" type="stmt"/>
+        <line num="39" count="24" type="stmt"/>
+        <line num="52" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="64" count="5" type="stmt"/>
+        <line num="70" count="3" type="stmt"/>
+        <line num="72" count="3" type="stmt"/>
+        <line num="84" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="85" count="1" type="stmt"/>
+        <line num="98" count="1" type="stmt"/>
+        <line num="110" count="5" type="stmt"/>
+        <line num="111" count="6" type="stmt"/>
+        <line num="118" count="5" type="stmt"/>
+        <line num="119" count="12" type="stmt"/>
+        <line num="126" count="5" type="stmt"/>
+        <line num="130" count="36" type="stmt"/>
+        <line num="131" count="36" type="stmt"/>
+        <line num="133" count="1" type="stmt"/>
+        <line num="141" count="5" type="stmt"/>
+        <line num="142" count="36" type="stmt"/>
+        <line num="143" count="1" type="stmt"/>
+        <line num="151" count="5" type="stmt"/>
+        <line num="157" count="5" type="stmt"/>
+        <line num="166" count="36" type="cond" truecount="2" falsecount="0"/>
+        <line num="172" count="5" type="stmt"/>
+        <line num="173" count="6" type="stmt"/>
+        <line num="176" count="1" type="stmt"/>
+        <line num="184" count="5" type="stmt"/>
+        <line num="185" count="6" type="stmt"/>
+        <line num="188" count="1" type="stmt"/>
+        <line num="196" count="5" type="stmt"/>
+        <line num="202" count="5" type="stmt"/>
+        <line num="209" count="5" type="stmt"/>
+        <line num="210" count="5" type="stmt"/>
+        <line num="211" count="5" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Pagination/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.PriceRange">
+      <metrics statements="6" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="PriceRange.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/PriceRange/PriceRange.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="PriceRange.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/PriceRange/PriceRange.tsx">
+        <metrics statements="6" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/PriceRange/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.ProgressBar">
+      <metrics statements="3" coveredstatements="2" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="ProgressBar.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/ProgressBar/ProgressBar.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="ProgressBar.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/ProgressBar/ProgressBar.tsx">
+        <metrics statements="3" coveredstatements="2" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="18" count="5" type="cond" truecount="0" falsecount="1"/>
+        <line num="19" count="0" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/ProgressBar/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.ProgressBarTimer">
+      <metrics statements="5" coveredstatements="5" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="ProgressBarTimer.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/ProgressBarTimer/ProgressBarTimer.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="ProgressBarTimer.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/ProgressBarTimer/ProgressBarTimer.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/ProgressBarTimer/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Radio">
+      <metrics statements="29" coveredstatements="27" conditionals="32" coveredconditionals="25" methods="9" coveredmethods="8"/>
+      <file name="Radio.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Radio/Radio.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Radio.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Radio/Radio.tsx">
+        <metrics statements="29" coveredstatements="27" conditionals="32" coveredconditionals="25" methods="9" coveredmethods="8"/>
+        <line num="47" count="6" type="stmt"/>
+        <line num="58" count="24" type="stmt"/>
+        <line num="62" count="24" type="cond" truecount="2" falsecount="0"/>
+        <line num="64" count="24" type="stmt"/>
+        <line num="71" count="5" type="cond" truecount="3" falsecount="0"/>
+        <line num="94" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="108" count="6" type="stmt"/>
+        <line num="130" count="6" type="stmt"/>
+        <line num="131" count="24" type="stmt"/>
+        <line num="132" count="24" type="cond" truecount="2" falsecount="2"/>
+        <line num="133" count="0" type="stmt"/>
+        <line num="139" count="24" type="cond" truecount="2" falsecount="0"/>
+        <line num="140" count="16" type="stmt"/>
+        <line num="154" count="6" type="stmt"/>
+        <line num="156" count="24" type="cond" truecount="2" falsecount="0"/>
+        <line num="161" count="6" type="stmt"/>
+        <line num="166" count="24" type="cond" truecount="2" falsecount="0"/>
+        <line num="173" count="6" type="stmt"/>
+        <line num="179" count="6" type="stmt"/>
+        <line num="194" count="6" type="stmt"/>
+        <line num="195" count="24" type="cond" truecount="3" falsecount="0"/>
+        <line num="197" count="1" type="stmt"/>
+        <line num="199" count="8" type="stmt"/>
+        <line num="201" count="15" type="stmt"/>
+        <line num="205" count="6" type="stmt"/>
+        <line num="206" count="24" type="cond" truecount="4" falsecount="0"/>
+        <line num="208" count="6" type="stmt"/>
+        <line num="211" count="24" type="cond" truecount="3" falsecount="0"/>
+        <line num="213" count="6" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Radio/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.RadioGroup">
+      <metrics statements="16" coveredstatements="16" conditionals="12" coveredconditionals="12" methods="6" coveredmethods="6"/>
+      <file name="RadioGroup.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/RadioGroup/RadioGroup.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="RadioGroup.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/RadioGroup/RadioGroup.tsx">
+        <metrics statements="16" coveredstatements="16" conditionals="12" coveredconditionals="12" methods="6" coveredmethods="6"/>
+        <line num="35" count="7" type="stmt"/>
+        <line num="39" count="7" type="stmt"/>
+        <line num="41" count="5" type="stmt"/>
+        <line num="42" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="47" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="48" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="59" count="4" type="stmt"/>
+        <line num="63" count="12" type="stmt"/>
+        <line num="66" count="24" type="stmt"/>
+        <line num="73" count="1" type="stmt"/>
+        <line num="74" count="1" type="stmt"/>
+        <line num="91" count="12" type="stmt"/>
+        <line num="92" count="12" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/RadioGroup/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.ReadMore">
+      <metrics statements="23" coveredstatements="23" conditionals="14" coveredconditionals="12" methods="7" coveredmethods="7"/>
+      <file name="ReadMore.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/ReadMore/ReadMore.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="ReadMore.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/ReadMore/ReadMore.tsx">
+        <metrics statements="23" coveredstatements="23" conditionals="14" coveredconditionals="12" methods="7" coveredmethods="7"/>
+        <line num="23" count="8" type="stmt"/>
+        <line num="27" count="6" type="stmt"/>
+        <line num="33" count="8" type="stmt"/>
+        <line num="35" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="39" count="8" type="stmt"/>
+        <line num="40" count="8" type="stmt"/>
+        <line num="41" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="43" count="8" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="54" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="60" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="61" count="6" type="stmt"/>
+        <line num="63" count="3" type="stmt"/>
+        <line num="68" count="9" type="stmt"/>
+        <line num="69" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="71" count="9" type="stmt"/>
+        <line num="85" count="6" type="stmt"/>
+        <line num="86" count="3" type="stmt"/>
+        <line num="96" count="6" type="stmt"/>
+        <line num="105" count="6" type="stmt"/>
+        <line num="114" count="6" type="stmt"/>
+        <line num="115" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="128" count="6" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/ReadMore/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Select">
+      <metrics statements="21" coveredstatements="11" conditionals="15" coveredconditionals="5" methods="13" coveredmethods="4"/>
+      <file name="Select.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Select/Select.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Select.story.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Select/Select.story.tsx">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+      </file>
+      <file name="Select.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Select/Select.tsx">
+        <metrics statements="17" coveredstatements="11" conditionals="15" coveredconditionals="5" methods="10" coveredmethods="4"/>
+        <line num="29" count="6" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="36" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="52" count="6" type="stmt"/>
+        <line num="53" count="3" type="stmt"/>
+        <line num="65" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="69" count="6" type="stmt"/>
+        <line num="79" count="6" type="stmt"/>
+        <line num="99" count="6" type="stmt"/>
+        <line num="100" count="6" type="stmt"/>
+        <line num="104" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="109" count="6" type="stmt"/>
+        <line num="121" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="125" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="135" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="145" count="6" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Select/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Separator">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="Separator.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Separator/Separator.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="20" count="5" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Separator/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Slider">
+      <metrics statements="6" coveredstatements="2" conditionals="6" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <file name="Slider.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Slider/Slider.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Slider.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Slider/Slider.tsx">
+        <metrics statements="6" coveredstatements="2" conditionals="6" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="53" count="5" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="60" count="5" type="stmt"/>
+        <line num="75" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="90" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="93" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Slider/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Spacer">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Spacer.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Spacer/Spacer.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="10" count="7" type="stmt"/>
+        <line num="11" count="90" type="stmt"/>
+        <line num="14" count="7" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Spacer/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Spinner">
+      <metrics statements="26" coveredstatements="10" conditionals="4" coveredconditionals="1" methods="8" coveredmethods="2"/>
+      <file name="Spinner.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Spinner/Spinner.ios.tsx">
+        <metrics statements="13" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+      </file>
+      <file name="Spinner.shared.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Spinner/Spinner.shared.tsx">
+        <metrics statements="7" coveredstatements="4" conditionals="4" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="18" count="7" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="21" count="2" type="cond" truecount="1" falsecount="3"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+      </file>
+      <file name="Spinner.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Spinner/Spinner.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="7" count="7" type="stmt"/>
+        <line num="14" count="7" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="31" count="7" type="stmt"/>
+        <line num="37" count="7" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Spinner/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.StackableBorderBox">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="StackableBorderBox.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/StackableBorderBox/StackableBorderBox.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="StackableBorderBox.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/StackableBorderBox/StackableBorderBox.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="30" count="5" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/StackableBorderBox/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.StaticCountdownTimer">
+      <metrics statements="14" coveredstatements="13" conditionals="10" coveredconditionals="9" methods="1" coveredmethods="1"/>
+      <file name="StaticCountdownTimer.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/StaticCountdownTimer/StaticCountdownTimer.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="StaticCountdownTimer.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/StaticCountdownTimer/StaticCountdownTimer.tsx">
+        <metrics statements="14" coveredstatements="13" conditionals="10" coveredconditionals="9" methods="1" coveredmethods="1"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="23" count="5" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="26" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="27" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="29" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="36" count="3" type="stmt"/>
+        <line num="37" count="3" type="stmt"/>
+        <line num="40" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="47" count="3" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/StaticCountdownTimer/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Stepper">
+      <metrics statements="19" coveredstatements="18" conditionals="15" coveredconditionals="11" methods="4" coveredmethods="4"/>
+      <file name="Stepper.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Stepper/Stepper.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Stepper.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Stepper/Stepper.tsx">
+        <metrics statements="19" coveredstatements="18" conditionals="15" coveredconditionals="11" methods="4" coveredmethods="4"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="38" count="5" type="stmt"/>
+        <line num="40" count="5" type="stmt"/>
+        <line num="41" count="4" type="stmt"/>
+        <line num="48" count="5" type="stmt"/>
+        <line num="53" count="9" type="cond" truecount="0" falsecount="1"/>
+        <line num="55" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="58" count="9" type="stmt"/>
+        <line num="64" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="65" count="4" type="stmt"/>
+        <line num="68" count="5" type="cond" truecount="4" falsecount="0"/>
+        <line num="69" count="2" type="stmt"/>
+        <line num="81" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="82" count="0" type="stmt"/>
+        <line num="86" count="3" type="stmt"/>
+        <line num="90" count="5" type="stmt"/>
+        <line num="96" count="5" type="stmt"/>
+        <line num="101" count="5" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Stepper/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Tabs">
+      <metrics statements="56" coveredstatements="43" conditionals="20" coveredconditionals="12" methods="18" coveredmethods="17"/>
+      <file name="Tabs.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Tabs/Tabs.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Tabs.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Tabs/Tabs.tsx">
+        <metrics statements="56" coveredstatements="43" conditionals="20" coveredconditionals="12" methods="18" coveredmethods="17"/>
+        <line num="61" count="6" type="stmt"/>
+        <line num="63" count="22" type="stmt"/>
+        <line num="68" count="14" type="stmt"/>
+        <line num="71" count="14" type="cond" truecount="2" falsecount="0"/>
+        <line num="72" count="14" type="stmt"/>
+        <line num="77" count="14" type="stmt"/>
+        <line num="78" count="1" type="stmt"/>
+        <line num="81" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="82" count="1" type="stmt"/>
+        <line num="90" count="14" type="stmt"/>
+        <line num="91" count="14" type="stmt"/>
+        <line num="93" count="14" type="stmt"/>
+        <line num="94" count="15" type="cond" truecount="2" falsecount="3"/>
+        <line num="95" count="15" type="stmt"/>
+        <line num="98" count="0" type="stmt"/>
+        <line num="99" count="0" type="stmt"/>
+        <line num="101" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="102" count="0" type="stmt"/>
+        <line num="105" count="0" type="stmt"/>
+        <line num="106" count="0" type="stmt"/>
+        <line num="107" count="0" type="stmt"/>
+        <line num="109" count="0" type="stmt"/>
+        <line num="110" count="0" type="stmt"/>
+        <line num="111" count="0" type="stmt"/>
+        <line num="112" count="0" type="stmt"/>
+        <line num="113" count="0" type="stmt"/>
+        <line num="117" count="14" type="stmt"/>
+        <line num="118" count="14" type="stmt"/>
+        <line num="122" count="1" type="stmt"/>
+        <line num="126" count="0" type="stmt"/>
+        <line num="129" count="14" type="stmt"/>
+        <line num="130" count="35" type="cond" truecount="2" falsecount="0"/>
+        <line num="131" count="2" type="stmt"/>
+        <line num="133" count="33" type="stmt"/>
+        <line num="134" count="33" type="cond" truecount="2" falsecount="0"/>
+        <line num="141" count="1" type="stmt"/>
+        <line num="150" count="15" type="cond" truecount="0" falsecount="1"/>
+        <line num="151" count="15" type="stmt"/>
+        <line num="154" count="16" type="stmt"/>
+        <line num="168" count="6" type="stmt"/>
+        <line num="169" count="15" type="stmt"/>
+        <line num="199" count="15" type="cond" truecount="2" falsecount="0"/>
+        <line num="203" count="6" type="stmt"/>
+        <line num="204" count="14" type="stmt"/>
+        <line num="213" count="6" type="stmt"/>
+        <line num="214" count="15" type="stmt"/>
+        <line num="224" count="6" type="stmt"/>
+        <line num="238" count="6" type="stmt"/>
+        <line num="250" count="6" type="stmt"/>
+        <line num="251" count="15" type="cond" truecount="1" falsecount="1"/>
+        <line num="258" count="6" type="stmt"/>
+        <line num="267" count="6" type="stmt"/>
+        <line num="272" count="6" type="stmt"/>
+        <line num="276" count="6" type="stmt"/>
+        <line num="281" count="6" type="stmt"/>
+        <line num="282" count="2" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Tabs/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Tag">
+      <metrics statements="19" coveredstatements="19" conditionals="9" coveredconditionals="9" methods="6" coveredmethods="6"/>
+      <file name="Tag.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Tag/Tag.tsx">
+        <metrics statements="19" coveredstatements="19" conditionals="9" coveredconditionals="9" methods="6" coveredmethods="6"/>
+        <line num="15" count="7" type="stmt"/>
+        <line num="16" count="504" type="stmt"/>
+        <line num="18" count="504" type="stmt"/>
+        <line num="28" count="7" type="stmt"/>
+        <line num="33" count="7" type="stmt"/>
+        <line num="34" count="6" type="stmt"/>
+        <line num="35" count="6" type="stmt"/>
+        <line num="36" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="37" count="13" type="stmt"/>
+        <line num="39" count="6" type="stmt"/>
+        <line num="49" count="7" type="stmt"/>
+        <line num="50" count="20" type="cond" truecount="4" falsecount="0"/>
+        <line num="53" count="20" type="stmt"/>
+        <line num="55" count="6" type="stmt"/>
+        <line num="60" count="20" type="stmt"/>
+        <line num="61" count="20" type="stmt"/>
+        <line num="64" count="7" type="stmt"/>
+        <line num="82" count="7" type="stmt"/>
+        <line num="84" count="7" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Tag/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.TextArea">
+      <metrics statements="20" coveredstatements="20" conditionals="24" coveredconditionals="24" methods="7" coveredmethods="7"/>
+      <file name="TextArea.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/TextArea/TextArea.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="TextArea.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/TextArea/TextArea.tsx">
+        <metrics statements="20" coveredstatements="20" conditionals="24" coveredconditionals="24" methods="7" coveredmethods="7"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="19" count="29" type="stmt"/>
+        <line num="29" count="6" type="stmt"/>
+        <line num="59" count="15" type="stmt"/>
+        <line num="64" count="15" type="stmt"/>
+        <line num="65" count="15" type="cond" truecount="2" falsecount="0"/>
+        <line num="66" count="2" type="stmt"/>
+        <line num="71" count="14" type="stmt"/>
+        <line num="72" count="14" type="stmt"/>
+        <line num="73" count="14" type="stmt"/>
+        <line num="74" count="14" type="cond" truecount="2" falsecount="0"/>
+        <line num="83" count="57" type="stmt"/>
+        <line num="84" count="57" type="stmt"/>
+        <line num="85" count="57" type="cond" truecount="2" falsecount="0"/>
+        <line num="88" count="15" type="stmt"/>
+        <line num="89" count="12" type="stmt"/>
+        <line num="93" count="29" type="stmt"/>
+        <line num="94" count="29" type="stmt"/>
+        <line num="96" count="29" type="cond" truecount="2" falsecount="0"/>
+        <line num="98" count="29" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/TextArea/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.TimeRemaining">
+      <metrics statements="8" coveredstatements="8" conditionals="9" coveredconditionals="8" methods="2" coveredmethods="2"/>
+      <file name="TimeRemaining.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/TimeRemaining/TimeRemaining.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="TimeRemaining.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/TimeRemaining/TimeRemaining.tsx">
+        <metrics statements="8" coveredstatements="8" conditionals="9" coveredconditionals="8" methods="2" coveredmethods="2"/>
+        <line num="6" count="13" type="stmt"/>
+        <line num="13" count="5" type="cond" truecount="0" falsecount="1"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="21" count="5" type="stmt"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="24" count="5" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/TimeRemaining/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Toggle">
+      <metrics statements="13" coveredstatements="13" conditionals="11" coveredconditionals="11" methods="4" coveredmethods="4"/>
+      <file name="Toggle.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Toggle/Toggle.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Toggle.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Toggle/Toggle.tsx">
+        <metrics statements="13" coveredstatements="13" conditionals="11" coveredconditionals="11" methods="4" coveredmethods="4"/>
+        <line num="21" count="5" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
+        <line num="31" count="4" type="stmt"/>
+        <line num="33" count="4" type="stmt"/>
+        <line num="38" count="4" type="stmt"/>
+        <line num="39" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="47" count="6" type="stmt"/>
+        <line num="48" count="6" type="stmt"/>
+        <line num="50" count="6" type="stmt"/>
+        <line num="84" count="5" type="stmt"/>
+        <line num="86" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="91" count="5" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Toggle/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Tooltip">
+      <metrics statements="46" coveredstatements="4" conditionals="20" coveredconditionals="0" methods="11" coveredmethods="0"/>
+      <file name="Tooltip.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Tooltip/Tooltip.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Tooltip.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Tooltip/Tooltip.tsx">
+        <metrics statements="46" coveredstatements="4" conditionals="20" coveredconditionals="0" methods="11" coveredmethods="0"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="24" count="5" type="stmt"/>
+        <line num="30" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="32" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="38" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="66" count="5" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="76" count="0" type="stmt"/>
+        <line num="78" count="0" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="80" count="0" type="stmt"/>
+        <line num="81" count="0" type="stmt"/>
+        <line num="83" count="0" type="stmt"/>
+        <line num="85" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="86" count="0" type="stmt"/>
+        <line num="87" count="0" type="stmt"/>
+        <line num="88" count="0" type="stmt"/>
+        <line num="89" count="0" type="stmt"/>
+        <line num="91" count="0" type="stmt"/>
+        <line num="92" count="0" type="stmt"/>
+        <line num="93" count="0" type="stmt"/>
+        <line num="95" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="96" count="0" type="stmt"/>
+        <line num="97" count="0" type="stmt"/>
+        <line num="98" count="0" type="stmt"/>
+        <line num="101" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="102" count="0" type="stmt"/>
+        <line num="103" count="0" type="stmt"/>
+        <line num="104" count="0" type="stmt"/>
+        <line num="108" count="0" type="stmt"/>
+        <line num="116" count="0" type="stmt"/>
+        <line num="117" count="0" type="stmt"/>
+        <line num="120" count="0" type="stmt"/>
+        <line num="121" count="0" type="stmt"/>
+        <line num="124" count="0" type="stmt"/>
+        <line num="125" count="0" type="stmt"/>
+        <line num="128" count="0" type="stmt"/>
+        <line num="129" count="0" type="stmt"/>
+        <line num="134" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="137" count="0" type="stmt"/>
+        <line num="159" count="5" type="stmt"/>
+        <line num="160" count="0" type="stmt"/>
+        <line num="162" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="163" count="0" type="stmt"/>
+        <line num="166" count="0" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Tooltip/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.elements.Typography">
+      <metrics statements="32" coveredstatements="30" conditionals="32" coveredconditionals="29" methods="11" coveredmethods="11"/>
+      <file name="Typography.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Typography/Typography.tsx">
+        <metrics statements="26" coveredstatements="24" conditionals="30" coveredconditionals="27" methods="8" coveredmethods="8"/>
+        <line num="54" count="18" type="stmt"/>
+        <line num="59" count="18" type="stmt"/>
+        <line num="60" count="429" type="cond" truecount="2" falsecount="0"/>
+        <line num="61" count="303" type="stmt"/>
+        <line num="63" count="126" type="stmt"/>
+        <line num="98" count="18" type="stmt"/>
+        <line num="99" count="429" type="cond" truecount="2" falsecount="0"/>
+        <line num="142" count="430" type="cond" truecount="1" falsecount="1"/>
+        <line num="143" count="0" type="stmt"/>
+        <line num="145" count="430" type="cond" truecount="2" falsecount="0"/>
+        <line num="149" count="428" type="cond" truecount="2" falsecount="0"/>
+        <line num="175" count="54" type="stmt"/>
+        <line num="177" count="430" type="stmt"/>
+        <line num="179" count="429" type="cond" truecount="1" falsecount="1"/>
+        <line num="180" count="0" type="stmt"/>
+        <line num="182" count="429" type="stmt"/>
+        <line num="229" count="18" type="stmt"/>
+        <line num="230" count="358" type="cond" truecount="4" falsecount="0"/>
+        <line num="259" count="18" type="stmt"/>
+        <line num="260" count="71" type="cond" truecount="5" falsecount="0"/>
+        <line num="261" count="1" type="stmt"/>
+        <line num="265" count="70" type="stmt"/>
+        <line num="287" count="18" type="stmt"/>
+        <line num="289" count="18" type="stmt"/>
+        <line num="290" count="18" type="stmt"/>
+        <line num="291" count="18" type="stmt"/>
+      </file>
+      <file name="determineFontSizes.ts" path="/Users/jtoumey/Code/react/sunnies/src/elements/Typography/determineFontSizes.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="11" count="431" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="428" type="stmt"/>
+        <line num="13" count="428" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="20" count="6" type="stmt"/>
+        <line num="23" count="6" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/elements/Typography/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.helpers">
+      <metrics statements="13" coveredstatements="9" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="5"/>
+      <file name="color.ts" path="/Users/jtoumey/Code/react/sunnies/src/helpers/color.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="7" count="5815" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/jtoumey/Code/react/sunnies/src/helpers/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="injectGlobalStyles.tsx" path="/Users/jtoumey/Code/react/sunnies/src/helpers/injectGlobalStyles.tsx">
+        <metrics statements="5" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="143" count="0" type="stmt"/>
+        <line num="145" count="0" type="stmt"/>
+        <line num="151" count="15" type="stmt"/>
+        <line num="158" count="15" type="stmt"/>
+      </file>
+      <file name="isReactNative.tsx" path="/Users/jtoumey/Code/react/sunnies/src/helpers/isReactNative.tsx">
+        <metrics statements="3" coveredstatements="2" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="6" count="36" type="cond" truecount="3" falsecount="1"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="36" type="stmt"/>
+      </file>
+      <file name="media.ts" path="/Users/jtoumey/Code/react/sunnies/src/helpers/media.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="20" count="16" type="stmt"/>
+        <line num="22" count="80" type="stmt"/>
+        <line num="24" count="60" type="stmt"/>
+      </file>
+      <file name="space.ts" path="/Users/jtoumey/Code/react/sunnies/src/helpers/space.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="7" count="332" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.platform">
+      <metrics statements="12" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="primitives.ios.ts" path="/Users/jtoumey/Code/react/sunnies/src/platform/primitives.ios.ts">
+        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+      </file>
+      <file name="primitives.ts" path="/Users/jtoumey/Code/react/sunnies/src/platform/primitives.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="8" count="23" type="stmt"/>
+        <line num="14" count="23" type="stmt"/>
+        <line num="15" count="23" type="stmt"/>
+        <line num="16" count="23" type="stmt"/>
+        <line num="21" count="23" type="stmt"/>
+        <line num="22" count="23" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.platform.fonts">
+      <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="fontFamily.ios.ts" path="/Users/jtoumey/Code/react/sunnies/src/platform/fonts/fontFamily.ios.ts">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+      <file name="fontFamily.ts" path="/Users/jtoumey/Code/react/sunnies/src/platform/fonts/fontFamily.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="22" type="stmt"/>
+        <line num="8" count="22" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/jtoumey/Code/react/sunnies/src/platform/fonts/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.svgs">
+      <metrics statements="204" coveredstatements="114" conditionals="7" coveredconditionals="3" methods="87" coveredmethods="9"/>
+      <file name="AddCircleFillIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/AddCircleFillIcon.tsx">
+        <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="21" count="7" type="stmt"/>
+      </file>
+      <file name="AddCircleIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/AddCircleIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="AddIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/AddIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="AlertIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/AlertIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="ArrowDownCircleIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/ArrowDownCircleIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="ArrowDownIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/ArrowDownIcon.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+      </file>
+      <file name="ArrowLeftCircleIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/ArrowLeftCircleIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="ArrowLeftIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/ArrowLeftIcon.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="9" type="stmt"/>
+      </file>
+      <file name="ArrowRightCircleIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/ArrowRightCircleIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="ArrowRightIcon.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/ArrowRightIcon.ios.tsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+      <file name="ArrowRightIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/ArrowRightIcon.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="15" type="stmt"/>
+      </file>
+      <file name="ArrowUpCircleIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/ArrowUpCircleIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="ArrowUpIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/ArrowUpIcon.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+      </file>
+      <file name="ArtsyLogoBlackIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/ArtsyLogoBlackIcon.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="20" count="7" type="stmt"/>
+      </file>
+      <file name="ArtsyLogoWhiteIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/ArtsyLogoWhiteIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="7" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+      <file name="ArtsyMarkBlackIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/ArtsyMarkBlackIcon.tsx">
+        <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="20" count="7" type="stmt"/>
+      </file>
+      <file name="ArtsyMarkWhiteIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/ArtsyMarkWhiteIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="7" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+      <file name="ArtworkIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/ArtworkIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="AuctionIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/AuctionIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="BellFillIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/BellFillIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="BellIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/BellIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="BlueChipIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/BlueChipIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="CheckCircleFillIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/CheckCircleFillIcon.tsx">
+        <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="21" count="7" type="stmt"/>
+      </file>
+      <file name="CheckCircleIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/CheckCircleIcon.tsx">
+        <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="21" count="7" type="stmt"/>
+        <line num="23" count="7" type="stmt"/>
+      </file>
+      <file name="CheckIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/CheckIcon.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+      </file>
+      <file name="ChevronIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/ChevronIcon.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="19" count="7" type="stmt"/>
+        <line num="26" count="7" type="stmt"/>
+        <line num="38" count="7" type="stmt"/>
+        <line num="42" count="29" type="cond" truecount="2" falsecount="0"/>
+        <line num="43" count="29" type="stmt"/>
+      </file>
+      <file name="CloseCircleIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/CloseCircleIcon.tsx">
+        <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="21" count="7" type="stmt"/>
+      </file>
+      <file name="CloseIcon.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/CloseIcon.ios.tsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+      <file name="CloseIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/CloseIcon.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="8" type="stmt"/>
+      </file>
+      <file name="CollapseIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/CollapseIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="CreditCardIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/CreditCardIcon.tsx">
+        <metrics statements="14" coveredstatements="7" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <line num="17" count="7" type="stmt"/>
+        <line num="18" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="28" count="7" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="48" count="7" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="62" count="7" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="80" count="7" type="stmt"/>
+        <line num="81" count="0" type="stmt"/>
+        <line num="103" count="7" type="stmt"/>
+        <line num="104" count="0" type="stmt"/>
+        <line num="127" count="7" type="stmt"/>
+      </file>
+      <file name="DocumentIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/DocumentIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="DownloadIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/DownloadIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="EditIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/EditIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="EnterIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/EnterIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="EnvelopeIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/EnvelopeIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="EstablishedIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/EstablishedIcon.tsx">
+        <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="21" count="7" type="stmt"/>
+      </file>
+      <file name="ExpandIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/ExpandIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="EyeClosedIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/EyeClosedIcon.tsx">
+        <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="21" count="7" type="stmt"/>
+      </file>
+      <file name="EyeOpenedIcon.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/EyeOpenedIcon.ios.tsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+      <file name="EyeOpenedIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/EyeOpenedIcon.tsx">
+        <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="20" count="7" type="stmt"/>
+      </file>
+      <file name="FacebookIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/FacebookIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="FairIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/FairIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="FilterIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/FilterIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="GenomeIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/GenomeIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="GraphIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/GraphIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="HeartFillIcon.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/HeartFillIcon.ios.tsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+      <file name="HeartFillIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/HeartFillIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="HeartIcon.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/HeartIcon.ios.tsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+      <file name="HeartIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/HeartIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="HomeIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/HomeIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="Icon.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/Icon.ios.tsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+      </file>
+      <file name="Icon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/Icon.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="32" count="7" type="stmt"/>
+        <line num="42" count="7" type="stmt"/>
+      </file>
+      <file name="InfoCircleIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/InfoCircleIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="InstagramIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/InstagramIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="InstitutionIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/InstitutionIcon.tsx">
+        <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="25" count="7" type="stmt"/>
+      </file>
+      <file name="LoaderIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/LoaderIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="LockIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/LockIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="LogoutIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/LogoutIcon.tsx">
+        <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="23" count="7" type="stmt"/>
+      </file>
+      <file name="MagnifyingGlassIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/MagnifyingGlassIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="MapPinIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/MapPinIcon.tsx">
+        <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="21" count="7" type="stmt"/>
+      </file>
+      <file name="MenuIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/MenuIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="MessageIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/MessageIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="MoreIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/MoreIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="NoImageIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/NoImageIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="PageIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/PageIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="PageViewsIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/PageViewsIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="PublicationIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/PublicationIcon.tsx">
+        <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="21" count="7" type="stmt"/>
+      </file>
+      <file name="QuestionCircleIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/QuestionCircleIcon.tsx">
+        <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="20" count="7" type="stmt"/>
+      </file>
+      <file name="ReloadIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/ReloadIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="SettingsIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/SettingsIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="ShareIcon.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/ShareIcon.ios.tsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+      <file name="ShareIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/ShareIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="TagIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/TagIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="TimerIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/TimerIcon.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+      </file>
+      <file name="TopEmergingIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/TopEmergingIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="TrashIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/TrashIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="TwitterIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/TwitterIcon.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="UserMultiIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/UserMultiIcon.tsx">
+        <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="21" count="7" type="stmt"/>
+      </file>
+      <file name="UserSingleIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/UserSingleIcon.tsx">
+        <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="21" count="7" type="stmt"/>
+      </file>
+      <file name="WeChatIcon.ios.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/WeChatIcon.ios.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="WeChatIcon.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/WeChatIcon.tsx">
+        <metrics statements="12" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="53" count="7" type="stmt"/>
+        <line num="54" count="7" type="stmt"/>
+        <line num="55" count="7" type="stmt"/>
+        <line num="57" count="7" type="stmt"/>
+        <line num="86" count="7" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/jtoumey/Code/react/sunnies/src/svgs/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.util">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="usePrevious.ts" path="/Users/jtoumey/Code/react/sunnies/src/util/usePrevious.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="8" count="12" type="stmt"/>
+        <line num="9" count="12" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="12" count="12" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
