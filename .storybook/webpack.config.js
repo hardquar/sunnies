@@ -66,7 +66,9 @@ module.exports = async ({ config, mode }) => {
     config.plugins = config.plugins.filter(plugin => {
       return !(plugin instanceof webpack.ProgressPlugin)
     })
-  }
+	}
+
+	console.log(config.module.rules);
 
   config.module.rules.push(
     {
