@@ -6,7 +6,7 @@ import 'storybook-chromatic';
 
 // automatically import all files ending in *.story.tsx.
 const req = require.context('../src', true, /\.story\.tsx$/)
-function loadStories() {
+const loadStories = () => {
   req
     .keys()
     .sort()
@@ -16,9 +16,10 @@ function loadStories() {
 addParameters({
   options: {
     theme: create({
-      base: 'light',
+      base: 'dark',
       brandTitle: 'Sunnies',
-      brandUrl: 'https://toumey.io',
+			brandUrl: 'https://toumey.io',
+			brandImage: 'https://github.com/miloofcroton/sunnies/blob/master/assets/img/icon-med.png?raw=true',
     }),
 
     inline: true,
