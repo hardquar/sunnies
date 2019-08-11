@@ -47,8 +47,8 @@ addParameters({
 
 			// Brand
       brandTitle: 'Sunnies',
-			brandUrl: 'https://toumey.io',
-			brandImage: 'https://github.com/miloofcroton/sunnies/blob/master/assets/img/icon-med.png?raw=true',
+			brandUrl: 'https://hardquar.com',
+			brandImage: 'https://github.com/hardquar/sunnies/blob/master/packages/sunnies/assets/img/icon-med.png?raw=true',
     }),
 
     inline: true,
