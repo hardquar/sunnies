@@ -95,6 +95,13 @@ and patch for bug fixes. Trivial will not cause a release and should be used whe
 
 If you don't want to release on a particular PR but the changes aren't trivial then use the `Skip Release` tag along side the appropriate version tag.
 
+### Publishing
+
+Run the following to publish to NPM:
+
+```
+npm publish --access public
+```
 
 ## Inspirations
 
