@@ -3,9 +3,9 @@
  * universal (shared) platform code.
  */
 export function isReactNative(): boolean {
-  if (typeof navigator !== "undefined" && navigator.product === "ReactNative") {
-    return true
-  } else {
-    return false
-  }
+	if (typeof navigator !== 'undefined' && navigator.product === 'ReactNative') {
+		return true
+	} else {
+		return false
+	}
 }

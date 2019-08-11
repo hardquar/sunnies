@@ -1,11 +1,12 @@
 {
 	"extends": [
 		"eslint:recommended",
-		"plugin:react/recommended",
-		"plugin:@typescript-eslint/recommended",
 		"prettier",
 		"prettier/react",
-		"prettier/@typescript-eslint"
+		"prettier/@typescript-eslint",
+		"plugin:prettier/recommended",
+		"plugin:react/recommended",
+		"plugin:@typescript-eslint/recommended",
 	],
 	"env": {
 		"node": true,
@@ -17,11 +18,14 @@
 	"plugins": [
 		"@typescript-eslint",
 		"react",
+		"prettier",
 		"lodash",
 		"promise",
 	],
 	"parserOptions": {
+		"project": "./tsconfig.json",
 		"sourceType": "module",
+		"ecmaVersion": 2018, // Allows for the parsing of modern ECMAScript features
 		"ecmaFeatures": {
 			"jsx": true
 		}
@@ -32,6 +36,11 @@
 		}
 	},
 	"rules": {
+		"prettier/prettier": "warn",
+		// "semi": ["error", "always"],
+		"semi": "off",
+		"@typescript-eslint/semi": 0,
+		// "@typescript-eslint/semi": "error",
 		"constructor-super": 2,
 		"jsx-quotes": [2, "prefer-single"],
 		"lodash/chaining": 0,
@@ -60,11 +69,19 @@
 		"no-unsafe-finally": 2,
 		"no-unsafe-negation": 2,
 		"no-unused-vars": "off", // we are using the typescript plugin instead
+		"@typescript-eslint/indent": [
+			"error",
+			"tab",
+			{
+				"ignoreComments": true
+			}
+		],
 		"@typescript-eslint/no-unused-vars": [2, { "args": "none" }], // this ignores the unused var error for TS interfaces
 		"@typescript-eslint/no-use-before-define": 0,
 		"@typescript-eslint/camelcase": 1,
 		"@typescript-eslint/interface-name-prefix": 0,
 		"@typescript-eslint/array-type": [2, "array-simple"],
+		"@typescript-eslint/explicit-function-return-type": 0,
 		"prefer-const": 2,
 		"promise/always-return": 0,
 		"promise/catch-or-return": 2,

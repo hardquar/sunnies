@@ -28,6 +28,25 @@ $ yarn
 $ yarn dev
 ```
 
+### Tooling
+
+Add the following to your VSCode editor's settings to get linting to work in the IDE:
+
+```
+"eslint.validate": [
+  "javascript",
+  "javascriptreact",
+  {
+    "language": "typescript",
+    "autoFix": true
+  },
+  {
+    "language": "typescriptreact",
+    "autoFix": true
+  }
+]
+```
+
 ## Local consumption
 
 ##### (Linking and Unlinking)

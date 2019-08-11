@@ -18,15 +18,15 @@ type Media = { [S in keyof typeof breakpoints]: typeof css }
  * `
  */
 export const media: Media = Object.entries(breakpoints).reduce(
-  (accumulator, [label, value]) => {
-    return {
-      ...accumulator,
-      [label]: (strings, ...args) => css`
+	(accumulator, [label, value]) => {
+		return {
+			...accumulator,
+			[label]: (strings, ...args) => css`
         @media (max-width: ${value}px) {
           ${css(strings, ...args)};
         }
       `,
-    }
-  },
-  {}
+		}
+	},
+	{}
 ) as Media

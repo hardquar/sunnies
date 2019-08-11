@@ -29,7 +29,8 @@ const plugins = [
     formatter: "codeframe",
     formatterOptions: "highlightCode",
     checkSyntacticErrors: true,
-    watch: ["./src"],
+		watch: ["./src"],
+		eslint: true
   }),
   new ForkTsCheckerNotifierWebpackPlugin({
     excludeWarnings: true,
