@@ -1,10 +1,6 @@
 {
 	"extends": [
 		"eslint:recommended",
-		"prettier",
-		"prettier/react",
-		"prettier/@typescript-eslint",
-		"plugin:prettier/recommended",
 		"plugin:react/recommended",
 		"plugin:@typescript-eslint/recommended",
 	],
@@ -18,14 +14,13 @@
 	"plugins": [
 		"@typescript-eslint",
 		"react",
-		"prettier",
 		"lodash",
 		"promise",
 	],
 	"parserOptions": {
 		"project": "./tsconfig.json",
 		"sourceType": "module",
-		"ecmaVersion": 2018, // Allows for the parsing of modern ECMAScript features
+		"ecmaVersion": 2018,
 		"ecmaFeatures": {
 			"jsx": true
 		}
@@ -36,64 +31,78 @@
 		}
 	},
 	"rules": {
-		// "max-len": ["error", { "code": 80 }], // this lets you replace prettier's printWidth
-		"prettier/prettier": "warn",
-		// "semi": ["error", "always"],
-		"semi": "off",
-		"@typescript-eslint/semi": 0,
-		// "@typescript-eslint/semi": "error",
-		"constructor-super": 2,
-		"jsx-quotes": [2, "prefer-single"],
-		"lodash/chaining": 0,
-		"no-case-declarations": 2,
-		"no-class-assign": 2,
-		"no-cond-assign": 2,
+
+		// ESLint
+
+		// Replaces the need for Prettier
+		"max-len": ["error", { "code": 300 }],
+		"semi": ["error", "never"],
+		"indent": ["error", "tab", { "ignoreComments": true }],
+		"quotes": ["error", "single"],
+		"jsx-quotes": ["error", "prefer-single"],
+		"comma-dangle": ["error", "only-multiline"],
+		"object-curly-spacing": ["error", "always"],
+		"array-bracket-spacing": ["error", "never"],
+		"arrow-parens": ["error", "always"],
+
+		// ESLint (cont'd)
+		"no-case-declarations": "error",
+		"no-class-assign": "error",
+		"no-cond-assign": "error",
 		"no-console": [1, { "allow": ["warn", "error", "info"] }],
-		"no-constant-condition": 2,
-		"no-empty": 2,
-		"no-empty-pattern": 2,
+		"no-constant-condition": "error",
+		"no-empty": "error",
+		"no-empty-pattern": "error",
 		"no-extra-semi": 0,
-		"no-global-assign": 2,
-		"no-inner-declarations": 2,
-		"no-invalid-regexp": 2,
-		"no-mixed-requires": 2,
-		"no-mixed-spaces-and-tabs": 0,
-		"no-negated-in-lhs": 2,
-		"no-new-require": 2,
-		"no-path-concat": 2,
-		"no-proto": 2,
-		"no-regex-spaces": 2,
-		"no-restricted-modules": [2, "sys", "_linklist"],
-		"no-sparse-arrays": 2,
-		"no-undef": 2,
-		"no-unexpected-multiline": 0,
-		"no-unsafe-finally": 2,
-		"no-unsafe-negation": 2,
-		"no-unused-vars": "off", // we are using the typescript plugin instead
-		"@typescript-eslint/indent": [
-			"error",
-			"tab",
-			{
-				"ignoreComments": true
-			}
-		],
-		"@typescript-eslint/no-unused-vars": [2, { "args": "none" }], // this ignores the unused var error for TS interfaces
-		"@typescript-eslint/no-use-before-define": 0,
-		"@typescript-eslint/camelcase": 1,
-		"@typescript-eslint/interface-name-prefix": 0,
-		"@typescript-eslint/array-type": [2, "array-simple"],
-		"@typescript-eslint/explicit-function-return-type": 0,
-		"prefer-const": 2,
-		"promise/always-return": 0,
-		"promise/catch-or-return": 2,
-		"promise/param-names": 2,
-		"quote-props": 0,
-		"react/jsx-uses-react": 2,
-		"react/jsx-uses-vars": 2,
-		"react/prop-types": 2,
-		"react/react-in-jsx-scope": 2,
-		"require-yield": 2,
-		"react/display-name": "off", // we have this all over our storybook examples
-		"react/no-unescaped-entities": "off" // this is purely to avoid changing all string quotemarks in JSX to their ampersand code equivalents
+		"no-global-assign": "error",
+		"no-inner-declarations": "error",
+		"no-invalid-regexp": "error",
+		"no-mixed-requires": "error",
+		"no-mixed-spaces-and-tabs": "error",
+		"no-negated-in-lhs": "error",
+		"no-new-require": "error",
+		"no-path-concat": "error",
+		"no-proto": "error",
+		"no-regex-spaces": "error",
+		"no-restricted-modules": ["error", "sys", "_linklist"],
+		"no-sparse-arrays": "error",
+		"no-undef": "error",
+		"no-unexpected-multiline": "off",
+		"no-unsafe-finally": "error",
+		"no-unsafe-negation": "error",
+		"no-unused-vars": "off", // using typescript plugin instead
+		"constructor-super": "error",
+		"prefer-const": "error",
+		"quote-props": "off",
+		"require-yield": "error",
+		"linebreak-style": ["error", "unix"],
+
+		// TypeScript-ESLint
+		"@typescript-eslint/no-unused-vars": ["error", { "args": "none" }], // this ignores the unused var error for TS interfaces
+		"@typescript-eslint/no-use-before-define": "off",
+		"@typescript-eslint/camelcase": "warn",
+		"@typescript-eslint/interface-name-prefix": "off",
+		"@typescript-eslint/array-type": ["error", "array-simple"],
+		"@typescript-eslint/explicit-function-return-type": "off",
+		// "@typescript-eslint/indent": ["error", "tab", { "ignoreComments": true }],
+		"@typescript-eslint/indent": "off",
+
+		// Promise
+		"promise/always-return": "off",
+		"promise/catch-or-return": "error",
+		"promise/param-names": "error",
+
+		// Lodash
+		"lodash/chaining": "off",
+
+		// React
+		"react/jsx-closing-bracket-location": "error",
+		"react/jsx-uses-react": "error",
+		"react/jsx-key": "error",
+		"react/jsx-uses-vars": "error",
+		"react/prop-types": "error",
+		"react/react-in-jsx-scope": "error",
+		"react/display-name": "off",
+		"react/no-unescaped-entities": "off",
 	}
 }
