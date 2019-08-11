@@ -54,7 +54,7 @@ Add the following to your VSCode editor's settings to get linting to work in the
 To _link_ your local `sunnies` with your local project, run:
 
 ```
-$ yarn link && yarn watch
+$ yarn workspace sunnies link && yarn workspace sunnies watch
 ```
 (wait until you see a message that X files have been successfully compiled before moving on)
 
