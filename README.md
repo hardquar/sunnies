@@ -1,10 +1,23 @@
-# 😎 Sunnies 😎
+<p align="center">
+  <a href="http://sunnies.com">
+    <img src="https://github.com/miloofcroton/sunnies/blob/master/assets/img/icon-large.png?raw=true" width="320" alt="Sunnies logo"/>
+  </a>
+</p>
 
-This is a component library to be consumed in React and React Native. Why React Native as well? I just want to build universal compatibility from the get-go.
+<p align="center">
+<img src="https://travis-ci.com/sunnies/example.svg?branch=master" alt="Travis-CI status" height="18">
+<a href="https://codecov.io/gh/sunnies/example?branch=master">
+  <img src="https://codecov.io/gh/sunnies/example/coverage.svg?branch=master" alt="Codecov coverage" height="18">
+</a>
+</p>
 
-The dev experience is going to be great, with TypeScript and Storybook. It will be key to figure out how TypeScript and Storybook can talk to each other, to esnure automatic documentation (with react-docgen or TypeDoc, possibly).
+<p align="center">
+😎 Stylish component library for stylish people 😎
+</p>
 
-An additional challenge will be configuring the build process, so that I can publish to NPM to use on other projects. If I ever need to test locally, I should also be able to use `yarn link`.
+## What is Sunnies?
+
+This is a component library to be consumed in React and React Native. More notes to come.
 
 ## Local development
 
