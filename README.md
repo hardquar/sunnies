@@ -50,7 +50,17 @@ $ yarn add sunnies
 $ yarn start
 ```
 
-## Deployment process
+## Development process
+
+### How to contribute
+
+If you'd like to add a new component to `Sunnies` please:
+
+1. Create an issue using the component spec template. That'll give both design and engineering a chance to peek at the proposal and provide feedback before moving forward.
+2. Create a feature branch and perform any work you are doing.
+3. Create a pull request using the feature branch template.
+
+Note: Any breaking changes should be noted in `CHANGELOG.md`.
 
 ### Commits and Deployments
 
